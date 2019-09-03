@@ -1,0 +1,42 @@
+<plugin class="gbxmodel" Author="Conure/Altimit01" version="0.05" headersize="0">
+ <struct name="Markers" offset="0xac" visible="true" size="64" name_offset="0x0">
+   <struct name="instances" offset="0x34" visible="true" size="32">
+      <int32 name="unknown" offset="0x0" visible="false" helptag=""/>
+      <float name="translation(x)" offset="0x4" visible="true" helptag=""/>
+      <float name="translation(y)" offset="0x8" visible="true" helptag=""/>
+      <float name="translation(z)" offset="0xc" visible="true" helptag=""/>
+      <float name="rotation(1)" offset="0x10" visible="true" helptag=""/>
+      <float name="rotation(2)" offset="0x14" visible="true" helptag=""/>
+      <float name="rotation(3)" offset="0x18" visible="true" helptag=""/>
+      <float name="rotation(4)" offset="0x1c" visible="true" helptag=""/>
+   </struct>
+ </struct>
+ <struct name="Region" offset="0xc4" visible="true" size="76" name_offset="0x0">
+   <struct name="Permutation" offset="0x40" visible="true" size="88" name_offset="0x0">
+       <index name="super low" offset="0x40" reflexive="main:Geometry:Part" visible="true"/>
+       <index name="low" offset="0x42" reflexive="main:Geometry:Part" visible="true"/>
+       <index name="medium" offset="0x44" reflexive="main:Geometry:Part" visible="true"/>
+       <index name="high" offset="0x46" reflexive="main:Geometry:Part" visible="true"/>
+       <index name="super high" offset="0x48" reflexive="main:Geometry:Part" visible="true"/>
+    <struct name="Markers" offset="0x4c" visible="true" size="80" name_offset="0x0">
+        <string32 name="name" offset="0x0" visible="true" helptag=""/>
+        <float name="translation(x)" offset="0x34" visible="true" helptag=""/>
+        <float name="translation(y)" offset="0x38" visible="true" helptag=""/>
+        <float name="translation(z)" offset="0x3c" visible="true" helptag=""/>
+     </struct>
+   </struct>
+ </struct>
+ <struct name="Geometry" offset="0xD0" visible="true" size="48">
+   <struct name="Part" offset="0x24" visible="true" size="132">
+       <int16 name="unknown possibly an index" offset="0x4" visible="false"/>
+       <int16 name="unknown (-1)" offset="0x6" visible="false"/>
+       <int16 name="unknown" offset="0x8" visible="false"/>
+       <int16 name="unknown possibly an index" offset="0xA" visible="false"/>
+       <float name="unknown" offset="0xC" visible="false"/>
+       <float name="unknown" offset="0x10" visible="false"/>
+       <float name="centroid (x)" offset="0x14" visible="true"/>
+       <float name="centroid (y)" offset="0x18" visible="true"/>
+       <float name="centroid (z)" offset="0x1C" visible="true"/>
+   </struct>
+ </struct>
+</plugin>

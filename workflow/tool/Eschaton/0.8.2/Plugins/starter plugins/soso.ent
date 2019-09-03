@@ -1,0 +1,58 @@
+<plugin class="soso" author="Altimit01" version="0.5" headersize="0">
+ <bitmask32 name="Flags" offset="0x0" visible="true">
+  <option name="Simple Paramterization" value="31" />
+  <option name="Ignore Normals" value="30" />
+  <option name="Transparent Lit" value="29" />
+ </bitmask32>
+ <enum16 name="Detail Level" offset="0x02" visible="true">
+  <option name="High" value="0" />
+  <option name="Medium" value="1" />
+  <option name="Low" value="2" />
+  <option name="Very Low" value="3" />
+ </enum16>
+ <float name="Power" offset="0x04" visible="true" />
+ <colorRGB name="Color of Emitted Light" offset="0x08" visible="true" />
+ <colorRGB name="Tint Color" offset="0x14" visible="true" />
+ <enum16 name="Material Type" offset="0x22" visible="true">
+  <option name="Dirt" value="0" />
+  <option name="Sand" value="1" />
+  <option name="Stone" value="2" />
+  <option name="Snow" value="3" />
+  <option name="Wood" value="4" />
+  <option name="Metal (Hollow)" value="5" />
+  <option name="Metal (Thin)" value="6" />
+  <option name="Metal (Thick)" value="7" />
+  <option name="Rubber" value="8" />
+  <option name="Glass" value="9" />
+  <option name="Force Field" value="10" />
+  <option name="Grunt" value="11" />
+  <option name="Hunter Armor" value="12" />
+  <option name="Hunter Skin" value="13" />
+  <option name="Elite" value="14" />
+  <option name="Jackal" value="15" />
+  <option name="Jackal Energy shield" value="16" />
+  <option name="Engineer Skin" value="17" />
+  <option name="Engineer Force Field" value="18" />
+  <option name="Flood Combat Form" value="19" />
+  <option name="Flood Carrier Form" value="20" />
+  <option name="Cyborg Armor" value="21" />
+  <option name="Cyborg Energy Shield" value="22" />
+  <option name="Human Armor" value="23" />
+  <option name="Human Skin" value="24" />
+  <option name="Sentinel" value="25" />
+  <option name="Monitor" value="26" />
+  <option name="Plastic" value="27" />
+  <option name="Water" value="28" />
+  <option name="Leaves" value="29" />
+  <option name="Elite Energy Shield" value="30" />
+  <option name="Ice" value="31" />
+  <option name="Hunter Shield" value="32" />
+ </enum16>
+ <float name="Translucency" offset="0x38" visible="true" />
+ <float name="Reflection Falloff Distance" offset="0x13C" visible="true" />
+ <float name="Reflection Cutoff Distance" offset="0x140" visible="true" />
+ <float name="Perpendicular Brightness" offset="0x144" visible="true" />
+ <colorRGB name="Perpendicular Tint Color" offset="0x148" visible="true" />
+ <float name="Parallel Brightness" offset="0x154" visible="true" />
+ <colorRGB name="Parallel Tint Color" offset="0x158" visible="true" />
+</plugin>

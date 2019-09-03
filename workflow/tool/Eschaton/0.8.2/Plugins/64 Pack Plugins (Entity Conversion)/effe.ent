@@ -1,0 +1,16 @@
+<plugin class="effe" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Deleted When Attachemnt Deactivates" value="0"/>
+    <option name="Required for Gameplay" value="1"/>
+  </bitmask32>
+  <struct name="Locations" offset="0x28" visible="true" size="32">
+    <string32 name="Marker Name" offset="0x00" Visible="true"/>
+  </struct>
+  <struct name="Events" offset="0x34" visible="true" size="64">
+    <float name="Skip Fraction" offset="0x00" Visible="true"/>
+    <float name="Delay Bounds" offset="0x0C" Visible="true"/>
+    <float name="Delay Bounds - To" offset="0x10" Visible="true"/>
+    <float name="Duration Bounds" offset="0x14" Visible="true"/>
+    <float name="Duration Bounds - To" offset="0x18" Visible="true"/>
+  </struct>
+</plugin>

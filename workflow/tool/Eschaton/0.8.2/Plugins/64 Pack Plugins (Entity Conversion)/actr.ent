@@ -1,0 +1,246 @@
+<plugin class="actr" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Can See in Darkness" value="0"/>
+    <option name="Sneak Uncovering Target" value="1"/>
+    <option name="Sneak Uncovering Pursuit Pos" value="2"/>
+    <option name="Unused" value="3"/>
+    <option name="Shoot at Target's Last Location" value="4"/>
+    <option name="Try to Stay Still When Crouched" value="5"/>
+    <option name="Crouch when not in Combat" value="6"/>
+    <option name="Crouch When Guarding" value="7"/>
+    <option name="Unused" value="8"/>
+    <option name="Must Crouch to Shoot" value="9"/>
+    <option name="Panic When Surprised" value="10"/>
+    <option name="Always Charge at Enemies" value="11"/>
+    <option name="Gets in Vehicles with Player" value="12"/>
+    <option name="Start Firing Before Aligned" value="13"/>
+    <option name="Standing Must Move Forward" value="14"/>
+    <option name="Crouching Must Move Forward" value="15"/>
+    <option name="Use Stalking Behaviour" value="16"/>
+    <option name="Stalking Freeze if Exposed" value="17"/>
+    <option name="Always Beserk in Attaching M" value="18"/>
+    <option name="Always Beserking Uses Panicked Mo" value="19"/>
+    <option name="Flying" value="20"/>
+    <option name="Panicked by Unopposable En" value="21"/>
+    <option name="Crouch When Hiding From Uno" value="22"/>
+    <option name="Always Charge in 'Attacking'" value="23"/>
+    <option name="Drive off Ledges" value="24"/>
+    <option name="Swarm" value="25"/>
+    <option name="Suicidal Melee Attack" value="26"/>
+    <option name="Cannot Move While Crouching " value="27"/>
+    <option name="Fixed Crouch Facing" value="28"/>
+    <option name="Crouch When in Line of Fire" value="29"/>
+    <option name="Avoid Friends' Line of Fire" value="30"/>
+  </bitmask32>
+  <bitmask32 name="More Flags" offset="0x04" Visible="true">
+    <option name="Avoid all Enemy Attack Vectors" value="0"/>
+    <option name="Must Stamd to Fire" value="1"/>
+    <option name="Must Stop to Fire" value="2"/>
+    <option name="Disallow Vehicle Combat" value="3"/>
+    <option name="Pathfinding Ignores Danger" value="4"/>
+    <option name="Panic in Groups" value="5"/>
+    <option name="No Corpse Shooting" value="6"/>
+  </bitmask32>
+  <enum32 name="Type" offset="0x14" Visible="true">
+    <option name="Elite" value="0"/>
+    <option name="Jackal" value="1"/>
+    <option name="Grunt" value="2"/>
+    <option name="Hunter" value="3"/>
+    <option name="Engineer" value="4"/>
+    <option name="Assassin" value="5"/>
+    <option name="Player" value="6"/>
+    <option name="Marine" value="7"/>
+    <option name="Crew" value="8"/>
+    <option name="Combat Form" value="9"/>
+    <option name="Infection Form" value="10"/>
+    <option name="Carrier Form" value="11"/>
+    <option name="Monitor" value="12"/>
+    <option name="Sentinel" value="11"/>
+    <option name="None" value="12"/>
+    <option name="Mounted Weapon" value="13"/>
+  </enum32>
+  <float name="Max Vision Distance" offset="0x18" Visible="true"/>
+  <float name="Central Vision Angle" offset="0x1C" Visible="true"/>
+  <float name="Max Vision Angle" offset="0x20" Visible="true"/>
+  <float name="Peripheral Vision Angle" offset="0x28" Visible="true"/>
+  <float name="Peripheral Distance" offset="0x2C" Visible="true"/>
+  <float name="Standing Gun Offset - i" offset="0x34" Visible="true"/>
+  <float name="Standing Gun Offset - i" offset="0x38" Visible="true"/>
+  <float name="Standing Gun Offset - i" offset="0x3C" Visible="true"/>
+  <float name="Crouching Gun Offset - i" offset="0x40" Visible="true"/>
+  <float name="Crouching Gun Offset - i" offset="0x44" Visible="true"/>
+  <float name="Crouching Gun Offset - k" offset="0x48" Visible="true"/>
+  <float name="Hearing Distance" offset="0x4C" Visible="true"/>
+  <float name="Notice Projectile Change" offset="0x50" Visible="true"/>
+  <float name="Notice Vehicle Change" offset="0x54" Visible="true"/>
+  <float name="Combat Perception Time" offset="0x60" Visible="true"/>
+  <float name="Guard Perception Time" offset="0x64" Visible="true"/>
+  <float name="Non-Combat Perception Time" offset="0x68" Visible="true"/>
+  <float name="Dive Into Cover Chance" offset="0x80" Visible="true"/>
+  <float name="Emerge From Cover Chance" offset="0x84" Visible="true"/>
+  <float name="Dive From Gernade Chance" offset="0x88" Visible="true"/>
+  <float name="Glass Ignorance Chance" offset="0x8C" Visible="true"/>
+  <float name="Stationary Movement Dist" offset="0x90" Visible="true"/>
+  <float name="Free-Flying Sidestep" offset="0x94" Visible="true"/>
+  <float name="Begin Moving Angle" offset="0x98" Visible="true"/>
+  <float name="Maximum Aiming Deviation - y" offset="0xA4" Visible="true"/>
+  <float name="Maximum Aiming Deviation - p" offset="0xA8" Visible="true"/>
+  <float name="Maximum Looking Deviation - y" offset="0xAC" Visible="true"/>
+  <float name="Maximum Looking Deviation - p" offset="0xB0" Visible="true"/>
+  <float name="Noncombat Look Delta L" offset="0xB4" Visible="true"/>
+  <float name="Noncombat Look Delta R" offset="0xB8" Visible="true"/>
+  <float name="Combat Look Delta L" offset="0xBC" Visible="true"/>
+  <float name="Combat Look Delta R" offset="0xC0" Visible="true"/>
+  <float name="Idle Aiming Range - y" offset="0xC4" Visible="true"/>
+  <float name="Idle Aiming Range - p" offset="0xC8" Visible="true"/>
+  <float name="Idle Looking Range - y" offset="0xCC" Visible="true"/>
+  <float name="Idle Looking Range - p" offset="0xD0" Visible="true"/>
+  <float name="Event Look Time Modifier" offset="0xD4" Visible="true"/>
+  <float name="Event Look Time Modifier - To" offset="0xD8" Visible="true"/>
+  <float name="Noncombat Idle Facing" offset="0xDC" Visible="true"/>
+  <float name="Noncombat Idle Facing - To" offset="0xE0" Visible="true"/>
+  <float name="Noncombat Idle Aiming" offset="0xE4" Visible="true"/>
+  <float name="Noncombat Idle Aiming -To" offset="0xE8" Visible="true"/>
+  <float name="Noncombat Idle Looking" offset="0xEC" Visible="true"/>
+  <float name="Noncombat Idle Looking - To" offset="0xF0" Visible="true"/>
+  <float name="Guard Idle Facing" offset="0xF4" Visible="true"/>
+  <float name="Guard Idle Facing - To" offset="0xF8" Visible="true"/>
+  <float name="Guard Idle Aiming" offset="0xFC" Visible="true"/>
+  <float name="Guard Idle Aiming - To" offset="0x100" Visible="true"/>
+  <float name="Guard Idle Looking" offset="0x104" Visible="true"/>
+  <float name="Guard Idle Looking - To" offset="0x108" Visible="true"/>
+  <float name="Combat Idle Facing" offset="0x10C" Visible="true"/>
+  <float name="Combat Idle Facing - To" offset="0x110" Visible="true"/>
+  <float name="Combat Idle Aiming" offset="0x114" Visible="true"/>
+  <float name="Combat Idle Aiming - To" offset="0x118" Visible="true"/>
+  <float name="Combat Idle Looking" offset="0x11C" Visible="true"/>
+  <float name="Combat Idle Looking - To" offset="0x120" Visible="true"/>
+  <enum16 name="Unreachable Danger Trigger" offset="0x268" Visible="true">
+    <option name="Never" value="0"/>
+    <option name="Visible" value="1"/>
+    <option name="Shooting" value="2"/>
+    <option name="Shooting Near Us" value="3"/>
+    <option name="Damaging Us" value="4"/>
+    <option name="Unused" value="5"/>
+    <option name="Unused" value="6"/>
+    <option name="Unused" value="7"/>
+    <option name="Unused" value="8"/>
+    <option name="Unused" value="9"/>
+  </enum16>
+  <enum16 name="Vehicle Danger Trigger" offset="0x26A" Visible="true">
+    <option name="Never" value="0"/>
+    <option name="Visible" value="1"/>
+    <option name="Shooting" value="2"/>
+    <option name="Shooting Near Us" value="3"/>
+    <option name="Damaging Us" value="4"/>
+    <option name="Unused" value="5"/>
+    <option name="Unused" value="6"/>
+    <option name="Unused" value="7"/>
+    <option name="Unused" value="8"/>
+    <option name="Unused" value="9"/>
+  </enum16>
+  <enum16 name="Player Danger Trigger" offset="0x26C" Visible="true">
+    <option name="Never" value="0"/>
+    <option name="Visible" value="1"/>
+    <option name="Shooting" value="2"/>
+    <option name="Shooting Near Us" value="3"/>
+    <option name="Damaging Us" value="4"/>
+    <option name="Unused" value="5"/>
+    <option name="Unused" value="6"/>
+    <option name="Unused" value="7"/>
+    <option name="Unused" value="8"/>
+    <option name="Unused" value="9"/>
+  </enum16>
+  <float name="Danger Trigger Time" offset="0x270" Visible="true"/>
+  <float name="Danger Trigger Time - To" offset="0x274" Visible="true"/>
+  <short name="Friends Killed Trigger" offset="0x278" Visible="true"/>
+  <short name="Friends Retreating Trigger" offset="0x27A" Visible="true"/>
+  <float name="Retreat Time" offset="0x288" Visible="true"/>
+  <float name="Retreat Time - To" offset="28C" Visible="true"/>
+  <float name="Cowering Time" offset="0x298" Visible="true"/>
+  <float name="Cowering Time - To" offset="0x29C" Visible="true"/>
+  <float name="Friend Killed Panic Chance" offset="0x2A0" Visible="true"/>
+  <enum16 name="Leader Type" offset="0x2A4" Visible="true">
+    <option name="Elite" value="0"/>
+    <option name="Jackal" value="1"/>
+    <option name="Grunt" value="2"/>
+    <option name="Hunter" value="3"/>
+    <option name="Engineer" value="4"/>
+    <option name="Assassin" value="5"/>
+    <option name="Player" value="6"/>
+    <option name="Marine" value="7"/>
+    <option name="Crew" value="8"/>
+    <option name="Combat Form" value="9"/>
+    <option name="Infection Form" value="10"/>
+    <option name="Carrier Form" value="11"/>
+    <option name="Monitor" value="12"/>
+    <option name="Sentinel" value="13"/>
+    <option name="None" value="14"/>
+    <option name="Mounted Weapon" value="15"/>
+  </enum16>
+  <float name="Leader Killed Panic Chance" offset="0x2A8" Visible="true"/>
+  <float name="Panic Damade Threshold" offset="0x2AC" Visible="true"/>
+  <float name="Surprise Distance" offset="0x2B0" Visible="true"/>
+  <float name="Hide Behind Cover Time" offset="0x2D0" Visible="true"/>
+  <float name="Hide Behind Cover Time - To" offset="0x2D4" Visible="true"/>
+  <float name="Hide Target-not-Visible Time" offset="0x2D8" Visible="true"/>
+  <float name="Hide Shield Fraction" offset="0x2DC" Visible="true"/>
+  <float name="Attack Shield Fraction" offset="0x2E0" Visible="true"/>
+  <float name="Pursue Shield Fraction" offset="0x2E4" Visible="true"/>
+  <enum16 name="Defensive Crouch Type" offset="0x2F8" Visible="true">
+    <option name="Never" value="0"/>
+    <option name="Danger" value="1"/>
+    <option name="Low Shields" value="2"/>
+    <option name="Hide Behind Shield" value="3"/>
+    <option name="Any Target" value="4"/>
+    <option name="Flood Shamble" value="5"/>
+  </enum16>
+  <float name="Attacking Crouch Threshold" offset="0x2FC" Visible="true"/>
+  <float name="Defending Crouch Threshold" offset="0x300" Visible="true"/>
+  <float name="Min Stand Time" offset="0x304" Visible="true"/>
+  <float name="Min Crouch Time" offset="0x308" Visible="true"/>
+  <float name="Defending Hide Time Modifier" offset="0x30C" Visible="true"/>
+  <float name="Attacking Evasion Threshold" offset="0x310" Visible="true"/>
+  <float name="Defending Evasion Threshold" offset="0x314" Visible="true"/>
+  <float name="Evasion Seek-Cover Chance" offset="0x318" Visible="true"/>
+  <float name="Evasion Delay Time" offset="031C" Visible="true"/>
+  <float name="Max Seek-Cover Distance" offset="0x320" Visible="true"/>
+  <float name="Cover Damage Threshold" offset="0x324" Visible="true"/>
+  <float name="Stalking Discovery Time" offset="0x328" Visible="true"/>
+  <float name="Stalking Max Distance" offset="0x32C" Visible="true"/>
+  <float name="Stationary Facing Angle" offset="0x330" Visible="true"/>
+  <float name="Change-Facing Stand Time" offset="0x334" Visible="true"/>
+  <float name="Uncover Delay Time" offset="0x33C" Visible="true"/>
+  <float name="Uncover Delay Time - To" offset="0x340" Visible="true"/>
+  <float name="Target Search Time" offset="0x344" Visible="true"/>
+  <float name="Target Search Time - To" offset="0x348" Visible="true"/>
+  <float name="Pursuit-Postion Time" offset="0x34C" Visible="true"/>
+  <float name="Pursuit-Postion Time - To" offset="0x350" Visible="true"/>
+  <short name="num positions (coord)" offset="0x354" Visible="true"/>
+  <short name="num positions (normal)" offset="0x358" Visible="true"/>
+  <float name="Melee Attack Delay" offset="0x378" Visible="true"/>
+  <float name="Melee Fudge Factor" offset="0x37C" Visible="true"/>
+  <float name="Melee Charge Time" offset="0x380" Visible="true"/>
+  <float name="Melee Leap Range" offset="0x384" Visible="true"/>
+  <float name="Melee Leap Range - To" offset="0x388" Visible="true"/>
+  <float name="Melee Leap Velocity" offset="0x38C" Visible="true"/>
+  <float name="Melee Leap Chance" offset="0x390" Visible="true"/>
+  <float name="Melee Leap Ballistic" offset="0x394" Visible="true"/>
+  <float name="Melee Leap Ballistic" offset="0x398" Visible="true"/>
+  <float name="Berserk Damage Amount" offset="0x39C" Visible="true"/>
+  <float name="Berserk Damage Threshold" offset="0x3A0" Visible="true"/>
+  <float name="Berserk Damage Threshold" offset="0x3A4" Visible="true"/>
+  <float name="Berserk Proximity" offset="0x3A8" Visible="true"/>
+  <float name="Suicde Sensing Dist" offset="0x3AC" Visible="true"/>
+  <float name="Beserk Gernade Chance" offset="0x3B0" Visible="true"/>
+  <float name="Guard Position Time" offset="0x3B8" Visible="true"/>
+  <float name="Guard Position Time - To" offset="0x3BC" Visible="true"/>
+  <float name="Combat Position Time" offset="0x3C0" Visible="true"/>
+  <float name="Combat Position Time - To" offset="0x3C4" Visible="true"/>
+  <float name="Old Position Avoid Dist" offset="0x3C8" Visible="true"/>
+  <float name="Friend Avoid Dist" offset="0x3CC" Visible="true"/>
+  <float name="Noncombat Idle Speech Time" offset="0x3F8" Visible="true"/>
+  <float name="Noncombat Idle Speech Time - To" offset="0x3FC" Visible="true"/>
+  <float name="Combat Idle Speech Time" offset="0x400" Visible="true"/>
+  <float name="Combat Idle Speech Time - To" offset="0x404" Visible="true"/>
+</plugin>

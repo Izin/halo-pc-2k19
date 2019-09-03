@@ -1,0 +1,3 @@
+<plugin class="itmc" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <short name="Respawn Time: 0 = Default" offset="0x0C" Visible="true"/>
+</plugin>

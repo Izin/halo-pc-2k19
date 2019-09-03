@@ -1,0 +1,8 @@
+<plugin class="scen" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="Bounding Radius" offset="0x04" Visible="true"/>
+  <float name="Model" offset="0x34" Visible="true"/>
+  <float name="1" offset="0x010" Visible="true"/>
+  <float name="2" offset="0x204" Visible="true"/>
+  <float name="3" offset="0x208" Visible="true"/>
+  <float name="4" offset="0x20c" Visible="true"/>
+</plugin>

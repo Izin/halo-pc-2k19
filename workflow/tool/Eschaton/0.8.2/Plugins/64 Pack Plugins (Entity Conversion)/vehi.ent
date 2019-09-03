@@ -1,0 +1,69 @@
+<plugin class="vehi" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <struct name="Seat" offset="0x2E4" visible="true" size="284">
+    <bitmask32 name="More Flags" offset="0x00" Visible="true">
+      <option name="Invisible" value="0"/>
+      <option name="Driver" value="2"/>
+      <option name="Gunner" value="3"/>
+      <option name="Thrid Person Camera" value="4"/>
+      <option name="Allows Weapons" value="5"/>
+      <option name="Thrid Person on Enter" value="6"/>
+      <option name="Not Calid Without Drvier" value="9"/>
+      <option name="Allow AI Noncombatants" value="10"/>
+    </bitmask32>
+    <string32 name="Marker Name" offset="0x04" Visible="true"/>
+    <string32 name="Marker Name" offset="0x24" Visible="true"/>
+  </struct>
+  <bitmask32 name="Flags" offset="0x2F0" Visible="true">
+    <option name="Speed Wakes Physics" value="0"/>
+    <option name="Turn Wakes Physics" value="1"/>
+    <option name="Driver Power Wakes Physics" value="2"/>
+    <option name="Gunner Power Wakes Physics" value="3"/>
+    <option name="Control Opposite Speed Set Brak" value="4"/>
+    <option name="Slide Wakes Physics" value="5"/>
+    <option name="Kills Rider at Terminal Velocity" value="6"/>
+    <option name="Causes Collision Damage" value="7"/>
+    <option name="AI Weapon Cannot Rotate" value="8"/>
+    <option name="AI Does not Require Driver" value="9"/>
+    <option name="AI Unused" value="10"/>
+    <option name="AI Driver Enabled" value="11"/>
+    <option name="AI Driver Flying" value="12"/>
+    <option name="AI Driver Can Side-Step" value="13"/>
+    <option name="AI Driver Hovering" value="14"/>
+  </bitmask32>
+  <enum16 name="Type" offset="0x2F4" Visible="true">
+    <option name="Human Tank" value="0"/>
+    <option name="Human Jeep" value="1"/>
+    <option name="Human Boat" value="2"/>
+    <option name="Human Plane" value="3"/>
+    <option name="Alien Scout" value="4"/>
+    <option name="Alien Fighter" value="5"/>
+    <option name="Turret" value="6"/>
+  </enum16>
+  <float name="Max Forward Speed" offset="0x2F8" Visible="true"/>
+  <float name="Max Reverse Speed" offset="0x2FC" Visible="true"/>
+  <float name="Speed Acceleration" offset="0x300" Visible="true"/>
+  <float name="Speed Deceleration" offset="0x304" Visible="true"/>
+  <float name="Max Left Turn" offset="0x308" Visible="true"/>
+  <float name="Max Right Turn (negative)" offset="0x30C" Visible="true"/>
+  <float name="Wheel Circumferance" offset="0x310" Visible="true"/>
+  <float name="Turn Rate" offset="0x314" Visible="true"/>
+  <float name="Blur Speed" offset="0x318" Visible="true"/>
+  <float name="Max Left Slide" offset="0x330" Visible="true"/>
+  <float name="Max Right Slide" offset="0x334" Visible="true"/>
+  <float name="Slide Acceleration" offset="0x338" Visible="true"/>
+  <float name="Deceleration" offset="0x33C" Visible="true"/>
+  <float name="Min Flipping Angular Velocity" offset="0x340" Visible="true"/>
+  <float name="Max Flipping Angular Velocity" offset="0x344" Visible="true"/>
+  <float name="Fixed Gun Yaw" offset="0x348" Visible="true"/>
+  <float name="Fixed Gun Pitch" offset="0x34C" Visible="true"/>
+  <float name="AI Sideslip Distance" offset="0x350" Visible="true"/>
+  <float name="AI Destination Radius" offset="0x354" Visible="true"/>
+  <float name="AI Avoidance Distance" offset="0x358" Visible="true"/>
+  <float name="AI Pathfinding Radius" offset="0x35C" Visible="true"/>
+  <float name="AI Charge Repeat  Timeout" offset="0x360" Visible="true"/>
+  <float name="AI Strafing Abort Range" offset="0x364" Visible="true"/>
+  <float name="AI Oversteering Bounds - To" offset="0x36C" Visible="true"/>
+  <float name="AI Steering Maximum" offset="0x370" Visible="true"/>
+  <float name="AI Throttle Maximum" offset="0x374" Visible="true"/>
+  <float name="AI Move Postion Time" offset="0x378" Visible="true"/>
+</plugin>

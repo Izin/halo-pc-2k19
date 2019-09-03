@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin class="actor" Author="Conure's plugin converter v0.35" version="2" headersize="1272">
+<bitmask32 name="flags" offset="0x0" visible="true" helptag="">
+<option name="can see in darkness" value="31"/>
+<option name="sneak uncovering target" value="30"/>
+<option name="sneak uncovering pursuit position" value="29"/>
+<option name="unused" value="28"/>
+<option name="shoot at targets last location" value="27"/>
+<option name="try to stay still when crouched" value="26"/>
+<option name="crouch when not in combat" value="25"/>
+<option name="crouch when guarding" value="24"/>
+<option name="unused" value="23"/>
+<option name="must crouch to shoot" value="22"/>
+<option name="panic when suprised" value="21"/>
+<option name="always charge at enemies" value="20"/>
+<option name="gets om vehicle with player" value="19"/>
+<option name="start firing before aligned" value="18"/>
+<option name="stand must move forward" value="17"/>
+<option name="crouching must move forward" value="16"/>
+<option name="defensive crouch while charging" value="15"/>
+<option name="use stalking behavior" value="14"/>
+<option name="stalking freeze if exposed" value="13"/>
+<option name="always berserk in attacking mode" value="12"/>
+<option name="berserking uses panicked movement" value="11"/>
+<option name="flying" value="10"/>
+<option name="panicked by unopposable enemy" value="9"/>
+<option name="crouch when hiding from unopposable" value="8"/>
+<option name="always charge in attacking mode" value="7"/>
+<option name="dive off ledges" value="6"/>
+<option name="swarm" value="5"/>
+<option name="suicidal melee attack" value="4"/>
+<option name="fixed crouch facing" value="3"/>
+<option name="crouch when in line of fire" value="2"/>
+<option name="avoid friends line of fire" value="1"/>
+</bitmask32>
+<bitmask32 name="more flags" offset="0x4" visible="true" helptag="">
+<option name="avoid all enemy attack vectors" value="31"/>
+<option name="must stand to fire" value="30"/>
+<option name="must stop to fire" value="29"/>
+<option name="disallow vehicle combat" value="28"/>
+<option name="pathfinding ignores danger" value="27"/>
+<option name="panic in groups" value="26"/>
+<option name="no corpse shooting" value="25"/>
+</bitmask32>
+<enum16 name="type" offset="0x14" visible="true" helptag="">
+<option name="elite" value="0"/>
+<option name="jackal" value="1"/>
+<option name="grunt" value="2"/>
+<option name="hunter" value="3"/>
+<option name="engineer" value="4"/>
+<option name="assassin" value="5"/>
+<option name="player" value="6"/>
+<option name="marin" value="7"/>
+<option name="crew" value="8"/>
+<option name="combat form" value="9"/>
+<option name="infection form" value="10"/>
+<option name="carrier form" value="11"/>
+<option name="monitor" value="12"/>
+<option name="sentinel" value="13"/>
+<option name="none" value="14"/>
+<option name="mounted weapon" value="15"/>
+</enum16>
+<float name="max vision distance" offset="0x18" visible="true" helptag="maximum range of sight"/>
+<float name="central vision angle" offset="0x1c" visible="true" helptag="horizontal angle in which we see see targets out to our maximum range"/>
+<float name="max vision angle" offset="0x20" visible="true" helptag="maximum horizontal angle within which we see targets in range"/>
+<float name="peripheral vision angle" offset="0x28" visible="true" helptag="maximum horizontal angle within which we can see targets out of the corner of our eye"/>
+<float name="peripheral distance" offset="0x2c" visible="true" helptag="maximum range at which we can see targets out of the corner of our eye"/>
+<float name="standing gun offset - 0" offset="0x52" visible="true" helptag="offset of gun from feet when standing (x=forward, y=left, z=up)"/>
+<float name="standing gun offset - 1" offset="0x56" visible="true" helptag="offset of gun from feet when standing (x=forward, y=left, z=up)"/>
+<float name="standing gun offset - 2" offset="0x60" visible="true" helptag="offset of gun from feet when standing (x=forward, y=left, z=up)"/>
+<float name="crouching gun offset - 0" offset="0x64" visible="true" helptag="offset of gun from feet when chrouched (x=forward, y=left, z=up)"/>
+<float name="crouching gun offset - 1" offset="0x68" visible="true" helptag="offset of gun from feet when chrouched (x=forward, y=left, z=up)"/>
+<float name="crouching gun offset - 2" offset="0x72" visible="true" helptag="offset of gun from feet when chrouched (x=forward, y=left, z=up)"/>
+<float name="hearing distance" offset="0x4c" visible="true" helptag="maximum range at which sound can be heard"/>
+<float name="notice projectile chance" offset="0x50" visible="true" helptag="random chance of noticing a dangerous enemy projectile (e.g. grenade)"/>
+<float name="notice vehicle chance" offset="0x5c" visible="true" helptag="random chance of noticing a dangerous vehicle"/>
+<float name="combat perception time" offset="0x60" visible="true" helptag="time required to aknowledge a visible enemy when we are already in combat or searching for them"/>
+<float name="guard perception time" offset="0x64" visible="true" helptag="time required to aknowledge a visible enemy when we have been alerted"/>
+<float name="non-combat perception time" offset="0x68" visible="true" helptag="time required to aknowledge a visible enemy when we are not alerted"/>
+<float name="dive into cover chance" offset="0x80" visible="true" helptag="chance of running a dive animation when moving into cover"/>
+<float name="emerge from cover chance" offset="0x84" visible="true" helptag="chance of running a emerging animation wehn uncovering a target"/>
+<float name="dive from grenade chance" offset="0x88" visible="true" helptag="chance of running a dive animating when moving away from a grenade"/>
+<float name="pathfinding radius" offset="0x8c" visible="true" helptag=""/>
+<float name="glass ignorance chance" offset="0x90" visible="true" helptag="chance of not noticing a breakable surfaces have been destroyed"/>
+<float name="stationary movement dist" offset="0x94" visible="true" helptag="movement distance which is considered 'stationary' for considering wether we crouch"/>
+<float name="free-flying sidestep" offset="0x98" visible="true" helptag="distance which we allow for sidesteping units"/>
+<float name="begin moving angle" offset="0x9c" visible="true" helptag="we must be facing this close to our target before we start applying the throttle (defualt"/>
+<float name="maximum aiming deviation - 0" offset="0x164" visible="true" helptag="how far we can turn our weapon"/>
+<float name="maximum aiming deviation - 1" offset="0x168" visible="true" helptag="how far we can turn our weapon"/>
+<float name="maximum looking deviation - 0" offset="0x172" visible="true" helptag="how far we can turn our head"/>
+<float name="maximum looking deviation - 1" offset="0x176" visible="true" helptag="how far we can turn our head"/>
+<float name="noncombat look delta L" offset="0xb4" visible="true" helptag="how far we can turn out head left away from our aiming vector when not in combat"/>
+<float name="noncombat look delta R" offset="0xb8" visible="true" helptag="how far we can turn out head right away from our aiming vector when not in combat"/>
+<float name="combat look delta L" offset="0xbc" visible="true" helptag="how far we can turn out head left away from our aiming vector when in combat"/>
+<float name="combat look delta R" offset="0xc0" visible="true" helptag="how far we can turn out head right away from our aiming vector when in combat"/>
+<float name="idle aiming range - 0" offset="0x196" visible="true" helptag="ranges in which we select random directions to aim in"/>
+<float name="idle aiming range - 1" offset="0x200" visible="true" helptag="ranges in which we select random directions to aim in"/>
+<float name="idle looking range - 0" offset="0x204" visible="true" helptag="range in which we select random directions to look at"/>
+<float name="idle looking range - 1" offset="0x208" visible="true" helptag="range in which we select random directions to look at"/>
+<float name="event look time modifier - 0" offset="0x212" visible="true" helptag="multiplier for how long we look at intresting events (zero is unchanged)"/>
+<float name="event look time modifier - 1" offset="0x216" visible="true" helptag="multiplier for how long we look at intresting events (zero is unchanged)"/>
+<float name="noncombat idle facing - 0" offset="0x220" visible="true" helptag="rate at which we change facing when looking around randomly when not in combat"/>
+<float name="noncombat idle facing - 1" offset="0x224" visible="true" helptag="rate at which we change facing when looking around randomly when not in combat"/>
+<float name="noncombat idle aiming - 0" offset="0x228" visible="true" helptag="rate at which we change aiming when looking around randomly when not in combat"/>
+<float name="noncombat idle aiming - 1" offset="0x232" visible="true" helptag="rate at which we change aiming when looking around randomly when not in combat"/>
+<float name="noncombat idle looking - 0" offset="0x236" visible="true" helptag="rate at which we change look around randomly when not in combat"/>
+<float name="noncombat idle looking - 1" offset="0x240" visible="true" helptag="rate at which we change look around randomly when not in combat"/>
+<float name="guard idle facing - 0" offset="0x244" visible="true" helptag="rate at which we change facing when looking around randomly when gaurding"/>
+<float name="guard idle facing - 1" offset="0x248" visible="true" helptag="rate at which we change facing when looking around randomly when gaurding"/>
+<float name="guard idle aiming - 0" offset="0x252" visible="true" helptag="rate at which we change facing when aiming around randomly when gaurding"/>
+<float name="guard idle aiming - 1" offset="0x256" visible="true" helptag="rate at which we change facing when aiming around randomly when gaurding"/>
+<float name="guard idle looking - 0" offset="0x260" visible="true" helptag="rate at which we change look around randomly when gaurding"/>
+<float name="guard idle looking - 1" offset="0x264" visible="true" helptag="rate at which we change look around randomly when gaurding"/>
+<float name="combat idle facing - 0" offset="0x268" visible="true" helptag="rate at which we change facing when looking around randomly when in combat"/>
+<float name="combat idle facing - 1" offset="0x272" visible="true" helptag="rate at which we change facing when looking around randomly when in combat"/>
+<float name="combat idle aiming - 0" offset="0x276" visible="true" helptag="rate at which we change facing when aiming around randomly when in combat"/>
+<float name="combat idle aiming - 1" offset="0x280" visible="true" helptag="rate at which we change facing when aiming around randomly when in combat"/>
+<float name="combat idle looking - 0" offset="0x284" visible="true" helptag="rate at which we change look around randomly when in combat"/>
+<float name="combat idle looking - 1" offset="0x288" visible="true" helptag="rate at which we change look around randomly when in combat"/>
+<dependency name="DO NOT USE" offset="0x13c" visible="true" helptag=""/>
+<dependency name="DO NOT USE" offset="0x258" visible="true" helptag=""/>
+<enum16 name="unreachable danger trigger" offset="0x268" visible="true" helptag="danger level of an unreachable enemy will trigger a retreat if it continues over time">
+<option name="never" value="0"/>
+<option name="visible" value="1"/>
+<option name="shooting" value="2"/>
+<option name="shooting near us" value="3"/>
+<option name="damaging us" value="4"/>
+<option name="unused" value="5"/>
+<option name="unused" value="6"/>
+<option name="unused" value="7"/>
+<option name="unused" value="8"/>
+<option name="unused" value="9"/>
+</enum16>
+<enum16 name="vehicle danger trigger" offset="0x26a" visible="true" helptag="danger level of an vehicle-based enemy will trigger a retreat if it continues over time">
+<option name="never" value="0"/>
+<option name="visible" value="1"/>
+<option name="shooting" value="2"/>
+<option name="shooting near us" value="3"/>
+<option name="damaging us" value="4"/>
+<option name="unused" value="5"/>
+<option name="unused" value="6"/>
+<option name="unused" value="7"/>
+<option name="unused" value="8"/>
+<option name="unused" value="9"/>
+</enum16>
+<enum16 name="player danger trigger" offset="0x26c" visible="true" helptag="danger level of an enemy player will trigger a retreat if it continues over time">
+<option name="never" value="0"/>
+<option name="visible" value="1"/>
+<option name="shooting" value="2"/>
+<option name="shooting near us" value="3"/>
+<option name="damaging us" value="4"/>
+<option name="unused" value="5"/>
+<option name="unused" value="6"/>
+<option name="unused" value="7"/>
+<option name="unused" value="8"/>
+<option name="unused" value="9"/>
+</enum16>
+<float name="danger trigger time - 0" offset="0x624" visible="true" helptag="how long it takes a unoppsable enemy with the above danger level to trigger a retreat"/>
+<float name="danger trigger time - 1" offset="0x628" visible="true" helptag="how long it takes a unoppsable enemy with the above danger level to trigger a retreat"/>
+<short name="friends killed trigger" offset="0x278" visible="true" helptag="if this many of our friends are killed by a unoppsable enemy, we trigger a retreat (zero = never use as retreat condition)"/>
+<short name="friends retreating trigger" offset="0x27a" visible="true" helptag="if this many of our friends are retreating from a unoppsable enemy, we retreat as well (zero = never use as retreat condition)"/>
+<float name="retreat time - 0" offset="0x648" visible="true" helptag="how long we retreat from an unoppsable enemy for"/>
+<float name="retreat time - 1" offset="0x652" visible="true" helptag="how long we retreat from an unoppsable enemy for"/>
+<float name="cowering time - 0" offset="0x664" visible="true" helptag=""/>
+<float name="cowering time - 1" offset="0x668" visible="true" helptag=""/>
+<float name="friend killed panic chance" offset="0x2a0" visible="true" helptag=""/>
+<enum16 name="leader type" offset="0x2a4" visible="true" helptag="">
+<option name="elite" value="0"/>
+<option name="jackal" value="1"/>
+<option name="grunt" value="2"/>
+<option name="hunter" value="3"/>
+<option name="engineer" value="4"/>
+<option name="assassin" value="5"/>
+<option name="player" value="6"/>
+<option name="marin" value="7"/>
+<option name="crew" value="8"/>
+<option name="combat form" value="9"/>
+<option name="infection form" value="10"/>
+<option name="carrier form" value="11"/>
+<option name="monitor" value="12"/>
+<option name="sentinel" value="13"/>
+<option name="none" value="14"/>
+<option name="mounted weapon" value="15"/>
+</enum16>
+<float name="leader killed panic chance" offset="0x2a8" visible="true" helptag=""/>
+<float name="panic damage threshold" offset="0x2ac" visible="true" helptag=""/>
+<float name="surprise distance" offset="0x2b0" visible="true" helptag=""/>
+<float name="hide behind cover time - 0" offset="0x720" visible="true" helptag=""/>
+<float name="hide behind cover time - 1" offset="0x724" visible="true" helptag=""/>
+<float name="hide target-not-visible time" offset="0x2d8" visible="true" helptag=""/>
+<float name="hide shield fraction" offset="0x2dc" visible="true" helptag=""/>
+<float name="attack shield fraction" offset="0x2e0" visible="true" helptag=""/>
+<float name="pursue shield fraction" offset="0x2e4" visible="true" helptag=""/>
+<enum16 name="defensive crouch type" offset="0x2f8" visible="true" helptag="">
+<option name="never" value="0"/>
+<option name="danger" value="1"/>
+<option name="low shields" value="2"/>
+<option name="hide behind shield" value="3"/>
+<option name="any target" value="4"/>
+<option name="flood shambles" value="5"/>
+</enum16>
+<float name="attacking crouch threshold" offset="0x2fc" visible="true" helptag=""/>
+<float name="defending crouch threshold" offset="0x300" visible="true" helptag=""/>
+<float name="min stand time" offset="0x304" visible="true" helptag=""/>
+<float name="min crouch time" offset="0x308" visible="true" helptag=""/>
+<float name="defending hide time modifier" offset="0x30c" visible="true" helptag=""/>
+<float name="attacking evasion threshold" offset="0x310" visible="true" helptag=""/>
+<float name="defending evasion threshold" offset="0x314" visible="true" helptag=""/>
+<float name="evasion seek-cover chance" offset="0x318" visible="true" helptag=""/>
+<float name="evasion delay time" offset="0x31c" visible="true" helptag=""/>
+<float name="max seek-cover distance" offset="0x320" visible="true" helptag=""/>
+<float name="cover damage threshold" offset="0x324" visible="true" helptag=""/>
+<float name="stalking discovery time" offset="0x328" visible="true" helptag=""/>
+<float name="stalking max distance" offset="0x32c" visible="true" helptag=""/>
+<float name="stationary facing angle" offset="0x330" visible="true" helptag=""/>
+<float name="change-facing stand time" offset="0x334" visible="true" helptag=""/>
+<float name="uncover delay time - 0" offset="0x828" visible="true" helptag=""/>
+<float name="uncover delay time - 1" offset="0x832" visible="true" helptag=""/>
+<float name="target search time - 0" offset="0x836" visible="true" helptag=""/>
+<float name="target search time - 1" offset="0x840" visible="true" helptag=""/>
+<float name="pursuit-position time - 0" offset="0x844" visible="true" helptag=""/>
+<float name="pursuit-position time - 1" offset="0x848" visible="true" helptag=""/>
+<short name="num positions (coord)" offset="0x354" visible="true" helptag=""/>
+<short name="num positions (normal)" offset="0x356" visible="true" helptag=""/>
+<float name="melee attack delay" offset="0x378" visible="true" helptag=""/>
+<float name="melee fudge factor" offset="0x37c" visible="true" helptag=""/>
+<float name="melee charge time" offset="0x380" visible="true" helptag=""/>
+<float name="melee leap range - 0" offset="0x900" visible="true" helptag=""/>
+<float name="melee leap range - 1" offset="0x904" visible="true" helptag=""/>
+<float name="melee leap velocity" offset="0x38c" visible="true" helptag=""/>
+<float name="melee leap chance" offset="0x390" visible="true" helptag=""/>
+<float name="melee leap ballistic" offset="0x394" visible="true" helptag=""/>
+<float name="berserk damage amount" offset="0x398" visible="true" helptag=""/>
+<float name="berserk damage threshold" offset="0x39c" visible="true" helptag=""/>
+<float name="berserk proximity" offset="0x3a0" visible="true" helptag=""/>
+<float name="suicide sensing dist" offset="0x3a4" visible="true" helptag=""/>
+<float name="berserk grenade chance" offset="0x3a8" visible="true" helptag=""/>
+<float name="guard position time - 0" offset="0x952" visible="true" helptag=""/>
+<float name="guard position time - 1" offset="0x956" visible="true" helptag=""/>
+<float name="combat position time - 0" offset="0x960" visible="true" helptag=""/>
+<float name="combat position time - 1" offset="0x964" visible="true" helptag=""/>
+<float name="old position avoid dist" offset="0x3c8" visible="true" helptag=""/>
+<float name="friend avoid dist" offset="0x3cc" visible="true" helptag=""/>
+<float name="noncombat idle speech time - 0" offset="0x1016" visible="true" helptag=""/>
+<float name="noncombat idle speech time - 1" offset="0x1020" visible="true" helptag=""/>
+<float name="combat idle speech time - 0" offset="0x1024" visible="true" helptag=""/>
+<float name="combat idle speech time - 1" offset="0x1028" visible="true" helptag=""/>
+<dependency name="DO NOT USE" offset="0x4b8" visible="true" helptag=""/>
+</plugin>

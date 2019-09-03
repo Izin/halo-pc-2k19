@@ -1,0 +1,33 @@
+Deadlier Wraith
+
+
+Eschaton 0.8
+==================================================================
+
+
+[coll: Model Collision Geometry] vehicles/wraith/wraith
+------------------------------------------------------------------
+maximum body vitality:   450 -> 800
+body damage threshold:   200 -> 500
+
+
+[jpt!: Damage Effect] vehicles/wraith/explosion
+------------------------------------------------------------------
+Minimum Damage: 	      050 -> 100
+Maximum Damage (min) :	090 -> 140
+Maximum Damage (max) :  110 -> 160
+
+
+[proj: Projectile] vehicles/wraith/wraith mortar
+------------------------------------------------------------------
+P - initial velocity:   0.3333333 ->  1.2
+P - final velocity:     0.3333333 ->  0.6
+
+
+[weap: Weapon] vehicles/wraith/wraith mortar
+------------------------------------------------------------------
+
+triggers [CHUNK 1] (main cannon)
+
+rounds per second - from:   0.5   -> 1
+rounds per seconds - to:    0.5   -> 1

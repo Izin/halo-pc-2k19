@@ -1,0 +1,11 @@
+<plugin class="garb" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="More Flags" offset="0x17C" Visible="true">
+    <option name="Always Maintains Z Up" value="0"/>
+    <option name="Destroyed by Explosions" value="1"/>
+    <option name="Unaffected by Gravity" value="2"/>
+  </bitmask32>
+  <float name="Detonation Delay" offset="0x2E0" Visible="true"/>
+  <float name="Detonation Delay - To" offset="0x2E4" Visible="true"/>
+  <float name="Detonating Effect" offset="0x303" Visible="true"/>
+  <float name="Detonation Effect" offset="0x2F3" Visible="true"/>
+</plugin>

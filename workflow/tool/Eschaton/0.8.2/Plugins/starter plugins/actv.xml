@@ -1,0 +1,597 @@
+<plugin>
+<tag>actv</tag>
+<struct>
+<name>Main</name>
+<size>0</size>
+<value>
+<type>bitmask32</type>
+<offset>0x00</offset>
+<name>Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Can Shoot While Flying</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Interpolate Colour in HSV</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Has Unlimited Gernades</name>
+</bitmask>
+<bitmask>
+<bit>29</bit>
+<name>Moveswitch Stay w/ Freinds</name>
+</bitmask>
+<bitmask>
+<bit>28</bit>
+<name>Active Camo</name>
+</bitmask>
+<bitmask>
+<bit>27</bit>
+<name>Super Active Camo</name>
+</bitmask>
+<bitmask>
+<bit>26</bit>
+<name>Cannot Used Ranged Weapons</name>
+</bitmask>
+<bitmask>
+<bit>25</bit>
+<name>Prefer Passenger Seat</name>
+</bitmask>
+</value>
+<value>
+<type>id16</type>
+<offset>0x4C</offset>
+<name>Movement Type</name>
+<option>
+<value>00</value>
+<name>Always Run</name>
+</option>
+<option>
+<value>01</value>
+<name>Always Crouch</name>
+</option>
+<option>
+<value>02</value>
+<name>Switch Type</name>
+</option>
+</value>
+<value>
+<type>float</type>
+<offset>0x50</offset>
+<name>Initial Crouch Chance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x54</offset>
+<name>Crouch Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x58</offset>
+<name>Crouch Time - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x5C</offset>
+<name>Run Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x60</offset>
+<name>Run Time - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x74</offset>
+<name>Max Firing Distance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x78</offset>
+<name>Rate of Fire</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x7C</offset>
+<name>Projectile Error</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x80</offset>
+<name>First Burst Delay Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x84</offset>
+<name>First Burst Delay Time - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x88</offset>
+<name>New-Target Firing Pattern Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x8C</offset>
+<name>Surprise Delay Time </name>
+</value>
+<value>
+<type>float</type>
+<offset>0x90</offset>
+<name>Surprise Fire-Wildly Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x94</offset>
+<name>Surprise Fire-Wildly Chance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x98</offset>
+<name>Death Fire-Wildly Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x9C</offset>
+<name>Desired Combat Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xA0</offset>
+<name>Desired Combat Range - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xBC</offset>
+<name>Target Tracking</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xC0</offset>
+<name>Target Leading</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xC4</offset>
+<name>Weapon Damage Modifier</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xC8</offset>
+<name>Damage Per Second</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xCC</offset>
+<name>Busrt Origin Radius</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xD0</offset>
+<name>Busrt Origin Angle</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xD4</offset>
+<name>Busrt Return Length</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xD8</offset>
+<name>Busrt Return Length - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xDC</offset>
+<name>Busrt Return Angle</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xE0</offset>
+<name>Brust Duration</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xE4</offset>
+<name>Brust Duration - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xE8</offset>
+<name>Brust Seperation</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xEC</offset>
+<name>Brust Seperation - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xF0</offset>
+<name>Brust Angular Modifier</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xF4</offset>
+<name>Special Damage Modifier</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xF8</offset>
+<name>Special Projectile Error</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x100</offset>
+<name>New Target Burst Duration</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x104</offset>
+<name>New Target Burst Separation</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x108</offset>
+<name>New Target Rate of Fire</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x10C</offset>
+<name>New Target Projectile Error</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x110</offset>
+<name>Moving Burst Duration</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x114</offset>
+<name>Moving Burst Separation</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x118</offset>
+<name>Moving Rate of Fire</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x11C</offset>
+<name>Moving Projectile Error</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x120</offset>
+<name>Berserk Burst Duration</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x124</offset>
+<name>Berserk Burst Separation</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x128</offset>
+<name>Berserk Rate of Fire</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x12C</offset>
+<name>Berserk Projectile Error</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x144</offset>
+<name>Super-Ballistic Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x148</offset>
+<name>Bombardment Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x14C</offset>
+<name>Modified Vision Range</name>
+</value>
+<value>
+<type>id16</type>
+<offset>0x150</offset>
+<name>Special Fire Mode</name>
+<option>
+<value>00</value>
+<name>None</name>
+</option>
+<option>
+<value>01</value>
+<name>Overcharge</name>
+</option>
+<option>
+<value>02</value>
+<name>Secondary Fire</name>
+</option>
+</value>
+<value>
+<type>id16</type>
+<offset>0x154</offset>
+<name>Special Fire Situation</name>
+<option>
+<value>00</value>
+<name>Never</name>
+</option>
+<option>
+<value>01</value>
+<name>Enemy Visible</name>
+</option>
+<option>
+<value>02</value>
+<name>Enemy Out of Sight</name>
+</option>
+<option>
+<value>03</value>
+<name>Strafing</name>
+</option>
+</value>
+<value>
+<type>float</type>
+<offset>0x158</offset>
+<name>Special-Fire Chance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x15C</offset>
+<name>Special-Fire Delay</name>
+</value>
+
+
+<value>
+<type>float</type>
+<offset>0x160</offset>
+<name>Melee Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x164</offset>
+<name>Melee Abort Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x168</offset>
+<name>Berserk Firing Ranges</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x16C</offset>
+<name>Berserk Firing Ranges - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x170</offset>
+<name>Berserk Melee Range</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x174</offset>
+<name>Berserk Melee Abort Range</name>
+</value>
+
+
+<value>
+<type>id16</type>
+<offset>0x180</offset>
+<name>Gernade Type</name>
+<option>
+<value>00</value>
+<name>Human Fragmentation</name>
+</option>
+<option>
+<value>01</value>
+<name>Covenant Plasma</name>
+</option>
+</value>
+<value>
+<type>id16</type>
+<offset>0x182</offset>
+<name>Trajectory Type</name>
+<option>
+<value>00</value>
+<name>Toss</name>
+</option>
+<option>
+<value>01</value>
+<name>Lob</name>
+</option>
+<option>
+<value>02</value>
+<name>Bounce</name>
+</option>
+</value>
+<value>
+<type>id16</type>
+<offset>0x184</offset>
+<name>Grenade Stimulus</name>
+<option>
+<value>00</value>
+<name>Never</name>
+</option>
+<option>
+<value>01</value>
+<name>Visible Target</name>
+</option>
+<option>
+<value>02</value>
+<name>Seek Cover</name>
+</option>
+</value>
+<value>
+<type>short</type>
+<offset>0x186</offset>
+<name>Min Enemy Count</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x188</offset>
+<name>Enemy Radius</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x18C</offset>
+<name>Grenade Velocity</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x190</offset>
+<name>Grenade Ranges</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x194</offset>
+<name>Grenade Ranges - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x198</offset>
+<name>Collateral Damage Radius</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x19C</offset>
+<name>Grenade Chance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1A0</offset>
+<name>Grenade Check Time</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1A4</offset>
+<name>Encounter Grenade Timeout</name>
+</value>
+
+
+<value>
+<type>short</type>
+<offset>0x1D0</offset>
+<name>Grenade Count</name>
+</value>
+<value>
+<type>short</type>
+<offset>0x1D2</offset>
+<name>Grenade Count - To</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1D4</offset>
+<name>Dont Drop Grenades Chance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1D8</offset>
+<name>Drop Weapon Loaded</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1DC</offset>
+<name>Drop Weapon Loaded - To</name>
+</value>
+<value>
+<type>short</type>
+<offset>0x1E0</offset>
+<name>Drop Weapon Ammo</name>
+</value>
+<value>
+<type>short</type>
+<offset>0x1E2</offset>
+<name>Drop Weapon Ammo - To</name>
+</value>
+
+
+<value>
+<type>float</type>
+<offset>0x200</offset>
+<name>Body Vitality</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x204</offset>
+<name>Shield Vitality</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x208</offset>
+<name>Shield Sapping Radius</name>
+</value>
+<value>
+<type>short</type>
+<offset>0x30C</offset>
+<name>Forced Shader Permutation</name>
+</value>
+
+
+<value>
+<type>reflexive</type>
+<offset>0x22C</offset>
+<name>Change Colour</name>
+</value>
+
+
+
+</struct>
+
+<struct>
+<name>Change Colour</name>
+<size>0x20</size>
+
+
+<value>
+<type>colorRGB</type>
+<offset>0x00</offset>
+<name>Color Lower Bound</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x00</offset>
+<name>Colour Lower Bound - r</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x04</offset>
+<name>Colour Lower Bound - g</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x08</offset>
+<name>Colour Lower Bound - b</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x0C</offset>
+<name>Color Upper Bound</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x0C</offset>
+<name>Colour Upper Bound - r</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>Colour Upper Bound - g</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>Colour Upper Bound - b</name>
+</value>
+
+</struct>
+
+</plugin>

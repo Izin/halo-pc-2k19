@@ -1,0 +1,29 @@
+<plugin>
+ <tag>scen</tag>
+ <struct>
+  <name>Main</name>
+  <size>0</size>
+
+ <value>
+   <type>float</type>
+   <offset>0x010</offset>
+   <name>1</name>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x204</offset>
+   <name>2</name>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x208</offset>
+   <name>3</name>
+  </value>
+  <value>
+   <type>float</type>
+   <offset>0x20c</offset>
+   <name>4</name>
+  </value>
+
+ </struct>
+</plugin>

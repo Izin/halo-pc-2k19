@@ -1,0 +1,23 @@
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/sniper rifle/sniper bullet
+------------------------------------------------------------------
+Minimum Damage: 	           101 -> 151
+Maximum Damage (min) :	     101 -> 151
+Maximum Damage (max) :       101 -> 151
+
+
+[weap: Weapon] weapons/sniper rifle/sniper rifle
+------------------------------------------------------------------
+autoaim rangle:                35 -> 0.01 # distance in meters for the autoaim to activate
+magnetism range:               35 -> 50   # distance in meters for the detection of an enemy to be effective - change reticle color in red
+
+rounds total initial: 	       12 -> 8
+rounds total maximum: 	       24 -> 8
+rounds loaded maximum: 	        4 -> 4
+magazine (chunk 1):            16 -> 4
+
+rounds per second - from:       2 -> 0.6
+rounds per second - to:	        2 -> 0.6

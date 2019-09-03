@@ -1,0 +1,21 @@
+<plugin class="metr" author="conure" version="1" headersize="0">
+ <dependency name="stencil bitmaps" offset="0x4" visible="true"/>
+ <dependency name="source bitmaps" offset="0x14" visible="true"/>
+ <short name="stencil sequence index" offset="0x24" visible="true"/>
+ <short name="source sequence index" offset="0x24" visible="true"/>
+ <enum16 name="interpolate colors..." offset="0x3c" visible="true">
+  <option name="linear" value="0"/>
+  <option name="faster near empty" value="1"/>
+  <option name="faster near full" value="2"/>
+  <option name="through random noise" value="3"/>
+ </enum16>
+ <enum16 name="anchor colors..." offset="0x3e" visible="true">
+  <option name="on both ends" value="0"/>
+  <option name="at empty" value="1"/>
+  <option name="at full" value="2"/>
+ </enum16>
+ <colorARGB name="empty color" offset="0x48" visible="true"/>
+ <colorARGB name="full color" offset="0x58" visible="true"/>
+ <flaot name="unmask distance" offset="0x7c" visible="true"/>
+ <flaot name="mask distance" offset="0x80" visible="true"/>
+</plugin>

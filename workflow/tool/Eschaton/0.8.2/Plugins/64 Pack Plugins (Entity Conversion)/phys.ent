@@ -1,0 +1,81 @@
+<plugin class="phys" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="Radius" offset="0x00" Visible="true"/>
+  <float name="Moment Scale" offset="0x04" Visible="true"/>
+  <float name="Mass" offset="0x08" Visible="true"/>
+  <float name="Centre of Mass - x" offset="0x0C" Visible="true"/>
+  <float name="Centre of Mass - y" offset="0x10" Visible="true"/>
+  <float name="Centre of Mass - z" offset="0x14" Visible="true"/>
+  <float name="Density" offset="0x18" Visible="true"/>
+  <float name="Gravity Scale" offset="0x1C" Visible="true"/>
+  <float name="Ground Friction" offset="0x20" Visible="true"/>
+  <float name="Ground Depth" offset="0x24" Visible="true"/>
+  <float name="Ground Damp Fraction" offset="0x28" Visible="true"/>
+  <float name="Ground Normak k1" offset="0x2C" Visible="true"/>
+  <float name="Ground Normak k0" offset="0x30" Visible="true"/>
+  <float name="Water Friction" offset="0x38" Visible="true"/>
+  <float name="Water Depth" offset="0x3C" Visible="true"/>
+  <float name="Water Desnity" offset="0x40" Visible="true"/>
+  <float name="Air Friction" offset="0x48" Visible="true"/>
+  <float name="XX Moment" offset="0x50" Visible="true"/>
+  <float name="YY Moment" offset="0x54" Visible="true"/>
+  <float name="ZZ Moment" offset="0x58" Visible="true"/>
+  <struct name="Powered Mass Points" offset="0x68" visible="true" size="128">
+    <string32 name="Name" offset="0x00" Visible="true"/>
+    <bitmask32 name="Flags" offset="0x20" Visible="true">
+      <option name="Ground Friction" value="0"/>
+      <option name="Water Friction" value="1"/>
+      <option name="Air Friction" value="2"/>
+      <option name="Water Lift" value="3"/>
+      <option name="Air Lift" value="4"/>
+      <option name="Thrust" value="5"/>
+      <option name="Anitgrav" value="6"/>
+    </bitmask32>
+    <float name="Antigrav Strength" offset="0x24" Visible="true"/>
+    <float name="Antigrav Offset" offset="0x28" Visible="true"/>
+    <float name="Antigrav Height" offset="0x2C" Visible="true"/>
+    <float name="Antigrav Damp Fraction" offset="0x30" Visible="true"/>
+    <float name="Antigrav Normak k1" offset="0x34" Visible="true"/>
+    <float name="Antigrav Normak k0" offset="0x38" Visible="true"/>
+  </struct>
+  <struct name="inertial matrix" offset="0x5C" visible="true" size="36">
+    <float name="yy+zz -zy -zy - i (1)" offset="0x0" Visible="true"/>
+    <float name="yy+zz -zy -zy - i (2)" offset="0x4" Visible="true"/>
+    <float name="yy+zz -zy -zy - k" offset="0x8" Visible="true"/>
+    <float name="-xy zz+xx -yz - i (1)" offset="0xC" Visible="true"/>
+    <float name="-xy zz+xx -yz - i (2)" offset="0x10" Visible="true"/>
+    <float name="-xy zz+xx -yz - k" offset="0x14" Visible="true"/>
+    <float name="-zx -yz xx+yy - i (1)" offset="0x18" Visible="true"/>
+    <float name="-zx -yz xx+yy - i (2)" offset="0x1C" Visible="true"/>
+    <float name="-zx -yz xx+yy - k" offset="0x20" Visible="true"/>
+  </struct>
+  <struct name="mass points" offset="0x74" visible="true" size="128">
+    <string32 name="name" offset="0x0" Visible="true"/>
+    <short name="model node" offset="0x22" Visible="true"/>
+    <bitmask32 name="flags" offset="0x26" Visible="true">
+      <option name="metallic" value="31"/>
+      <option name="blank" value="32"/>
+    </bitmask32>
+    <float name="relative mass" offset="0x28" Visible="true"/>
+    <float name="mass" offset="0x2C" Visible="true"/>
+    <float name="relative density" offset="0x30" Visible="true"/>
+    <float name="density" offset="0x34" Visible="true"/>
+    <float name="position - y" offset="0x3C" Visible="true"/>
+    <float name="position - z" offset="0x40" Visible="true"/>
+    <float name="position - x" offset="0x38" Visible="true"/>
+    <float name="forward - i (1)" offset="0x44" Visible="true"/>
+    <float name="forward - i (2)" offset="0x48" Visible="true"/>
+    <float name="forward - k" offset="0x4C" Visible="true"/>
+    <float name="up - i (1)" offset="0x50" Visible="true"/>
+    <float name="up - i (2)" offset="0x54" Visible="true"/>
+    <float name="up - k" offset="0x58" Visible="true"/>
+    <enum16 name="friction type" offset="0x5C" Visible="true">
+      <option name="point" value="0"/>
+      <option name="forward" value="1"/>
+      <option name="left" value="2"/>
+      <option name="up" value="3"/>
+    </enum16>
+    <float name="friction parallel scale" offset="0x60" Visible="true"/>
+    <float name="friction perpendicular scale" offset="0x64" Visible="true"/>
+    <float name="radius" offset="0x68" Visible="true"/>
+  </struct>
+</plugin>

@@ -1,0 +1,8 @@
+<plugin class="devc" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <enum16 name="Device Type" offset="0x00" Visible="true">
+    <option name="Mouse/Keyboard" value="0"/>
+    <option name="Joystick/Gamepads/etc..." value="1"/>
+    <option name="Full Profile Defintion" value="2"/>
+  </enum16>
+  <short name="Device ID" offset="0x04" Visible="true"/>
+</plugin>

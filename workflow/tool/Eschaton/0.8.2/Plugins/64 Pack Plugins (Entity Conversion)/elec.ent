@@ -1,0 +1,9 @@
+<plugin class="elec" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <short name="Stream Count" offset="0x2" Visible="true"/>
+  <float name="Near Fade Distance" offset="0x14" Visible="true"/>
+  <float name="Far Fade Distance" offset="0x18" Visible="true"/>
+  <float name="Alpha Level" offset="0x190" Visible="true"/>
+  <float name="Tint: Red" offset="0x194" Visible="true"/>
+  <float name="Tint: Green" offset="0x198" Visible="true"/>
+  <float name="Tint: Blue" offset="0x19c" Visible="true"/>
+</plugin>

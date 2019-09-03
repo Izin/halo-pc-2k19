@@ -1,0 +1,17 @@
+<plugin class="DeLa" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="text colour - a" offset="0x10C" Visible="true"/>
+  <float name="text colour - r" offset="0x110" Visible="true"/>
+  <float name="text colour - g" offset="0x114" Visible="true"/>
+  <float name="text colour - b" offset="0x118" Visible="true"/>
+  <enum16 name="Justification" offset="0x11C" Visible="true">
+    <option name="left justify" value="0"/>
+    <option name="right justify" value="1"/>
+    <option name="centre" value="2"/>
+  </enum16>
+  <bitmask32 name="Flags" offset="0x11E" Visible="true">
+    <option name="Editable" value="0"/>
+    <option name="Password" value="1"/>
+    <option name="Flashing" value="2"/>
+    <option name="Dont do That Weird Focus Test" value="3"/>
+  </bitmask32>
+</plugin>

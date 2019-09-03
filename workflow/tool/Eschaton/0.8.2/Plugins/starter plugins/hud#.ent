@@ -1,0 +1,9 @@
+<plugin class="hud#" author="conure" version="1" headersize="0">
+ <dependency name="digits bitmap" offset="0x0" visible="true"/>
+ <char name="bitmap digit width" offset="0x10" visible="true"/>
+ <char name="screen digit width" offset="0x11" visible="true"/>
+ <char name="x offset" offset="0x12" visible="true"/>
+ <char name="y offset" offset="0x13" visible="true"/>
+ <char name="decimal point width" offset="0x14" visible="true"/>
+ <char name="colon width" offset="0x15" visible="true"/>
+</plugin>

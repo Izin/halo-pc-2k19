@@ -1,0 +1,381 @@
+<plugin class="wphi" author="Altimit01" version="1.1" headersize="0">
+ <bitmask32 name="flag" offset="0x10" visible="true">
+  <option name="use parent hud flashing parametters" value="31"/>
+ </bitmask32>
+ <short name="total ammo cutoff" offset="0x14" visible="true"/>
+ <short name="loaded ammo cutoff" offset="0x16" visible="true"/>
+ <short name="heat cutoff" offset="0x18" visible="true"/>
+ <short name="age cutoff" offset="0x1a" visible="true"/>
+ <enum16 name="anchor" offset="0x3c" visible="true">
+  <option name="top left" value="0"/>
+  <option name="top right" value="1"/>
+  <option name="bottem left" value="2"/>
+  <option name="bottem right" value="3"/>
+  <option name="center" value="4"/>
+ </enum16>
+ <struct name="static elements" offset="0x60" visible="true" size="180">
+  <enum16 name="state attached to" offset="0x0" visible="true">
+   <option name="total ammo" value="0"/>
+   <option name="loaded ammo" value="1"/>
+   <option name="heat" value="2"/>
+   <option name="age" value="3"/>
+   <option name="secondary weapon total ammo" value="4"/>
+   <option name="secondary weapon loaded ammo" value="5"/>
+   <option name="distance to targer" value="6"/>
+   <option name="elevation to target" value="7"/>
+  </enum16>
+  <enum16 name="can use on map type" offset="0x4" visible="true">
+   <option name="any" value="0"/>
+   <option name="solo" value="1"/>
+   <option name="multi" value="2"/>
+  </enum16>
+  <short name="anchor offset - x" offset="0x24" visible="true"/>
+  <short name="anchor offset - y" offset="0x26" visible="true"/>
+  <float name="width scale" offset="0x28" visible="true"/>
+  <float name="height scale" offset="0x2c" visible="true"/>
+  <bitmask32 name="scaling flags" offset="0x30" visible="true">
+   <option name="dont scale offset" value="31"/>
+   <option name="dont scale size" value="30"/>
+   <option name="use high res scale" value="29"/>
+  </bitmask32>
+  <colorByte name="default color" offset="0x58" visible="true"/>
+  <colorByte name="flashing color" offset="0x5c" visible="true"/>
+  <float name="flash period" offset="0x60" visible="true"/>
+  <float name="flash delay" offset="0x64" visible="true"/>
+  <short name="number of flashes" offset="0x68" visible="true"/>
+  <bitmask32 name="scaling flags" offset="0x6a" visible="true">
+   <option name="reverse default/flashing color" value="31"/>
+  </bitmask32>
+  <float name="flash length" offset="0x6c" visible="true"/>
+  <colorByte name="disabled color" offset="0x70" visible="true"/>
+  <short name="sequence index" offset="0x78" visible="true"/>
+  <struct name="multitext overlay" offset="0x7c" visible="true" size="480">
+   <short name="type" offset="0x2" visible="true"/>
+   <enum16 name="framebuffer blend func" offset="0x4" visible="true">
+    <option name="alpha blend" value="0"/>
+    <option name="multiply" value="1"/>
+    <option name="double multiply" value="2"/>
+    <option name="add" value="3"/>
+    <option name="subtract" value="4"/>
+    <option name="component min" value="5"/>
+    <option name="component max" value="6"/>
+    <option name="alpha-multiply add" value="7"/>
+   </enum16>
+   <enum16 name="primary anchor" offset="0x28" visible="true">
+    <option name="texture" value="0"/>
+    <option name="screen" value="1"/>
+   </enum16>
+   <enum16 name="secondary anchor" offset="0x2a" visible="true">
+    <option name="texture" value="0"/>
+    <option name="screen" value="1"/>
+   </enum16>
+   <enum16 name="tertiary anchor" offset="0x2c" visible="true">
+    <option name="texture" value="0"/>
+    <option name="screen" value="1"/>
+   </enum16>
+   <enum16 name="0 to 1 blend func" offset="0x2e" visible="true">
+    <option name="add" value="0"/>
+    <option name="subtract" value="1"/>
+    <option name="multiply multiply" value="2"/>
+    <option name="multiply2x" value="3"/>
+    <option name="dot" value="4"/>
+   </enum16>
+   <enum16 name="1 to 2 blend func" offset="0x30" visible="true">
+    <option name="add" value="0"/>
+    <option name="subtract" value="1"/>
+    <option name="multiply multiply" value="2"/>
+    <option name="multiply2x" value="3"/>
+    <option name="dot" value="4"/>
+   </enum16>
+   <float name="primary scale - x" offset="0x34" visible="true"/>
+   <float name="primary scale - y" offset="0x38" visible="true"/>
+   <float name="secondary scale - x" offset="0x3c" visible="true"/>
+   <float name="secondary scale - y" offset="0x40" visible="true"/>
+   <float name="tertiary scale - x" offset="0x44" visible="true"/>
+   <float name="tertiary scale - y" offset="0x48" visible="true"/>
+   <float name="primary offset - x" offset="0x4c" visible="true"/>
+   <float name="primary offset - y" offset="0x50" visible="true"/>
+   <float name="secondary offset - x" offset="0x54" visible="true"/>
+   <float name="secondary offset - y" offset="0x58" visible="true"/>
+   <float name="tertiary offset - x" offset="0x5c" visible="true"/>
+   <float name="tertiary offset - y" offset="0x60" visible="true"/>
+   <enum16 name="primary wrap mode" offset="0x94" visible="true">
+    <option name="clamp" value="0"/>
+    <option name="wrap" value="1"/>
+   </enum16>
+   <enum16 name="secondary wrap mode" offset="0x96" visible="true">
+    <option name="clamp" value="0"/>
+    <option name="wrap" value="1"/>
+   </enum16>
+   <enum16 name="tertiary wrap mode" offset="0x98" visible="true">
+    <option name="clamp" value="0"/>
+    <option name="wrap" value="1"/>
+   </enum16>
+   <struct name="effectors" offset="0x154" visible="true" size="220">
+    <enum16 name="destination type" offset="0x40" visible="true">
+     <option name="tint [0,1]" value="0"/>
+     <option name="horizontal offset" value="1"/>
+     <option name="vertical offset" value="2"/>
+     <option name="fade [0,1]" value="3"/>
+    </enum16>
+    <enum16 name="destination" offset="0x42" visible="true">
+     <option name="geometry offset" value="0"/>
+     <option name="primary map" value="1"/>
+     <option name="secondary map" value="2"/>
+     <option name="tertiary map" value="3"/>
+    </enum16>
+    <enum16 name="source" offset="0x44" visible="true">
+     <option name="player pitch" value="0"/>
+     <option name="player pitch tangent" value="1"/>
+     <option name="player yaw" value="2"/>
+     <option name="weapon ammo (total)" value="3"/>
+     <option name="weapon ammo (loaded)" value="4"/>
+     <option name="weapon heat" value="5"/>
+     <option name="explicit (use low bound)" value="6"/>
+     <option name="weapon zoom level" value="7"/>
+    </enum16>
+    <float name="in bounds" offset="0x48" visible="true"/>
+    <float name="in bounds - to" offset="0x4c" visible="true"/>
+    <float name="out bounds" offset="0x50" visible="true"/>
+    <float name="out bounds - to" offset="0x54" visible="true"/>
+    <colorARGB name="tint color lower bounds" offset="0x98" visible="true"/>
+    <colorARGB name="tint color upper bounds" offset="0xa4" visible="true"/>
+    <enum16 name="periodic functions" offset="0x44" visible="true">
+     <option name="one" value="0"/>
+     <option name="zero" value="1"/>
+     <option name="cosine" value="2"/>
+     <option name="cosine (varible period)" value="3"/>
+     <option name="diagonal wave" value="4"/>
+     <option name="diagonal wave (varible period)" value="5"/>
+     <option name="slide" value="6"/>
+     <option name="slide (variable period)" value="7"/>
+     <option name="noise" value="8"/>
+     <option name="jitter" value="9"/>
+     <option name="wander" value="10"/>
+     <option name="spark" value="11"/>
+    </enum16>
+    <float name="function period" offset="0xb4" visible="true"/>
+    <float name="function phase" offset="0xb8" visible="true"/>
+   </struct>
+  </struct>
+ </struct>
+ <struct name="meter elements" offset="0x6c" visible="true" size="180">
+  <enum16 name="state attached to" offset="0x0" visible="true">
+   <option name="total ammo" value="0"/>
+   <option name="loaded ammo" value="1"/>
+   <option name="heat" value="2"/>
+   <option name="age" value="3"/>
+   <option name="secondary weapon total ammo" value="4"/>
+   <option name="secondary weapon loaded ammo" value="5"/>
+   <option name="distance to targer" value="6"/>
+   <option name="elevation to target" value="7"/>
+  </enum16>
+  <enum16 name="can use on map type" offset="0x4" visible="true">
+   <option name="any" value="0"/>
+   <option name="solo" value="1"/>
+   <option name="multi" value="2"/>
+  </enum16>
+  <short name="anchor offset - x" offset="0x24" visible="true"/>
+  <short name="anchor offset - y" offset="0x26" visible="true"/>
+  <float name="width scale" offset="0x28" visible="true"/>
+  <float name="height scale" offset="0x2c" visible="true"/>
+  <bitmask32 name="scaling flags" offset="0x30" visible="true">
+   <option name="dont scale offset" value="31"/>
+   <option name="dont scale size" value="30"/>
+   <option name="use high res scale" value="29"/>
+  </bitmask32>
+  <colorByte name="color at meter minumum" offset="0x58" visible="true"/>
+  <colorByte name="color at meter maximum" offset="0x5c" visible="true"/>
+  <colorByte name="flashing color" offset="0x60" visible="true"/>
+  <colorByte name="empty color" offset="0x64" visible="true"/>
+  <short name="sequence index" offset="0x6a" visible="true"/>
+  <short name="value scale" offset="0x6e" visible="true"/>
+  <float name="opacity" offset="0x70" visible="true"/>
+  <float name="translucency" offset="0x74" visible="true"/>
+  <colorByte name="disabled color" offset="0x78" visible="true"/>
+ </struct>
+ <struct name="number elements" offset="0x78" visible="true" size="160">
+  <enum16 name="state attached to" offset="0x0" visible="true">
+   <option name="total ammo" value="0"/>
+   <option name="loaded ammo" value="1"/>
+   <option name="heat" value="2"/>
+   <option name="age" value="3"/>
+   <option name="secondary weapon total ammo" value="4"/>
+   <option name="secondary weapon loaded ammo" value="5"/>
+   <option name="distance to targer" value="6"/>
+   <option name="elevation to target" value="7"/>
+  </enum16>
+  <enum16 name="can use on map type" offset="0x4" visible="true">
+   <option name="any" value="0"/>
+   <option name="solo" value="1"/>
+   <option name="multi" value="2"/>
+  </enum16>
+  <short name="anchor offset - x" offset="0x24" visible="true"/>
+  <short name="anchor offset - y" offset="0x26" visible="true"/>
+  <float name="width scale" offset="0x28" visible="true"/>
+  <float name="height scale" offset="0x2c" visible="true"/>
+  <bitmask32 name="scaling flags" offset="0x30" visible="true">
+   <option name="dont scale offset" value="31"/>
+   <option name="dont scale size" value="30"/>
+   <option name="use high res scale" value="29"/>
+  </bitmask32>
+  <colorByte name="default color" offset="0x48" visible="true"/>
+  <colorByte name="flashing color" offset="0x4c" visible="true"/>
+  <float name="flashing period" offset="0x50" visible="true"/>
+  <float name="flash delay" offset="0x54" visible="true"/>
+  <short name="number of flashes" offset="0x58" visible="true"/>
+  <bitmask32 name="flash flags" offset="0x5a" visible="true">
+   <option name="reverse default/flashing colors" value="31"/>
+  </bitmask32>
+  <float name="flash length" offset="0x5c" visible="true"/>
+  <colorByte name="disabled color" offset="0x60" visible="true"/>
+  <bitmask32 name="weapon specific flags" offset="0x78" visible="true">
+   <option name="divide number by clip size" value="31"/>
+  </bitmask32>
+ </struct>
+ <struct name="crosshairs" offset="0x84" visible="true" size="104">
+  <enum16 name="crosshair type" offset="0x0" visible="true">
+   <option name="aim" value="0"/>
+   <option name="zoom" value="1"/>
+   <option name="charge" value="2"/>
+   <option name="should reload" value="3"/>
+   <option name="flash heat" value="4"/>
+   <option name="flash total ammo" value="5"/>
+   <option name="flash battery" value="6"/>
+   <option name="reload/overheat" value="7"/>
+   <option name="flash when firing and no ammo" value="8"/>
+   <option name="flash when throwing and no grenade" value="9"/>
+   <option name="low ammo and none left to reload" value="10"/>
+   <option name="should reload ammo" value="11"/>
+   <option name="flash secondary total ammo" value="12"/>
+   <option name="flash secondary reload" value="13"/>
+   <option name="flash when firing secondary trigger with no ammo" value="14"/>
+   <option name="low secondary ammo and none left to reload" value="15"/>
+   <option name="primary trigger ready" value="16"/>
+   <option name="secondary trigger ready" value="17"/>
+   <option name="flash when firing with depleted battery" value="18"/>
+  </enum16>
+  <enum16 name="can use on map type" offset="0x4" visible="true">
+   <option name="any" value="0"/>
+   <option name="solo" value="1"/>
+   <option name="multi" value="2"/>
+  </enum16>
+  <struct name="crosshairs overlays" offset="0x34" visible="true" size="108">
+   <short name="anchor offset - x" offset="0x0" visible="true"/>
+   <short name="anchor offset - y" offset="0x2" visible="true"/>
+   <float name="width scale" offset="0x4" visible="true"/>
+   <float name="height scale" offset="0x8" visible="true"/>
+   <bitmask32 name="scaling flags" offset="0xc" visible="true">
+    <option name="dont scale offset" value="31"/>
+    <option name="dont scale size" value="30"/>
+    <option name="use high res scale" value="29"/>
+   </bitmask32>
+   <colorByte name="defualt color" offset="0x24" visible="true"/>
+   <colorByte name="flashing color" offset="0x28" visible="true"/>
+   <float name="flash period" offset="0x2c" visible="true"/>
+   <float name="flash delay" offset="0x30" visible="true"/>
+   <short name="number of flashes" offset="0x34" visible="true"/>
+   <bitmask32 name="flash flag" offset="0x36" visible="true">
+    <option name="reverse defualt\flashing colors" value="31"/>
+   </bitmask32>
+   <float name="flash length" offset="0x38" visible="true"/>
+   <colorByte name="disabled color" offset="0x3c" visible="true"/>
+   <short name="frame rate" offset="0x44" visible="true"/>
+   <short name="bitmap subindex" offset="0x46" visible="true"/>
+   <short name="sequence index" offset="0x48" visible="true"/>
+   <bitmask32 name="flags" offset="0x4a" visible="true">
+    <option name="flashes when active" value="31"/>
+    <option name="not a sprite" value="30"/>
+    <option name="show only when zoomed" value="29"/>
+    <option name="show sniper data" value="28"/>
+    <option name="hide area outside reticle" value="27"/>
+    <option name="one zoom level" value="26"/>
+    <option name="dont show when zoomed" value="25"/>
+   </bitmask32>
+  </struct>
+ </struct>
+ <struct name="overlay elements" offset="0x90" visible="true" size="104">
+  <enum16 name="crosshair type" offset="0x0" visible="true">
+   <option name="total ammo" value="0"/>
+   <option name="loaded ammo" value="1"/>
+   <option name="heat" value="2"/>
+   <option name="age" value="3"/>
+   <option name="secondary weapon total ammo" value="4"/>
+   <option name="secondary weapon loaded ammo" value="5"/>
+   <option name="distance to targer" value="6"/>
+   <option name="elevation to target" value="7"/>
+  </enum16>
+  <enum16 name="can use on map type" offset="0x4" visible="true">
+   <option name="any" value="0"/>
+   <option name="solo" value="1"/>
+   <option name="multi" value="2"/>
+  </enum16>
+  <struct name="overlays" offset="0x34" visible="true" size="136">
+   <short name="anchor offset - x" offset="0x0" visible="true"/>
+   <short name="anchor offset - y" offset="0x2" visible="true"/>
+   <float name="width scale" offset="0x4" visible="true"/>
+   <float name="height scale" offset="0x8" visible="true"/>
+   <bitmask32 name="scaling flags" offset="0xc" visible="true">
+    <option name="dont scale offset" value="31"/>
+    <option name="dont scale size" value="30"/>
+    <option name="use high res scale" value="29"/>
+   </bitmask32>
+   <colorByte name="defualt color" offset="0x24" visible="true"/>
+   <colorByte name="flashing color" offset="0x28" visible="true"/>
+   <float name="flash period" offset="0x2c" visible="true"/>
+   <float name="flash delay" offset="0x30" visible="true"/>
+   <short name="number of flashes" offset="0x34" visible="true"/>
+   <bitmask32 name="flash flag" offset="0x36" visible="true">
+    <option name="reverse defualt\flashing colors" value="31"/>
+   </bitmask32>
+   <float name="flash length" offset="0x38" visible="true"/>
+   <colorByte name="disabled color" offset="0x3c" visible="true"/>
+   <short name="frame rate" offset="0x44" visible="true"/>
+   <short name="sequence index" offset="0x48" visible="true"/>
+   <bitmask32 name="type" offset="0x4a" visible="true">
+    <option name="show on flashing" value="31"/>
+    <option name="show on empty" value="30"/>
+    <option name="show on reload/overheating" value="29"/>
+    <option name="show on defualt" value="28"/>
+    <option name="show always" value="27"/>
+   </bitmask32>
+   <bitmask32 name="flags" offset="0x4e" visible="true">
+    <option name="flashes when active" value="31"/>
+   </bitmask32>
+  </struct>
+ </struct>
+ <struct name="screen effect" offset="0xac" visible="true" size="184">
+  <bitmask32 name="flags (mask)" offset="0x4" visible="true">
+   <option name="only when zoomed" value="31"/>
+  </bitmask32>
+  <bitmask32 name="flags (convolution)" offset="0x40" visible="true">
+   <option name="only when zoomed" value="31"/>
+  </bitmask32>
+  <float name="FOV in bounds" offset="0x44" visible="true"/>
+  <float name="FOV in bounds - to" offset="0x48" visible="true"/>
+  <float name="radius out bounds" offset="0x4c" visible="true"/>
+  <float name="radius out bounds - to" offset="0x50" visible="true"/>
+  <bitmask32 name="flags" offset="0x6c" visible="true">
+   <option name="only when zoomed" value="31"/>
+   <option name="connect to flashlight" value="30"/>
+   <option name="masked" value="29"/>
+  </bitmask32>
+  <short name="sprite source [0,3]" offset="0x6e" visible="true"/>
+  <float name="intensity[0,1]" offset="0x70" visible="true"/>
+  <bitmask32 name="flags" offset="0x8c" visible="true">
+   <option name="only when zoomed" value="31"/>
+   <option name="connect to flashlight" value="30"/>
+   <option name="additive" value="29"/>
+   <option name="masked" value="28"/>
+  </bitmask32>
+  <short name="script source [0,3]" offset="0x8e" visible="true"/>
+  <float name="intensity[0,1]" offset="0x90" visible="true"/>
+  <colorRGB name="tint" offset="0x94" visible="true"/>
+ </struct>
+ <short name="sequence index" offset="0x13c" visible="true"/>
+ <short name="width offset" offset="0x13e" visible="true"/>
+ <short name="offset from refernce corner - x" offset="0x140" visible="true"/>
+ <short name="offset from refernce corner - y" offset="0x142" visible="true"/>
+ <colorByte name="override icon color" offset="0x144" visible="true"/>
+ <short name="text index" offset="0x14a" visible="true"/>
+</plugin>

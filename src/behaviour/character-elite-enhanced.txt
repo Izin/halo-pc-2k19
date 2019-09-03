@@ -1,0 +1,10 @@
+More powerfull Elite
+
+
+Eschaton 0.8
+==================================================================
+
+
+[coll: Model Collision Geometry] characters/elite/elite
+------------------------------------------------------------------
+maximum shield vitality:   100 -> 150

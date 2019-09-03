@@ -1,0 +1,211 @@
+<plugin class="coll" author="conure" version="1" headersize="0">
+ <bitmask32 name="flags" offset="0x0" visible="true">
+  <option name="takes shield damage for children" value="31"/>
+  <option name="takes body damage for children" value="30"/>
+  <option name="always shields freindly damage" value="29"/>
+  <option name="passes area damage to children" value="28"/>
+  <option name="parent never takes body damage for child" value="27"/>
+  <option name="only damaged by explosives" value="26"/>
+  <option name="only damaged while occupied" value="25"/>
+ </bitmask32>
+ <float name="maximum body vitality" offset="0x8" visible="true"/>
+ <float name="body system shock" offset="0xc" visible="true"/>
+ <float name="freindly damage resistance [0,1]" offset="0x44" visible="true"/>
+ <dependency name="localized damage effect" offset="0x70" visible="true"/>
+ <float name="area damage effect threshold [0,1]" offset="0x80" visible="true"/>
+ <dependency name="area damage effect" offset="0x84" visible="true"/>
+ <float name="body damage threshold" offset="0x94" visible="true"/>
+ <dependency name="body damaged effect" offset="0x98" visible="true"/>
+ <dependency name="body depletion effect" offset="0xa8" visible="true"/>
+ <float name="body destroy threshold" offset="0xb8" visible="true"/>
+ <dependency name="body destroyed effect" offset="0xbc" visible="true"/>
+ <float name="maximum shield vitality" offset="0xcc" visible="true"/>
+ <enum16 name="shield material type" offset="0xd2" visible="true">
+  <option name="dirt" value="0"/>
+  <option name="sand" value="1"/>
+  <option name="stone" value="2"/>
+  <option name="snow" value="3"/>
+  <option name="wood" value="4"/>
+  <option name="metal (hollow)" value="5"/>
+  <option name="metal (thin)" value="6"/>
+  <option name="metal (thick)" value="7"/>
+  <option name="rubber" value="8"/>
+  <option name="glass" value="9"/>
+  <option name="force field" value="10"/>
+  <option name="grunt" value="11"/>
+  <option name="hunter armor" value="12"/>
+  <option name="hunter skin" value="13"/>
+  <option name="elite" value="14"/>
+  <option name="jackel" value="15"/>
+  <option name="jackel energy shield" value="16"/>
+  <option name="engineer skin" value="17"/>
+  <option name="engineer force field" value="18"/>
+  <option name="flood combat form" value="19"/>
+  <option name="flood carrier form" value="20"/>
+  <option name="cyborg armor" value="21"/>
+  <option name="cyborg energy shield" value="22"/>
+  <option name="human armor" value="23"/>
+  <option name="human skin" value="24"/>
+  <option name="sential" value="25"/>
+  <option name="monitor" value="26"/>
+  <option name="plastic" value="27"/>
+  <option name="water" value="28"/>
+  <option name="leaves" value="29"/>
+  <option name="elite energy shield" value="30"/>
+  <option name="ice" value="31"/>
+  <option name="hunter shield" value="32"/>
+ </enum16>
+ <enum16 name="shield failure function" offset="0xec" visible="true">
+  <option name="linear" value="0"/>
+  <option name="early" value="1"/>
+  <option name="very early" value="2"/>
+  <option name="late" value="3"/>
+  <option name="very late" value="4"/>
+  <option name="cosine" value="5"/>
+ </enum16>
+ <float name="shield failure threshold" offset="0xf0" visible="true"/>
+ <float name="failing shield leak fraction" offset="0xf4" visible="true"/>
+ <float name="minimum stun damage" offset="0x108" visible="true"/>
+ <float name="stun time" offset="0x10c" visible="true"/>
+ <float name="recharge time" offset="0x110" visible="true"/>
+ <float name="shield damged threshold" offset="0x184" visible="true"/>
+ <dependency name="shield damaged effect" offset="0x188" visible="true"/>
+ <dependency name="shield depleted effect" offset="0x198" visible="true"/>
+ <dependency name="shield recharging effect" offset="0x1a8" visible="true"/>
+ <struct name="materials" offset="0x234" visible="true" size="72">
+  <string32 name="name" offset="0x0" visible="true"/>
+  <bitmask32 name="flags" offset="0x20" visible="true">
+   <option name="head" value="31"/>
+  </bitmask32>
+  <enum16 name="material type" offset="0x24" visible="true">
+   <option name="dirt" value="0"/>
+   <option name="sand" value="1"/>
+   <option name="stone" value="2"/>
+   <option name="snow" value="3"/>
+   <option name="wood" value="4"/>
+   <option name="metal (hollow)" value="5"/>
+   <option name="metal (thin)" value="6"/>
+   <option name="metal (thick)" value="7"/>
+   <option name="rubber" value="8"/>
+   <option name="glass" value="9"/>
+   <option name="force field" value="10"/>
+   <option name="grunt" value="11"/>
+   <option name="hunter armor" value="12"/>
+   <option name="hunter skin" value="13"/>
+   <option name="elite" value="14"/>
+   <option name="jackel" value="15"/>
+   <option name="jackel energy shield" value="16"/>
+   <option name="engineer skin" value="17"/>
+   <option name="engineer force field" value="18"/>
+   <option name="flood combat form" value="19"/>
+   <option name="flood carrier form" value="20"/>
+   <option name="cyborg armor" value="21"/>
+   <option name="cyborg energy shield" value="22"/>
+   <option name="human armor" value="23"/>
+   <option name="human skin" value="24"/>
+   <option name="sential" value="25"/>
+   <option name="monitor" value="26"/>
+   <option name="plastic" value="27"/>
+   <option name="water" value="28"/>
+   <option name="leaves" value="29"/>
+   <option name="elite energy shield" value="30"/>
+   <option name="ice" value="31"/>
+   <option name="hunter shield" value="32"/>
+  </enum16>
+  <float name="shield leakage percentage" offset="0x28" visible="true"/>
+  <float name="shield damage multiplier" offset="0x2c" visible="true"/>
+  <float name="body damage multiplier" offset="0x3c" visible="true"/>
+ </struct>
+ <struct name="regions" offset="0x240" visible="true" size="84">
+  <string32 name="name" offset="0x0" visible="true"/>
+  <bitmask32 name="flags" offset="0x20" visible="true">
+   <option name="lives until object dies" value="31"/>
+   <option name="forces object to die" value="30"/>
+   <option name="dies when object dies" value="29"/>
+   <option name="dies when onject is damaged" value="28"/>
+   <option name="disappears when shield is off" value="27"/>
+   <option name="inhibits melee attack" value="26"/>
+   <option name="inhibits weapon attack" value="25"/>
+   <option name="inhibits walking" value="24"/>
+   <option name="forces drop weapon" value="23"/>
+   <option name="cuases head-maimed scream" value="22"/>
+  </bitmask32>
+  <float name="damage threshold" offset="0x28" visible="true"/>
+  <dependency name="destroyed effect effect" offset="0x38" visible="true"/>
+  <struct name="permutations" offset="0x48" visible="true" size="32">
+   <string32 name="name" offset="0x0" visible="true"/>
+  </struct>
+ </struct>
+ <float name="x" offset="0x268" visible="true"/>
+ <float name="x - to" offset="0x26c" visible="true"/>
+ <float name="y" offset="0x270" visible="true"/>
+ <float name="y - to" offset="0x274" visible="true"/>
+ <float name="z" offset="0x278" visible="true"/>
+ <float name="z - to" offset="0x27c" visible="true"/>
+ <struct name="pathfinding spheres" offset="0x280" visible="true" size="32">
+  <float name="center - x" offset="0x10" visible="true"/>
+  <float name="center - y" offset="0x14" visible="true"/>
+  <float name="center - z" offset="0x18" visible="true"/>
+  <float name="radius" offset="0x1c" visible="true"/>
+ </struct>
+ <struct name="nodes" offset="0x28c" visible="true" size="64">
+  <string32 name="name" offset="0x0" visible="true"/>
+  <struct name="bsp" offset="0x34" visible="true" size="96">
+   <struct name="bsp3d" offset="0x0" visible="true" size="12">
+    <short name="plane" offset="0x0" visible="true"/>
+    <short name="back child" offset="0x4" visible="true"/>
+    <short name="front child" offset="0x8" visible="true"/>
+   </struct>
+   <struct name="plane" offset="0xc" visible="true" size="16">
+    <float name="plane - i" offset="0x0" visible="true"/>
+    <float name="plane - i(2)" offset="0x4" visible="true"/>
+    <float name="plane - k" offset="0x8" visible="true"/>
+    <float name="plane - d" offset="0xc" visible="true"/>
+   </struct>
+   <struct name="leaves" offset="0x18" visible="true" size="8">
+    <bitmask32 name="flags" offset="0x0" visible="true">
+     <option name="contains double-sided surfaces" value="31"/>
+    </bitmask32>
+    <short name="bsp2d reference count" offset="0x2" visible="true"/>
+    <short name="first bsp2d reference" offset="0x6" visible="true"/>
+   </struct>
+   <struct name="bsp2d refernces" offset="0x24" visible="true" size="8">
+    <short name="plane" offset="0x2" visible="true"/>
+    <short name="bsp2d node" offset="0x6" visible="true"/>
+   </struct>
+   <struct name="bsp2d nodes" offset="0x30" visible="true" size="20">
+    <float name="plane - i" offset="0x0" visible="true"/>
+    <float name="plane - i(2)" offset="0x4" visible="true"/>
+    <float name="plane - d" offset="0x8" visible="true"/>
+    <short name="plane" offset="0xe" visible="true"/>
+    <short name="bsp2d node" offset="0x12" visible="true"/>
+   </struct>
+   <struct name="surface" offset="0x3c" visible="true" size="12">
+    <short name="plane" offset="0x0" visible="true"/>
+    <short name="first edge" offset="0x4" visible="true"/>
+    <bitmask8 name="flags" offset="0x9" visible="true">
+     <option name="two-sided" value="7"/>
+     <option name="invisible" value="6"/>
+     <option name="climbable" value="5"/>
+     <option name="breakable" value="4"/>
+    </bitmask8>
+    <char name="breakable surface" offset="0x8" visible="true"/>
+    <short name="material" offset="0x10" visible="true"/>
+   </struct>
+   <struct name="edge" offset="0x48" visible="true" size="24">
+    <short name="start vertex" offset="0x0" visible="true"/>
+    <short name="end vertex" offset="0x4" visible="true"/>
+    <short name="forward edge" offset="0x8" visible="true"/>
+    <short name="reverse edge" offset="0xc" visible="true"/>
+    <short name="left surface" offset="0x10" visible="true"/>
+    <short name="right surface" offset="0x14" visible="true"/>
+   </struct>
+   <struct name="vertices" offset="0x54" visible="true" size="16">
+    <float name="point - x" offset="0x0" visible="true"/>
+    <float name="point - y" offset="0x4" visible="true"/>
+    <float name="point - z" offset="0x8" visible="true"/>
+    <short name="first edge" offset="0xc" visible="true"/>
+   </struct>
+  </struct>
+ </struct>
+</plugin>

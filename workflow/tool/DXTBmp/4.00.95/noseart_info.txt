@@ -1,0 +1,45 @@
+Quick CFS3 Noseart tutorial
+
+A simple step by step to converting an image you want to Noseart for use
+in CFS3. This assumes you have the latest version of DXTBmp and it is set
+up to work with your Paint program. Ideally you should start with an image
+that is square.
+
+The example is for creating a new US Noseart. Exactly the same principles
+are used to create Noseart for the other countries. The only difference is
+the UIRES folder the Bmp version needs to go in (gbr or ger instead of usa)
+
+1/ Get the bmp into your paint program and paint all the bits you want
+   see-through in Black then save it as a new bmp file. If your paint 
+   program has the option then resize it to 256x256 before saving.
+
+2/ Run DXTBmp and "Load Normal Image" then select the bmp you just saved.
+   This wil be resized square and the alpha channel will be created using 
+   the Black you have painted as the transparent bit
+
+3/ Select "Save Targa Image" and save it wherever you want. This will be
+   your Master image in case you want to make changes later.  
+
+4/ Select "Save Extended Image", from the save dialog filetypes list
+   select "Extended 16 bit 444-4" and browse to the CFS3 Uires\usa\noseart
+   folder and save it as noseart_us_17.bmp (for example)
+
+5/ Now select "Save DDS". From the save dialog filetypes list select DDS
+   DXT1 and browse to the CFS3 Aircraft\Shared folder and save it as the
+   same name as at step 4 (eg noseart_us_17.dds ). It is important that the
+   DDS version has the same name as the BMP version so that CFS3 can find it.
+
+
+General Notes :-
+
+Noseart files can also be done in 512x512 if greater detail is required.
+
+The name of a Noseart file decides where in the list it is displayed. 
+Because CFS3 expects the first Noseart to be the totally-transparent
+version used by the "None" option you should name your noseart files so 
+they will appear further down the list. 
+
+Martin Wright
+mnwright@btinternet.com
+http://fly.to/mwgfx/
+    

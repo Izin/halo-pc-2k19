@@ -1,0 +1,111 @@
+<plugin class="wphi" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x10" Visible="true">
+    <option name="Flash Cutoffs" value="32"/>
+  </bitmask32>
+  <short name="Total Ammo Cutoff" offset="0x14" Visible="true"/>
+  <short name="Loaded Ammo Cutoff" offset="0x16" Visible="true"/>
+  <short name="Heat Cutoff" offset="0x18" Visible="true"/>
+  <short name="Age Cutoff" offset="0x1A" Visible="true"/>
+  <enum16 name="Anchor" offset="0x3C" Visible="true">
+    <option name="Top Left" value="0"/>
+    <option name="Top Right" value="1"/>
+    <option name="Bottom Left" value="2"/>
+    <option name="Bottom Right" value="3"/>
+    <option name="Centre" value="4"/>
+  </enum16>
+  <struct name="Static Elements (SE)" offset="0x60" visible="true" size="180">
+    <enum16 name="SE State Attached To" offset="0x00" Visible="true">
+      <option name="Total Ammo" value="0"/>
+      <option name="Loaded Ammo" value="1"/>
+      <option name="Heat" value="2"/>
+      <option name="Age" value="3"/>
+      <option name="2ndary Weapon Total Ammo" value="4"/>
+      <option name="2ndary Weapon Loaded Ammo" value="5"/>
+      <option name="Distance to Target" value="6"/>
+      <option name="Elevation to Target" value="7"/>
+    </enum16>
+    <short name="SE Anchor Offset - X" offset="0x24" Visible="true"/>
+    <short name="SE Anchor Offset - Y" offset="0x26" Visible="true"/>
+    <float name="SE Width Scale" offset="0x28" Visible="true"/>
+    <float name="SE Height Scale" offset="0x2C" Visible="true"/>
+    <bitmask32 name="SE Scaling Flags" offset="0x30" Visible="true">
+      <option name="Dont Scale Offset" value="0"/>
+      <option name="Dont Scale Size" value="1"/>
+      <option name="Use High Res Scale" value="2"/>
+    </bitmask32>
+  </struct>
+  <struct name="Meter Elements (ME)" offset="0x6C" visible="true" size="180">
+    <enum16 name="ME State Attached To" offset="0x00" Visible="true">
+      <option name="Total Ammo" value="0"/>
+      <option name="Loaded Ammo" value="1"/>
+      <option name="Heat" value="2"/>
+      <option name="Age" value="3"/>
+      <option name="2ndary Weapon Total Ammo" value="4"/>
+      <option name="2ndary Weapon Loaded Ammo" value="5"/>
+      <option name="Distance to Target" value="6"/>
+      <option name="Elevation to Target" value="7"/>
+    </enum16>
+    <short name="ME Anchor Offset - X" offset="0x24" Visible="true"/>
+    <short name="ME Anchor Offset - Y" offset="0x26" Visible="true"/>
+    <float name="ME Width Scale" offset="0x28" Visible="true"/>
+    <float name="ME Height Scale" offset="0x2C" Visible="true"/>
+    <bitmask32 name="ME Scaling Flags" offset="0x30" Visible="true">
+      <option name="Dont Scale Offset" value="0"/>
+      <option name="Dont Scale Size" value="1"/>
+      <option name="Use High Res Scale" value="2"/>
+    </bitmask32>
+  </struct>
+  <struct name="Number Elements (NE)" offset="0x78" visible="true" size="160">
+    <enum16 name="NE State Attached To" offset="0x00" Visible="true">
+      <option name="Total Ammo" value="0"/>
+      <option name="Loaded Ammo" value="1"/>
+      <option name="Heat" value="2"/>
+      <option name="Age" value="3"/>
+      <option name="2ndary Weapon Total Ammo" value="4"/>
+      <option name="2ndary Weapon Loaded Ammo" value="5"/>
+      <option name="Distance to Target" value="6"/>
+      <option name="Elevation to Target" value="7"/>
+    </enum16>
+    <short name="NE Anchor Offset - X" offset="0x24" Visible="true"/>
+    <short name="NE Anchor Offset - Y" offset="0x26" Visible="true"/>
+    <float name="NE Width Scale" offset="0x28" Visible="true"/>
+    <float name="NE Height Scale" offset="0x2C" Visible="true"/>
+    <bitmask32 name="NE Scaling Flags" offset="0x30" Visible="true">
+      <option name="Dont Scale Offset" value="0"/>
+      <option name="Dont Scale Size" value="1"/>
+      <option name="Use High Res Scale" value="2"/>
+    </bitmask32>
+  </struct>
+  <short name="Sequence Index" offset="0x13C" Visible="true"/>
+  <short name="Width Offset" offset="0x13E" Visible="true"/>
+  <short name="Offset from Ref Corner - X" offset="0x140" Visible="true"/>
+  <short name="Frame Rate [0,30]" offset="0x147" Visible="true"/>
+  <short name="Text Index" offset="0x14A" Visible="true"/>
+  <struct name="Screen Effects" offset="0xAC" visible="true" size="180">
+    <bitmask32 name="Screen Flags" offset="0x40" Visible="true">
+      <option name="Only When Zoomed" value="0"/>
+    </bitmask32>
+    <float name="FOV in Bounds" offset="0x44" Visible="true"/>
+    <float name="FOV in Bounds - To" offset="0x48" Visible="true"/>
+    <float name="Radius Out Bounds" offset="0x4C" Visible="true"/>
+    <float name="Radius Out Bounds - To" offset="0x50" Visible="true"/>
+    <bitmask32 name="More Flags" offset="0x6C" Visible="true">
+      <option name="Only When Zoomed" value="0"/>
+      <option name="Connect to Flashlight" value="1"/>
+      <option name="Masked" value="2"/>
+    </bitmask32>
+    <short name="Script Source" offset="0x6E" Visible="true"/>
+    <float name="Intensity" offset="0x70" Visible="true"/>
+    <bitmask32 name="Even More Flags" offset="0x8C" Visible="true">
+      <option name="Only When Zoomed" value="0"/>
+      <option name="Connect to Flashlight" value="1"/>
+      <option name="Additive" value="2"/>
+      <option name="Masked" value="3"/>
+    </bitmask32>
+    <short name="Script Source(1)" offset="0x8E" Visible="true"/>
+    <float name="Intensity(1)" offset="0x90" Visible="true"/>
+    <float name="Tint - R" offset="0x94" Visible="true"/>
+    <float name="Tint - G" offset="0x98" Visible="true"/>
+    <float name="Tint - B" offset="0x9C" Visible="true"/>
+  </struct>
+</plugin>

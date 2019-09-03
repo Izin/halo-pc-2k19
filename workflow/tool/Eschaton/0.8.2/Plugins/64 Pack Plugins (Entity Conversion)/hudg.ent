@@ -1,0 +1,20 @@
+<plugin class="hudg" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <enum16 name="Anchor" offset="0x00" Visible="true">
+    <option name="Top Left" value="0"/>
+    <option name="Top Right" value="1"/>
+    <option name="Bottom Left" value="2"/>
+    <option name="Bottom Right" value="3"/>
+    <option name="Centre" value="4"/>
+  </enum16>
+  <short name="Anchor Offset - X" offset="0x02" Visible="true"/>
+  <short name="Anchor Offset - Y" offset="0x04" Visible="true"/>
+  <float name="Width Scale" offset="0x08" Visible="true"/>
+  <float name="Height Scale" offset="0x0C" Visible="true"/>
+  <bitmask32 name="Scaling Flags" offset="0x10" Visible="true">
+    <option name="Dont Scale Offset" value="0"/>
+    <option name="Dont Scale Size" value="1"/>
+    <option name="Use High Res Scale" value="2"/>
+  </bitmask32>
+  <float name="Motion Censor Range" offset="0x2D0" Visible="true"/>
+  <float name="Motion Sensor Velocuty Sensitivity" offset="0x2D4" Visible="true"/>
+</plugin>

@@ -1,0 +1,7 @@
+<plugin class="lsnd" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Deafening to AIs" value="0"/>
+    <option name="Not a Loop" value="1"/>
+    <option name="Stops Music" value="2"/>
+  </bitmask32>
+</plugin>

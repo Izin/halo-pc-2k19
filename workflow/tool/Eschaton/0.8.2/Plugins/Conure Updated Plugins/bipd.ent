@@ -1,0 +1,572 @@
+<plugin class="biped" Author="Conure's plugin builder v0.9" version="0.9" headersize="1268">
+  <note info="this plugin was automatically generated and may have some information that is wrong. Types that are not trustable: enums, and data"/>
+  <bitmask16 name="flags" offset="0x2" Visible="true" helptag="">
+    <option name="does not case shadow" value="16"/>
+    <option name="transparent self-occlusion" value="15"/>
+    <option name="brighter then it should be" value="14"/>
+    <option name="not a pathfinding object" value="13"/>
+  </bitmask16>
+  <float name="bounding radius" offset="0x4" Visible="true" helptag=""/>
+  <RealP3d name="bounding offset" offset="0x8" Visible="true" helptag=""/>
+  <RealP3d name="origin offset" offset="0x14" Visible="true" helptag=""/>
+  <float name="acceleration scale" offset="0x20" Visible="true" helptag=""/>
+  <dependency name="model" offset="0x28" Visible="true" helptag="" tags=""/>
+  <dependency name="animation graph" offset="0x38" Visible="true" helptag="" tags=""/>
+  <dependency name="collision model" offset="0x70" Visible="true" helptag="" tags=""/>
+  <dependency name="physics" offset="0x80" Visible="true" helptag="" tags=""/>
+  <dependency name="modifier shader" offset="0x90" Visible="true" helptag="" tags=""/>
+  <dependency name="creation effect" offset="0xA0" Visible="true" helptag="" tags=""/>
+  <float name="render bounding radius" offset="0x104" Visible="true" helptag=""/>
+
+
+  <textbox title="export to functions"/>
+  <enum16 name="A in" offset="0x108" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="body vitality" value="1"/>
+    <option name="shield vitality" value="2"/>
+    <option name="recent body damage" value="3"/>
+    <option name="recent shield damage" value="4"/>
+    <option name="random constant" value="5"/>
+    <option name="umbrella shield vitality" value="6"/>
+    <option name="shield stun" value="7"/>
+    <option name="recent umbrella shield vitality" value="8"/>
+    <option name="umbrella shield stun" value="9"/>
+    <option name="region #00 damage" value="10"/>
+    <option name="region #01 damage" value="11"/>
+    <option name="region #02 damage" value="12"/>
+    <option name="region #03 damage" value="13"/>
+    <option name="region #04 damage" value="14"/>
+    <option name="region #05 damage" value="15"/>
+    <option name="region #06 damage" value="16"/>
+    <option name="region #07 damage" value="17"/>
+    <option name="alive" value="18"/>
+    <option name="compass" value="19"/>
+  </enum16>
+  <enum16 name="B in" offset="0x10A" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="body vitality" value="1"/>
+    <option name="shield vitality" value="2"/>
+    <option name="recent body damage" value="3"/>
+    <option name="recent shield damage" value="4"/>
+    <option name="random constant" value="5"/>
+    <option name="umbrella shield vitality" value="6"/>
+    <option name="shield stun" value="7"/>
+    <option name="recent umbrella shield vitality" value="8"/>
+    <option name="umbrella shield stun" value="9"/>
+    <option name="region #00 damage" value="10"/>
+    <option name="region #01 damage" value="11"/>
+    <option name="region #02 damage" value="12"/>
+    <option name="region #03 damage" value="13"/>
+    <option name="region #04 damage" value="14"/>
+    <option name="region #05 damage" value="15"/>
+    <option name="region #06 damage" value="16"/>
+    <option name="region #07 damage" value="17"/>
+    <option name="alive" value="18"/>
+    <option name="compass" value="19"/>
+  </enum16>
+  <enum16 name="C in" offset="0x10C" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="body vitality" value="1"/>
+    <option name="shield vitality" value="2"/>
+    <option name="recent body damage" value="3"/>
+    <option name="recent shield damage" value="4"/>
+    <option name="random constant" value="5"/>
+    <option name="umbrella shield vitality" value="6"/>
+    <option name="shield stun" value="7"/>
+    <option name="recent umbrella shield vitality" value="8"/>
+    <option name="umbrella shield stun" value="9"/>
+    <option name="region #00 damage" value="10"/>
+    <option name="region #01 damage" value="11"/>
+    <option name="region #02 damage" value="12"/>
+    <option name="region #03 damage" value="13"/>
+    <option name="region #04 damage" value="14"/>
+    <option name="region #05 damage" value="15"/>
+    <option name="region #06 damage" value="16"/>
+    <option name="region #07 damage" value="17"/>
+    <option name="alive" value="18"/>
+    <option name="compass" value="19"/>
+  </enum16>
+  <enum16 name="D in" offset="0x10E" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="body vitality" value="1"/>
+    <option name="shield vitality" value="2"/>
+    <option name="recent body damage" value="3"/>
+    <option name="recent shield damage" value="4"/>
+    <option name="random constant" value="5"/>
+    <option name="umbrella shield vitality" value="6"/>
+    <option name="shield stun" value="7"/>
+    <option name="recent umbrella shield vitality" value="8"/>
+    <option name="umbrella shield stun" value="9"/>
+    <option name="region #00 damage" value="10"/>
+    <option name="region #01 damage" value="11"/>
+    <option name="region #02 damage" value="12"/>
+    <option name="region #03 damage" value="13"/>
+    <option name="region #04 damage" value="14"/>
+    <option name="region #05 damage" value="15"/>
+    <option name="region #06 damage" value="16"/>
+    <option name="region #07 damage" value="17"/>
+    <option name="alive" value="18"/>
+    <option name="compass" value="19"/>
+  </enum16>
+  <short name="hud text message index" offset="0x13C" Visible="true" helptag=""/>
+  <short name="forced shader permuation index" offset="0x13E" Visible="true" helptag=""/>
+
+
+  <struct name="attachments" offset="0x140" nameNode="0" Visible="true" size="72">
+    <dependency name="type" offset="0x0" Visible="true" helptag="" tags=""/>
+    <string32 name="marker" offset="0x10" Visible="true" helptag=""/>
+    <enum16 name="primary scale" offset="0x30" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A out" value="1"/>
+      <option name="B out" value="2"/>
+      <option name="C out" value="3"/>
+      <option name="D out" value="4"/>
+    </enum16>
+    <enum16 name="secondary scale" offset="0x32" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A out" value="1"/>
+      <option name="B out" value="2"/>
+      <option name="C out" value="3"/>
+      <option name="D out" value="4"/>
+    </enum16>
+    <enum16 name="change color" offset="0x34" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A out" value="1"/>
+      <option name="B out" value="2"/>
+      <option name="C out" value="3"/>
+      <option name="D out" value="4"/>
+    </enum16>
+  </struct>
+
+
+  <struct name="widgets" offset="0x14C" nameNode="0" Visible="true" size="32">
+    <dependency name="reference" offset="0x0" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <struct name="functions" offset="0x158" nameNode="18" Visible="true" size="360">
+    <bitmask32 name="flags" offset="0x0" Visible="true" helptag="">
+      <option name="invert" value="32"/>
+      <option name="additive" value="31"/>
+      <option name="always on" value="30"/>
+    </bitmask32>
+    <float name="period" offset="0x4" Visible="true" helptag=""/>
+    <enum16 name="scale period by" offset="0x8" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <enum16 name="function" offset="0xA" Visible="true" helptag="">
+      <option name="one" value="0"/>
+      <option name="zero" value="1"/>
+      <option name="cosine" value="2"/>
+      <option name="cosine (variable period)" value="3"/>
+      <option name="diagonal wave" value="4"/>
+      <option name="diagonal wave (variable period)" value="5"/>
+      <option name="slide" value="6"/>
+      <option name="slide (variable period)" value="7"/>
+      <option name="noise" value="8"/>
+      <option name="jitter" value="9"/>
+      <option name="wander" value="10"/>
+      <option name="spark" value="11"/>
+    </enum16>
+    <enum16 name="scale function by" offset="0xC" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <enum16 name="wobble function" offset="0xE" Visible="true" helptag="">
+      <option name="one" value="0"/>
+      <option name="zero" value="1"/>
+      <option name="cosine" value="2"/>
+      <option name="cosine (variable period)" value="3"/>
+      <option name="diagonal wave" value="4"/>
+      <option name="diagonal wave (variable period)" value="5"/>
+      <option name="slide" value="6"/>
+      <option name="slide (variable period)" value="7"/>
+      <option name="noise" value="8"/>
+      <option name="jitter" value="9"/>
+      <option name="wander" value="10"/>
+      <option name="spark" value="11"/>
+    </enum16>
+    <float name="wobble period" offset="0x10" Visible="true" helptag=""/>
+    <float name="wobble magnitude" offset="0x14" Visible="true" helptag=""/>
+    <float name="square wave threshold" offset="0x18" Visible="true" helptag=""/>
+    <short name="step count" offset="0x1C" Visible="true" helptag=""/>
+    <enum16 name="map to" offset="0x1E" Visible="true" helptag="">
+      <option name="linear" value="0"/>
+      <option name="early" value="1"/>
+      <option name="very early" value="2"/>
+      <option name="late" value="3"/>
+      <option name="very late" value="4"/>
+      <option name="cosine" value="5"/>
+    </enum16>
+    <short name="sawtooth count" offset="0x20" Visible="true" helptag=""/>
+    <enum16 name="add" offset="0x22" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <enum16 name="scale result by" offset="0x24" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <enum16 name="bounds mode" offset="0x26" Visible="true" helptag="">
+      <option name="clip" value="0"/>
+      <option name="clip and normalize" value="1"/>
+      <option name="scale to fit" value="2"/>
+    </enum16>
+    <floatBounds name="bounds" offset="0x584" Visible="true" helptag=""/>
+    <index name="turn off with" offset="0x30" reflexive="main:functions" Visible="true" helptag=""/>
+    <float name="scale by" offset="0x38" Visible="true" helptag=""/>
+    <string32 name="usage" offset="0x148" Visible="true" helptag=""/>
+  </struct>
+
+
+  <struct name="change colors" offset="0x164" nameNode="-1" Visible="true" size="72">
+    <enum16 name="darken by" offset="0x0" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <enum16 name="scale by" offset="0x2" Visible="true" helptag="">
+      <option name="none" value="0"/>
+      <option name="A in" value="1"/>
+      <option name="B in" value="2"/>
+      <option name="C in" value="3"/>
+      <option name="D in" value="4"/>
+      <option name="A out" value="5"/>
+      <option name="B out" value="6"/>
+      <option name="C out" value="7"/>
+      <option name="D out" value="8"/>
+    </enum16>
+    <bitmask32 name="scale flags" offset="0x4" Visible="true" helptag="">
+      <option name="blend in-hsv" value="32"/>
+      <option name="...more colors" value="31"/>
+    </bitmask32>
+    <colorRGB name="color lower bound" offset="0x8" Visible="true" helptag=""/>
+    <colorRGB name="color upper bound" offset="0x14" Visible="true" helptag=""/>
+
+
+    <struct name="permutations" offset="0x28" nameNode="-1" Visible="true" size="56">
+      <float name="weight" offset="0x0" Visible="true" helptag=""/>
+      <colorRGB name="color lower bound" offset="0x4" Visible="true" helptag=""/>
+      <colorRGB name="color upper bound" offset="0x10" Visible="true" helptag=""/>
+    </struct>
+  </struct>
+
+
+  <textbox title="$$$ UNIT $$$"/>
+  <bitmask32 name="flags" offset="0x17C" Visible="true" helptag="">
+    <option name="circular aiming" value="32"/>
+    <option name="destroyed after dying" value="31"/>
+    <option name="half-speed interpolation" value="30"/>
+    <option name="fires from camera" value="29"/>
+    <option name="entrance inside bounding sphere" value="28"/>
+    <option name="unused" value="27"/>
+    <option name="causes passenger dialouge" value="26"/>
+    <option name="resists pings" value="25"/>
+    <option name="umelee attack is fatal" value="24"/>
+    <option name="dont reface during pings" value="23"/>
+    <option name="has no aiming" value="22"/>
+    <option name="simple creature" value="21"/>
+    <option name="impact melee attaches to unit" value="20"/>
+    <option name="impact melee dies on shields" value="19"/>
+    <option name="cannot open doors automatically" value="18"/>
+    <option name="melee attackers cannot attach" value="17"/>
+    <option name="not instantly killed by melee" value="16"/>
+    <option name="shield sapping" value="15"/>
+    <option name="runs around flaming" value="14"/>
+    <option name="inconsequential" value="13"/>
+    <option name="special cinematic unit" value="12"/>
+    <option name="ignored by autoaiming" value="11"/>
+    <option name="shields fry infection forms" value="10"/>
+    <option name="integrated light cntrls weapon" value="9"/>
+    <option name="integrated light lasts forever" value="8"/>
+  </bitmask32>
+  <enum16 name="default team" offset="0x180" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="player" value="1"/>
+    <option name="human" value="2"/>
+    <option name="covenant" value="3"/>
+    <option name="flood" value="4"/>
+    <option name="sentinel" value="5"/>
+    <option name="unused(6)" value="6"/>
+    <option name="unused(7)" value="7"/>
+    <option name="unused(8)" value="8"/>
+    <option name="unused(9)" value="9"/>
+  </enum16>
+  <enum16 name="constant sound volume" offset="0x182" Visible="true" helptag="">
+    <option name="silent" value="0"/>
+    <option name="medium" value="1"/>
+    <option name="loud" value="2"/>
+    <option name="shout" value="3"/>
+    <option name="quiet" value="4"/>
+  </enum16>
+  <float name="rider damage fraction" offset="0x184" Visible="true" helptag=""/>
+  <dependency name="integrated light toggle" offset="0x188" Visible="true" helptag="" tags=""/>
+  <enum16 name="A in" offset="0x198" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="driver seat power" value="1"/>
+    <option name="gunner seat power" value="2"/>
+    <option name="aiming change" value="3"/>
+    <option name="mouth aperture" value="4"/>
+    <option name="integrated light power" value="5"/>
+    <option name="can blink" value="6"/>
+    <option name="shield sapping" value="7"/>
+  </enum16>
+  <enum16 name="B in" offset="0x19A" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="driver seat power" value="1"/>
+    <option name="gunner seat power" value="2"/>
+    <option name="aiming change" value="3"/>
+    <option name="mouth aperture" value="4"/>
+    <option name="integrated light power" value="5"/>
+    <option name="can blink" value="6"/>
+    <option name="shield sapping" value="7"/>
+  </enum16>
+  <enum16 name="C in" offset="0x19C" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="driver seat power" value="1"/>
+    <option name="gunner seat power" value="2"/>
+    <option name="aiming change" value="3"/>
+    <option name="mouth aperture" value="4"/>
+    <option name="integrated light power" value="5"/>
+    <option name="can blink" value="6"/>
+    <option name="shield sapping" value="7"/>
+  </enum16>
+  <enum16 name="D in" offset="0x19E" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="driver seat power" value="1"/>
+    <option name="gunner seat power" value="2"/>
+    <option name="aiming change" value="3"/>
+    <option name="mouth aperture" value="4"/>
+    <option name="integrated light power" value="5"/>
+    <option name="can blink" value="6"/>
+    <option name="shield sapping" value="7"/>
+  </enum16>
+  <angle name="camera field of view" offset="0x1A0" Visible="true" helptag=""/>
+  <float name="camera stiffness" offset="0x1A4" Visible="true" helptag=""/>
+  <string32 name="camera marker name" offset="0x1A8" Visible="true" helptag=""/>
+  <string32 name="camera submerged marker name" offset="0x1C8" Visible="true" helptag=""/>
+  <angle name="pitch auto-level" offset="0x1E8" Visible="true" helptag=""/>
+  <AngleBounds name="pitch range" offset="0x1EC" Visible="true" helptag=""/>
+
+
+  <struct name="camera tracks" offset="0x1F4" nameNode="-1" Visible="true" size="76">
+    <dependency name="track" offset="0x0" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <RealV3d name="seat acceleration scale" offset="0x200" Visible="true" helptag=""/>
+  <float name="soft ping threshold" offset="0x218" Visible="true" helptag=""/>
+  <float name="soft ping interrupt time" offset="0x21C" Visible="true" helptag=""/>
+  <float name="hard ping threshold" offset="0x220" Visible="true" helptag=""/>
+  <float name="hard ping interrupt time" offset="0x224" Visible="true" helptag=""/>
+  <float name="hard death threshold" offset="0x228" Visible="true" helptag=""/>
+  <float name="feign death threshold" offset="0x22C" Visible="true" helptag=""/>
+  <float name="feign death time" offset="0x230" Visible="true" helptag=""/>
+  <float name="distance of evade anim" offset="0x234" Visible="true" helptag=""/>
+  <float name="distance of dive anim" offset="0x238" Visible="true" helptag=""/>
+  <float name="stunned movement threshold" offset="0x240" Visible="true" helptag=""/>
+  <float name="feign death chance" offset="0x244" Visible="true" helptag=""/>
+  <float name="feign repeat chance" offset="0x248" Visible="true" helptag=""/>
+  <dependency name="spawned actor" offset="0x24C" Visible="true" helptag="" tags=""/>
+  <shortBounds name="spawned actor count" offset="0x25C" Visible="true" helptag=""/>
+  <float name="spawned velocity" offset="0x260" Visible="true" helptag=""/>
+  <angle name="aiming velocity maximum" offset="0x264" Visible="true" helptag=""/>
+  <angle name="aiming acceleration maximum" offset="0x268" Visible="true" helptag=""/>
+  <float name="casual aiming modifier" offset="0x26C" Visible="true" helptag=""/>
+  <angle name="looking velocity maximum" offset="0x270" Visible="true" helptag=""/>
+  <angle name="looking acceleration maximum" offset="0x274" Visible="true" helptag=""/>
+  <float name="AI vehicle radius" offset="0x280" Visible="true" helptag=""/>
+  <float name="AI danger radius" offset="0x284" Visible="true" helptag=""/>
+  <dependency name="melee damage" offset="0x288" Visible="true" helptag="" tags=""/>
+  <enum16 name="motion sensor blip size" offset="0x298" Visible="true" helptag="">
+    <option name="medium" value="0"/>
+    <option name="small" value="1"/>
+    <option name="large" value="2"/>
+  </enum16>
+
+
+  <struct name="NEW HUD INTERFACES" offset="0x2A8" nameNode="-1" Visible="true" size="72">
+    <dependency name="unit hud interface" offset="0x0" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <struct name="dialogue variants" offset="0x2B4" nameNode="-1" Visible="true" size="92">
+    <short name="variant number" offset="0x0" Visible="true" helptag=""/>
+    <dependency name="dialogue" offset="0x8" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <float name="grenade velocity" offset="0x2C0" Visible="true" helptag=""/>
+  <enum16 name="grenade type" offset="0x2C4" Visible="true" helptag="">
+    <option name="human fragmentation" value="0"/>
+    <option name="covenant plasma" value="1"/>
+  </enum16>
+  <short name="grenade count" offset="0x2C6" Visible="true" helptag=""/>
+
+
+  <struct name="powered seats" offset="0x2CC" nameNode="-1" Visible="true" size="104">
+    <float name="driver powerup time" offset="0x4" Visible="true" helptag=""/>
+    <float name="driver powerdown time" offset="0x8" Visible="true" helptag=""/>
+  </struct>
+
+
+  <struct name="weapons" offset="0x2D8" nameNode="-1" Visible="true" size="396">
+    <dependency name="weapon" offset="0x0" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <struct name="seats" offset="0x2E4" nameNode="-1" Visible="true" size="-232">
+    <bitmask32 name="flags" offset="0x0" Visible="true" helptag="">
+      <option name="invisible" value="32"/>
+      <option name="locked" value="31"/>
+      <option name="driver" value="30"/>
+      <option name="gunner" value="29"/>
+      <option name="third person camera" value="28"/>
+      <option name="allows weapons" value="27"/>
+      <option name="third person on enter" value="26"/>
+      <option name="first person camera slaved to gun" value="25"/>
+      <option name="allo vehicle communication animation" value="24"/>
+      <option name="not valid without driver" value="23"/>
+      <option name="allow AI noncombatans" value="22"/>
+    </bitmask32>
+    <string32 name="label" offset="0x4" Visible="true" helptag=""/>
+    <string32 name="marker name" offset="0x24" Visible="true" helptag=""/>
+    <RealV3d name="acceleration scale" offset="0x64" Visible="true" helptag=""/>
+    <float name="yaw rate" offset="0x7C" Visible="true" helptag=""/>
+    <float name="pitch rate" offset="0x80" Visible="true" helptag=""/>
+    <string32 name="camera marker name" offset="0x84" Visible="true" helptag=""/>
+    <string32 name="camera submerged marker name" offset="0xA4" Visible="true" helptag=""/>
+    <angle name="pitch auto-level" offset="0xC4" Visible="true" helptag=""/>
+    <AngleBounds name="pitch range" offset="0xC8" Visible="true" helptag=""/>
+    <struct name="camera tracks" offset="0x118" nameNode="-1" Visible="true" size="0">
+      <dependency name="track" offset="0x0" Visible="true" helptag="" tags=""/>
+    </struct>
+    <struct name="unit hud interface" offset="0x134" nameNode="-1" Visible="true" size="0">
+      <dependency name="unit hud interface" offset="0x0" Visible="true" helptag="" tags=""/>
+    </struct>
+    <short name="hud text message index" offset="0xEC" Visible="true" helptag=""/>
+    <angle name="yaw minimum" offset="0xEE" Visible="true" helptag=""/>
+    <angle name="yaw maximum" offset="0xF2" Visible="true" helptag=""/>
+    <dependency name="built-in gunner" offset="0xF8" Visible="true" helptag="" tags=""/>
+  </struct>
+
+
+  <textbox title="$$$ BIPED $$$"/>
+  <angle name="moving turning speed" offset="0x2F0" Visible="true" helptag=""/>
+  <bitmask32 name="flags" offset="0x2F4" Visible="true" helptag="">
+    <option name="turns without animating" value="32"/>
+    <option name="uses player physics" value="31"/>
+    <option name="flying" value="30"/>
+    <option name="physics pill centered at origin" value="29"/>
+    <option name="spherical" value="28"/>
+    <option name="passes through other bipeds" value="27"/>
+    <option name="can climb any surface" value="26"/>
+    <option name="immune to falling damage" value="25"/>
+    <option name="rotate while airborne" value="24"/>
+    <option name="uses limp body physics" value="23"/>
+    <option name="has no dying airborne" value="22"/>
+    <option name="random speed increase" value="21"/>
+    <option name="unit uses old(NTSC) player physics" value="20"/>
+  </bitmask32>
+  <angle name="stationary turning threshold" offset="0x2F8" Visible="true" helptag=""/>
+  <enum16 name="A in" offset="0x30C" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="uflying velocity" value="1"/>
+  </enum16>
+  <enum16 name="B in" offset="0x30E" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="uflying velocity" value="1"/>
+  </enum16>
+  <enum16 name="C in" offset="0x310" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="uflying velocity" value="1"/>
+  </enum16>
+  <enum16 name="D in" offset="0x312" Visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="uflying velocity" value="1"/>
+  </enum16>
+  <dependency name="DON'T USE" offset="0x314" Visible="true" helptag="" tags=""/>
+
+
+  <textbox title="flying"/>
+  <angle name="bank angle" offset="0x324" Visible="true" helptag=""/>
+  <float name="bank apply time" offset="0x328" Visible="true" helptag=""/>
+  <float name="bank decay time" offset="0x32C" Visible="true" helptag=""/>
+  <float name="pitch ratio" offset="0x330" Visible="true" helptag=""/>
+  <float name="max velocity" offset="0x334" Visible="true" helptag=""/>
+  <float name="max sidestep velocity" offset="0x338" Visible="true" helptag=""/>
+  <float name="acceleration" offset="0x33C" Visible="true" helptag=""/>
+  <float name="deceleration" offset="0x340" Visible="true" helptag=""/>
+  <angle name="angular velocity maximum" offset="0x344" Visible="true" helptag=""/>
+  <angle name="angular acceleration maximum" offset="0x348" Visible="true" helptag=""/>
+  <float name="crouch velocity modifier" offset="0x34C" Visible="true" helptag=""/>
+
+
+  <textbox title="movement"/>
+  <angle name="maximum slope angle" offset="0x350" Visible="true" helptag=""/>
+  <angle name="downhill falloff angle" offset="0x354" Visible="true" helptag=""/>
+  <angle name="downhill cutoff angle" offset="0x358" Visible="true" helptag=""/>
+  <float name="downhill velocity scale" offset="0x364" Visible="true" helptag=""/>
+  <angle name="uphill falloff angle" offset="0x368" Visible="true" helptag=""/>
+  <angle name="uphill cutoff angle" offset="0x36C" Visible="true" helptag=""/>
+  <float name="uphill velocity scale" offset="0x370" Visible="true" helptag=""/>
+  <dependency name="footsteps" offset="0x38C" Visible="true" helptag="" tags=""/>
+
+
+  <textbox title="jumping and landing"/>
+  <float name="jump velocity" offset="0x3B4" Visible="true" helptag=""/>
+  <float name="maximum soft landing time" offset="0x3D4" Visible="true" helptag=""/>
+  <float name="maximum hard landing time" offset="0x3D8" Visible="true" helptag=""/>
+  <float name="minimum soft landing velocity" offset="0x3DC" Visible="true" helptag=""/>
+  <float name="minimum hard landing velocity" offset="0x3E0" Visible="true" helptag=""/>
+  <float name="maximum hard landing velocity" offset="0x3E4" Visible="true" helptag=""/>
+  <float name="death hard landing velocity" offset="0x3E8" Visible="true" helptag=""/>
+
+
+  <textbox title="camera, collision, and autoaim"/>
+  <float name="standing camera height" offset="0x400" Visible="true" helptag=""/>
+  <float name="crouching camera height" offset="0x404" Visible="true" helptag=""/>
+  <float name="crouch transition time" offset="0x408" Visible="true" helptag=""/>
+  <float name="standing collision height" offset="0x424" Visible="true" helptag=""/>
+  <float name="crouching collision height" offset="0x428" Visible="true" helptag=""/>
+  <float name="collision radius" offset="0x42C" Visible="true" helptag=""/>
+  <float name="autoaim width" offset="0x458" Visible="true" helptag=""/>
+  <struct name="contact points" offset="0x4E8" nameNode="-1" Visible="true" size="64">
+    <string32 name="marker name" offset="0x20" Visible="true" helptag=""/>
+  </struct>
+</plugin>

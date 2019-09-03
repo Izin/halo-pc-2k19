@@ -1,0 +1,45 @@
+<plugin class="unhi" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <enum16 name="Anchor" offset="0x00" Visible="true">
+    <option name="Top Left" value="0"/>
+    <option name="Top Right" value="1"/>
+    <option name="Bottom Left" value="2"/>
+    <option name="Bottom Right" value="3"/>
+    <option name="Centre" value="4"/>
+  </enum16>
+  <short name="SPB Anchor Offset - x" offset="0x8C" Visible="true"/>
+  <short name="SPB Anchor Offset - y" offset="0x8E" Visible="true"/>
+  <float name="SPB Width Scale" offset="0x90" Visible="true"/>
+  <float name="SPB Height Scale" offset="0x94" Visible="true"/>
+  <bitmask32 name="SPB Scaling Flags" offset="0x98" Visible="true">
+    <option name="Dont Scale Offset" value="0"/>
+    <option name="Dont Scale Size" value="1"/>
+    <option name="Use High Res Scale" value="2"/>
+  </bitmask32>
+  <short name="SPM Achor Offset - x" offset="0xF4" Visible="true"/>
+  <short name="SPM Achor Offset - y" offset="0xF6" Visible="true"/>
+  <float name="SPM Width Scale" offset="0xF8" Visible="true"/>
+  <float name="SPM Height Scale" offset="0xFC" Visible="true"/>
+  <bitmask32 name="SPM Scaling Flags" offset="0x100" Visible="true">
+    <option name="Dont Scale Offset" value="0"/>
+    <option name="Dont Scale Size" value="1"/>
+    <option name="Use High Res Scale" value="2"/>
+  </bitmask32>
+  <short name="HPB Achor Offset - x" offset="0x17C" Visible="true"/>
+  <short name="HPB Achor Offset - y" offset="0x17E" Visible="true"/>
+  <float name="HPB Width Scale" offset="0x180" Visible="true"/>
+  <float name="HPB Height Scale" offset="0x184" Visible="true"/>
+  <bitmask32 name="HPB Scaling Flags" offset="0x188" Visible="true">
+    <option name="Dont Scale Offset" value="0"/>
+    <option name="Dont Scale Size" value="0"/>
+    <option name="Use High Res Scale" value="0"/>
+  </bitmask32>
+  <short name="HPM Achor Offset - x" offset="0x1E4" Visible="true"/>
+  <short name="HPM Achor Offset - y" offset="0x1E6" Visible="true"/>
+  <float name="HPM Width Scale" offset="0x1E8" Visible="true"/>
+  <float name="HPM Height Scale" offset="0x1EC" Visible="true"/>
+  <bitmask32 name="HPM Scaling Flags" offset="0x1F0" Visible="true">
+    <option name="Dont Scale Offset" value="0"/>
+    <option name="Dont Scale Size" value="1"/>
+    <option name="Use High Res Scale" value="2"/>
+  </bitmask32>
+</plugin>

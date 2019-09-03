@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+<tag>weap</tag>
+<struct>
+<name>Main</name>
+<size>0</size>
+
+<value>
+<type>reflexive</type>
+<offset>0x4F0</offset>
+<name>Clip</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x4FC</offset>
+<name>Projectile</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x140</offset>
+<name>Attachments</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x158</offset>
+<name>functions</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x164</offset>
+<name>change colors</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x170</offset>
+<name>predicted resources 1</name>
+</value>
+
+<value>
+<type>reflexive</type>
+<offset>0x4e4</offset>
+<name>predicted resources 2</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x3DA</offset>
+<name>Zoom Levels</name>
+<info>Number of zoom settings</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3DC</offset>
+<name>Minimum Zoom</name>
+<info>Lowest Zoom Setting</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3E0</offset>
+<name>Maximum Zoom</name>
+<info>Highest Zoom Setting</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3E8</offset>
+<name>Autoaim Range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3F0</offset>
+<name>Magnetisim Range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3F4</offset>
+<name>Deviation Angle</name>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x308</offset>
+<name>Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Verticle Heat Display</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Mutually Eclusive Triggers</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Attacks Automatically on Bump</name>
+</bitmask>
+<bitmask>
+<bit>29</bit>
+<name>Must be Readied</name>
+</bitmask>
+<bitmask>
+<bit>28</bit>
+<name>Doesn't Count Toward Max</name>
+</bitmask>
+<bitmask>
+<bit>27</bit>
+<name>Aim Assists only When Zoomed</name>
+</bitmask>
+<bitmask>
+<bit>26</bit>
+<name>Prevents Gernade Throwing</name>
+</bitmask>
+<bitmask>
+<bit>25</bit>
+<name>Must be Picked Up</name>
+</bitmask>
+<bitmask>
+<bit>24</bit>
+<name>Holds Trigger When Dropped</name>
+</bitmask>
+<bitmask>
+<bit>23</bit>
+<name>Prevents Melee Attack</name>
+</bitmask>
+<bitmask>
+<bit>22</bit>
+<name>Detonates When Dropped</name>
+</bitmask>
+<bitmask>
+<bit>21</bit>
+<name>Cannot Fire at Max Age</name>
+</bitmask>
+<bitmask>
+<bit>20</bit>
+<name>Secondary Trigger Overrides Nades</name>
+</bitmask>
+<bitmask>
+<bit>19</bit>
+<name>(OBSOLETE) Does not Depower</name>
+</bitmask>
+<bitmask>
+<bit>18</bit>
+<name>Enables Intergrated Night Vision</name>
+</bitmask>
+<bitmask>
+<bit>17</bit>
+<name>AIs use Weapons Melee Damage</name>
+</bitmask>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x17C</offset>
+<name>More Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Always Maintains Z Up</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Destroyed by Explosions</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Unaffected by Gravity</name>
+</bitmask>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4CC</offset>
+<name>Active Camo Ding</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4D0</offset>
+<name>Active Camo Regrowth Rate</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x34C</offset>
+<name>Heat Recovery Threshold</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x350</offset>
+<name>Overheated Threshold</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x354</offset>
+<name>Heat Detonation Threshold</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x4E2</offset>
+<name>Weapon Type</name>
+<option>
+<value>00</value>
+<name>Undefined</name>
+</option>
+<option>
+<value>01</value>
+<name>Shotgun</name>
+</option>
+<option>
+<value>02</value>
+<name>Needler</name>
+</option>
+<option>
+<value>03</value>
+<name>Plasma Pistol</name>
+</option>
+<option>
+<value>04</value>
+<name>Plasma Rifle</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x32A</offset>
+<name>Secondary Trigger Mode</name>
+<option>
+<value>00</value>
+<name>Normal</name>
+</option>
+<option>
+<value>01</value>
+<name>Slaved to Primary</name>
+</option>
+<option>
+<value>02</value>
+<name>Inhibits Primary</name>
+</option>
+<option>
+<value>03</value>
+<name>Loads Alternate Ammunition</name>
+</option>
+<option>
+<value>04</value>
+<name>Loads Multiple Primary Ammunition</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4</offset>
+<name>bounding radius</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x8</offset>
+<name>bounding offset - X</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xC</offset>
+<name>bounding offset - y</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>bounding offset - z</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>origin offset - x</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x18</offset>
+<name>origin offset - y</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x1C</offset>
+<name>origin offset - z</name>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x2</offset>
+<name>Even more flags</name>
+<bitmask>
+<bit>32</bit>
+<name>does not cast shadow</name>
+<info>does not cast shadow</info>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>transparent self-occlusion</name>
+<info>transparent self-occlusion</info>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>brighter then it should be</name>
+<info>brighter then it should be</info>
+</bitmask>
+<bitmask>
+<bit>29</bit>
+<name>not a pathfinding obstacle</name>
+<info>not a pathfinding obstacle</info>
+</bitmask>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x20</offset>
+<name>Acceleration scale</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x104</offset>
+<name>Render bounding radius</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x108</offset>
+<name>A in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>body vitality</name>
+</option>
+<option>
+<value>2</value>
+<name>shield vitality</name>
+</option>
+<option>
+<value>3</value>
+<name>recent body damge</name>
+</option>
+<option>
+<value>4</value>
+<name>recent shield damge</name>
+</option>
+<option>
+<value>5</value>
+<name>random constant</name>
+</option>
+<option>
+<value>6</value>
+<name>umbrella shield vitality</name>
+</option>
+<option>
+<value>7</value>
+<name>shield stun</name>
+</option>
+<option>
+<value>8</value>
+<name>recent umbrella shield vitality</name>
+</option>
+<option>
+<value>9</value>
+<name>umbrella shield stun</name>
+</option>
+<option>
+<value>10</value>
+<name>region #00 damage</name>
+</option>
+<option>
+<value>11</value>
+<name>region #01 damage</name>
+</option>
+<option>
+<value>12</value>
+<name>region #02 damage</name>
+</option>
+<option>
+<value>13</value>
+<name>region #03 damage</name>
+</option>
+<option>
+<value>14</value>
+<name>region #04 damage</name>
+</option>
+<option>
+<value>15</value>
+<name>region #05 damage</name>
+</option>
+<option>
+<value>16</value>
+<name>region #06 damage</name>
+</option>
+<option>
+<value>17</value>
+<name>region #07 damage</name>
+</option>
+<option>
+<value>18</value>
+<name>alive</name>
+</option>
+<option>
+<value>19</value>
+<name>compass</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x10a</offset>
+<name>B in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>body vitality</name>
+</option>
+<option>
+<value>2</value>
+<name>shield vitality</name>
+</option>
+<option>
+<value>3</value>
+<name>recent body damge</name>
+</option>
+<option>
+<value>4</value>
+<name>recent shield damge</name>
+</option>
+<option>
+<value>5</value>
+<name>random constant</name>
+</option>
+<option>
+<value>6</value>
+<name>umbrella shield vitality</name>
+</option>
+<option>
+<value>7</value>
+<name>shield stun</name>
+</option>
+<option>
+<value>8</value>
+<name>recent umbrella shield vitality</name>
+</option>
+<option>
+<value>9</value>
+<name>umbrella shield stun</name>
+</option>
+<option>
+<value>10</value>
+<name>region #00 damage</name>
+</option>
+<option>
+<value>11</value>
+<name>region #01 damage</name>
+</option>
+<option>
+<value>12</value>
+<name>region #02 damage</name>
+</option>
+<option>
+<value>13</value>
+<name>region #03 damage</name>
+</option>
+<option>
+<value>14</value>
+<name>region #04 damage</name>
+</option>
+<option>
+<value>15</value>
+<name>region #05 damage</name>
+</option>
+<option>
+<value>16</value>
+<name>region #06 damage</name>
+</option>
+<option>
+<value>17</value>
+<name>region #07 damage</name>
+</option>
+<option>
+<value>18</value>
+<name>alive</name>
+</option>
+<option>
+<value>19</value>
+<name>compass</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x10c</offset>
+<name>C in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>body vitality</name>
+</option>
+<option>
+<value>2</value>
+<name>shield vitality</name>
+</option>
+<option>
+<value>3</value>
+<name>recent body damge</name>
+</option>
+<option>
+<value>4</value>
+<name>recent shield damge</name>
+</option>
+<option>
+<value>5</value>
+<name>random constant</name>
+</option>
+<option>
+<value>6</value>
+<name>umbrella shield vitality</name>
+</option>
+<option>
+<value>7</value>
+<name>shield stun</name>
+</option>
+<option>
+<value>8</value>
+<name>recent umbrella shield vitality</name>
+</option>
+<option>
+<value>9</value>
+<name>umbrella shield stun</name>
+</option>
+<option>
+<value>10</value>
+<name>region #00 damage</name>
+</option>
+<option>
+<value>11</value>
+<name>region #01 damage</name>
+</option>
+<option>
+<value>12</value>
+<name>region #02 damage</name>
+</option>
+<option>
+<value>13</value>
+<name>region #03 damage</name>
+</option>
+<option>
+<value>14</value>
+<name>region #04 damage</name>
+</option>
+<option>
+<value>15</value>
+<name>region #05 damage</name>
+</option>
+<option>
+<value>16</value>
+<name>region #06 damage</name>
+</option>
+<option>
+<value>17</value>
+<name>region #07 damage</name>
+</option>
+<option>
+<value>18</value>
+<name>alive</name>
+</option>
+<option>
+<value>19</value>
+<name>compass</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x10e</offset>
+<name>D in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>body vitality</name>
+</option>
+<option>
+<value>2</value>
+<name>shield vitality</name>
+</option>
+<option>
+<value>3</value>
+<name>recent body damge</name>
+</option>
+<option>
+<value>4</value>
+<name>recent shield damge</name>
+</option>
+<option>
+<value>5</value>
+<name>random constant</name>
+</option>
+<option>
+<value>6</value>
+<name>umbrella shield vitality</name>
+</option>
+<option>
+<value>7</value>
+<name>shield stun</name>
+</option>
+<option>
+<value>8</value>
+<name>recent umbrella shield vitality</name>
+</option>
+<option>
+<value>9</value>
+<name>umbrella shield stun</name>
+</option>
+<option>
+<value>10</value>
+<name>region #00 damage</name>
+</option>
+<option>
+<value>11</value>
+<name>region #01 damage</name>
+</option>
+<option>
+<value>12</value>
+<name>region #02 damage</name>
+</option>
+<option>
+<value>13</value>
+<name>region #03 damage</name>
+</option>
+<option>
+<value>14</value>
+<name>region #04 damage</name>
+</option>
+<option>
+<value>15</value>
+<name>region #05 damage</name>
+</option>
+<option>
+<value>16</value>
+<name>region #06 damage</name>
+</option>
+<option>
+<value>17</value>
+<name>region #07 damage</name>
+</option>
+<option>
+<value>18</value>
+<name>alive</name>
+</option>
+<option>
+<value>19</value>
+<name>compass</name>
+</option>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x13C</offset>
+<name>hud text message index</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x13E</offset>
+<name>forced shader permuation ide</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x180</offset>
+<name>message index</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x182</offset>
+<name>sort order</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x184</offset>
+<name>scale</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x188</offset>
+<name>hud message scale value</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x2E0</offset>
+<name>detation delay - from</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x2E4</offset>
+<name>detonation delay - to</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x32E</offset>
+<name>maximum alternate shots loaded</name>
+</value>
+
+<value>
+<type>string32</type>
+<offset>0x30C</offset>
+<name>label</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x330</offset>
+<name>func expo A in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>heat</name>
+</option>
+<option>
+<value>2</value>
+<name>primary ammunition</name>
+</option>
+<option>
+<value>3</value>
+<name>secondary ammunition</name>
+</option>
+<option>
+<value>4</value>
+<name>primary rate of fire</name>
+</option>
+<option>
+<value>5</value>
+<name>secondary rate of fire</name>
+</option>
+<option>
+<value>6</value>
+<name>ready</name>
+</option>
+<option>
+<value>7</value>
+<name>primary ejection port</name>
+</option>
+<option>
+<value>8</value>
+<name>secondary ejection port</name>
+</option>
+<option>
+<value>9</value>
+<name>overheat</name>
+</option>
+<option>
+<value>10</value>
+<name>primary charged</name>
+</option>
+<option>
+<value>11</value>
+<name>secondary charged</name>
+</option>
+<option>
+<value>12</value>
+<name>illumination</name>
+</option>
+<option>
+<value>13</value>
+<name>age</name>
+</option>
+<option>
+<value>14</value>
+<name>primary firing</name>
+</option>
+<option>
+<value>15</value>
+<name>secondary firing</name>
+</option>
+<option>
+<value>16</value>
+<name>primary firing on</name>
+</option>
+<option>
+<value>17</value>
+<name>secondary firing on</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x332</offset>
+<name>func expo B in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>heat</name>
+</option>
+<option>
+<value>2</value>
+<name>primary ammunition</name>
+</option>
+<option>
+<value>3</value>
+<name>secondary ammunition</name>
+</option>
+<option>
+<value>4</value>
+<name>primary rate of fire</name>
+</option>
+<option>
+<value>5</value>
+<name>secondary rate of fire</name>
+</option>
+<option>
+<value>6</value>
+<name>ready</name>
+</option>
+<option>
+<value>7</value>
+<name>primary ejection port</name>
+</option>
+<option>
+<value>8</value>
+<name>secondary ejection port</name>
+</option>
+<option>
+<value>9</value>
+<name>overheat</name>
+</option>
+<option>
+<value>10</value>
+<name>primary charged</name>
+</option>
+<option>
+<value>11</value>
+<name>secondary charged</name>
+</option>
+<option>
+<value>12</value>
+<name>illumination</name>
+</option>
+<option>
+<value>13</value>
+<name>age</name>
+</option>
+<option>
+<value>14</value>
+<name>primary firing</name>
+</option>
+<option>
+<value>15</value>
+<name>secondary firing</name>
+</option>
+<option>
+<value>16</value>
+<name>primary firing on</name>
+</option>
+<option>
+<value>17</value>
+<name>secondary firing on</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x334</offset>
+<name>func expo C in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>heat</name>
+</option>
+<option>
+<value>2</value>
+<name>primary ammunition</name>
+</option>
+<option>
+<value>3</value>
+<name>secondary ammunition</name>
+</option>
+<option>
+<value>4</value>
+<name>primary rate of fire</name>
+</option>
+<option>
+<value>5</value>
+<name>secondary rate of fire</name>
+</option>
+<option>
+<value>6</value>
+<name>ready</name>
+</option>
+<option>
+<value>7</value>
+<name>primary ejection port</name>
+</option>
+<option>
+<value>8</value>
+<name>secondary ejection port</name>
+</option>
+<option>
+<value>9</value>
+<name>overheat</name>
+</option>
+<option>
+<value>10</value>
+<name>primary charged</name>
+</option>
+<option>
+<value>11</value>
+<name>secondary charged</name>
+</option>
+<option>
+<value>12</value>
+<name>illumination</name>
+</option>
+<option>
+<value>13</value>
+<name>age</name>
+</option>
+<option>
+<value>14</value>
+<name>primary firing</name>
+</option>
+<option>
+<value>15</value>
+<name>secondary firing</name>
+</option>
+<option>
+<value>16</value>
+<name>primary firing on</name>
+</option>
+<option>
+<value>17</value>
+<name>secondary firing on</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x336</offset>
+<name>func expo D in</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>heat</name>
+</option>
+<option>
+<value>2</value>
+<name>primary ammunition</name>
+</option>
+<option>
+<value>3</value>
+<name>secondary ammunition</name>
+</option>
+<option>
+<value>4</value>
+<name>primary rate of fire</name>
+</option>
+<option>
+<value>5</value>
+<name>secondary rate of fire</name>
+</option>
+<option>
+<value>6</value>
+<name>ready</name>
+</option>
+<option>
+<value>7</value>
+<name>primary ejection port</name>
+</option>
+<option>
+<value>8</value>
+<name>secondary ejection port</name>
+</option>
+<option>
+<value>9</value>
+<name>overheat</name>
+</option>
+<option>
+<value>10</value>
+<name>primary charged</name>
+</option>
+<option>
+<value>11</value>
+<name>secondary charged</name>
+</option>
+<option>
+<value>12</value>
+<name>illumination</name>
+</option>
+<option>
+<value>13</value>
+<name>age</name>
+</option>
+<option>
+<value>14</value>
+<name>primary firing</name>
+</option>
+<option>
+<value>15</value>
+<name>secondary firing</name>
+</option>
+<option>
+<value>16</value>
+<name>primary firing on</name>
+</option>
+<option>
+<value>17</value>
+<name>secondary firing on</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x338</offset>
+<name>Ready time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x35C</offset>
+<name>heat loss per second [0,1]</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x358</offset>
+<name>heat detonation fraction[0,1]</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x360</offset>
+<name>heat illumination [0,1]</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3CC</offset>
+<name>Near reticle range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3D0</offset>
+<name>far reticle range</name>
+</value>
+
+<value>
+<type>null</type>
+<offset>0x3D4</offset>
+<name>intersection reticle range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3E4</offset>
+<name>autoaim angle</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3EC</offset>
+<name>magnetism range</name>
+</value>
+
+<value>
+<type>null</type>
+<offset>0x3F0</offset>
+<name>magnetism range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3F4</offset>
+<name>deviation angle</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3D4</offset>
+<name>intersection reticle range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3E8</offset>
+<name>autoaim range</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x3FC</offset>
+<name>movement penalized</name>
+<option>
+<value>0</value>
+<name>always</name>
+</option>
+<option>
+<value>1</value>
+<name>when zoomed</name>
+</option>
+<option>
+<value>2</value>
+<name>when zoomed or reloading</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x400</offset>
+<name>forward movement penalty</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x404</offset>
+<name>sidways movement penalty</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x40C</offset>
+<name>minimum target range</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x410</offset>
+<name>looking time modifier</name>
+</value>
+
+<value>
+<type>null</type>
+<offset>0x418</offset>
+<name>light power-on time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x418</offset>
+<name>light power-on time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x41C</offset>
+<name>light power-off time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x440</offset>
+<name>age heat recovery penalty</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x444</offset>
+<name>age heat recovery penalty</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x448</offset>
+<name>age misfire start [0,1]</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x44C</offset>
+<name>age misfire change</name>
+</value>
+</struct>
+
+
+<struct>
+<name>Clip</name>
+<size>112</size>
+
+<value>
+<type>short</type>
+<offset>0x004</offset>
+<name>Rounds Recharged</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x006</offset>
+<name>Starting Ammo</name>
+<info>Ammo the weapon will start with</info>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x008</offset>
+<name>Maximum Ammo</name>
+<info>Maximum ammo the weapon can hold</info>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x00A</offset>
+<name>Clip Size</name>
+<info>Amount of ammo in each clip</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x014</offset>
+<name>Reload Time</name>
+<info>Time taken to reload a clip</info>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x18</offset>
+<name>Shots Reloaded</name>
+<info>Ammo added with each reload (should equal clip size)</info>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x2</offset>
+<name>flags</name>
+<bitmask>
+<bit>32</bit>
+<name>waste rounds when reloading</name>
+<info>waste rounds when reloading</info>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>every round must be chambered</name>
+<info>every round must be chambered</info>
+</bitmask>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x4</offset>
+<name>rounds recharged</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x1C</offset>
+<name>Chamber time</name>
+</value>
+</struct>
+
+
+<struct>
+<name>Projectile</name>
+<size>276</size>
+
+<value>
+<type>bitmask32</type>
+<offset>0x00</offset>
+<name>Stop With the Flags!</name>
+<bitmask>
+<bit>32</bit>
+<name>Tracks Fired Projectile</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Random Firing Effects</name>
+</bitmask>
+<bitmask>
+<bit>29</bit>
+<name>Does Not Repeat Automatically</name>
+</bitmask>
+<bitmask>
+<bit>28</bit>
+<name>Locks in on/off state</name>
+</bitmask>
+<bitmask>
+<bit>27</bit>
+<name>Projectiles Use Weapons Origin</name>
+</bitmask>
+<bitmask>
+<bit>26</bit>
+<name>Sticks When Dropped</name>
+</bitmask>
+<bitmask>
+<bit>25</bit>
+<name>Ejects During Chamber</name>
+</bitmask>
+<bitmask>
+<bit>24</bit>
+<name>Discharging Spews</name>
+</bitmask>
+<bitmask>
+<bit>23</bit>
+<name>Analog Rate of Fire</name>
+</bitmask>
+<bitmask>
+<bit>22</bit>
+<name>Use Error when Unzoomed</name>
+</bitmask>
+<bitmask>
+<bit>21</bit>
+<name>Projectile Vector Cannont be Adjus</name>
+</bitmask>
+<bitmask>
+<bit>20</bit>
+<name>Projectile Have Identical Error</name>
+</bitmask>
+<bitmask>
+<bit>19</bit>
+<name>Projectile is Client-Side Only</name>
+</bitmask>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x04</offset>
+<name>Minimum ROF</name>
+<info>Minimum projectiles per second fired</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x08</offset>
+<name>Maximum ROF</name>
+<info>Maximum projectiles per second fired</info>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x22</offset>
+<name>Ammo per Shot</name>
+<info>Ammo lost with each shot</info>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x26</offset>
+<name>Tracers</name>
+<info>Projectiles fired between each tracer</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x48</offset>
+<name>Charging Time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4C</offset>
+<name>Charged Time</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x6E</offset>
+<name>Projectiles Fired</name>
+<info>Number of projectiles launched with each shot</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x7C</offset>
+<name>Minimum Spread</name>
+<info>Minimum distance from the center projectiles will travel</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x80</offset>
+<name>Maximum Spread</name>
+<info>Maximum distance from the center projectiles will travel</info>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x0C</offset>
+<name>Acceleration Time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>Deceleration Time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>Blurred Rate of Fire</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xB8</offset>
+<name>Heat Generated per Round</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xBC</offset>
+<name>Age Generated per Round</name>
+<info>Percent battery each shot uses up</info>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x50</offset>
+<name>OverCharged Action</name>
+<option>
+<value>00</value>
+<name>None</name>
+</option>
+<option>
+<value>01</value>
+<name>Explode</name>
+</option>
+<option>
+<value>02</value>
+<name>Discharge</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x54</offset>
+<name>Charged Illumination</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x58</offset>
+<name>Spew Time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x30</offset>
+<name>error - from</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x24</offset>
+<name>minimum rounds loaded</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x2E</offset>
+<name>firing noise</name>
+<option>
+<value>0</value>
+<name>silent</name>
+</option>
+<option>
+<value>1</value>
+<name>medium</name>
+</option>
+<option>
+<value>2</value>
+<name>loud</name>
+</option>
+<option>
+<value>3</value>
+<name>shout</name>
+</option>
+<option>
+<value>4</value>
+<name>quite</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x34</offset>
+<name>error - to</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x38</offset>
+<name>error - acceleration time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x3C</offset>
+<name>error - deceleration time</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x6C</offset>
+<name>distribution function</name>
+<option>
+<value>0</value>
+<name>point</name>
+</option>
+<option>
+<value>1</value>
+<name>horizontal fan</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x70</offset>
+<name>distribution angle</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x78</offset>
+<name>minimum error</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x84</offset>
+<name>first person offset - x</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x88</offset>
+<name>first person offset - y</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x8C</offset>
+<name>first person offset - z</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xA4</offset>
+<name>ejection port recovery time</name>
+</value>
+
+<value>
+<type>null</type>
+<offset>0xA8</offset>
+<name>illumination recovery time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xA8</offset>
+<name>ilumination recovery time</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xC4</offset>
+<name>overload time</name>
+</value>
+</struct>
+
+
+<struct>
+<name>Attachments</name>
+<size>72</size>
+
+<value>
+<type>string32</type>
+<offset>0x10</offset>
+<name>marker name</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x30</offset>
+<name>primary scale</name>
+<option>
+<value>1</value>
+<name>A out</name>
+</option>
+<option>
+<value>2</value>
+<name>B out</name>
+</option>
+<option>
+<value>3</value>
+<name>C out</name>
+</option>
+<option>
+<value>4</value>
+<name>D out</name>
+</option>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x32</offset>
+<name>secondary scale</name>
+<option>
+<value>1</value>
+<name>A out</name>
+</option>
+<option>
+<value>2</value>
+<name>B out</name>
+</option>
+<option>
+<value>3</value>
+<name>C out</name>
+</option>
+<option>
+<value>4</value>
+<name>D out</name>
+</option>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x34</offset>
+<name>change color</name>
+<option>
+<value>1</value>
+<name>A</name>
+</option>
+<option>
+<value>2</value>
+<name>B</name>
+</option>
+<option>
+<value>3</value>
+<name>C</name>
+</option>
+<option>
+<value>4</value>
+<name>D</name>
+</option>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+</value>
+</struct>
+
+
+<struct>
+<name>functions</name>
+<size>360</size>
+
+<value>
+<type>bitmask32</type>
+<offset>0x2</offset>
+<name>FU flags</name>
+<bitmask>
+<bit>32</bit>
+<name>invert</name>
+<info>invert</info>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>additive</name>
+<info>additive</info>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>always active</name>
+<info>always active</info>
+</bitmask>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x4</offset>
+<name>period (secs)</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x8</offset>
+<name>Scale period by</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0xA</offset>
+<name>function</name>
+<option>
+<value>0</value>
+<name>one</name>
+</option>
+<option>
+<value>1</value>
+<name>zero</name>
+</option>
+<option>
+<value>2</value>
+<name>cosine</name>
+</option>
+<option>
+<value>3</value>
+<name>cosine (variable period)</name>
+</option>
+<option>
+<value>4</value>
+<name>diagonal</name>
+</option>
+<option>
+<value>5</value>
+<name>diagonal (varible period)</name>
+</option>
+<option>
+<value>6</value>
+<name>slide</name>
+</option>
+<option>
+<value>7</value>
+<name>slide (variable period)</name>
+</option>
+<option>
+<value>8</value>
+<name>noise</name>
+</option>
+<option>
+<value>9</value>
+<name>jitter</name>
+</option>
+<option>
+<value>10</value>
+<name>wander</name>
+</option>
+<option>
+<value>11</value>
+<name>spark</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0xc</offset>
+<name>Scale function by</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0xE</offset>
+<name>woble function</name>
+<option>
+<value>0</value>
+<name>one</name>
+</option>
+<option>
+<value>1</value>
+<name>zero</name>
+</option>
+<option>
+<value>2</value>
+<name>cosine</name>
+</option>
+<option>
+<value>3</value>
+<name>cosine (variable period)</name>
+</option>
+<option>
+<value>4</value>
+<name>diagonal</name>
+</option>
+<option>
+<value>5</value>
+<name>diagonal (varible period)</name>
+</option>
+<option>
+<value>6</value>
+<name>slide</name>
+</option>
+<option>
+<value>7</value>
+<name>slide (variable period)</name>
+</option>
+<option>
+<value>8</value>
+<name>noise</name>
+</option>
+<option>
+<value>9</value>
+<name>jitter</name>
+</option>
+<option>
+<value>10</value>
+<name>wander</name>
+</option>
+<option>
+<value>11</value>
+<name>spark</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>Wobble period</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>Woble magnitude</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x18</offset>
+<name>square wave threshold</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x1C</offset>
+<name>step count</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x1E</offset>
+<name>map to</name>
+<option>
+<value>0</value>
+<name>linear</name>
+</option>
+<option>
+<value>1</value>
+<name>early</name>
+</option>
+<option>
+<value>2</value>
+<name>very early</name>
+</option>
+<option>
+<value>3</value>
+<name>late</name>
+</option>
+<option>
+<value>4</value>
+<name>very late</name>
+</option>
+<option>
+<value>5</value>
+<name>cosine</name>
+</option>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x20</offset>
+<name>sawtooth count</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x22</offset>
+<name>add</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x24</offset>
+<name>scale results by</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x26</offset>
+<name>bounds mode</name>
+<option>
+<value>0</value>
+<name>clip</name>
+</option>
+<option>
+<value>1</value>
+<name>clip and normalize</name>
+</option>
+<option>
+<value>2</value>
+<name>scale to fit</name>
+</option>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x28</offset>
+<name>Bounds - from</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x2C</offset>
+<name>Bounds - to</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x38</offset>
+<name>Scale by</name>
+</value>
+
+<value>
+<type>string32</type>
+<offset>0x148</offset>
+<name>Usage</name>
+</value>
+</struct>
+
+
+<struct>
+<name>change colors</name>
+<size>44</size>
+
+<value>
+<type>id16</type>
+<offset>0x0</offset>
+<name>darken by</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x2</offset>
+<name>scale by</name>
+<option>
+<value>0</value>
+<name>none</name>
+</option>
+<option>
+<value>1</value>
+<name>A in</name>
+</option>
+<option>
+<value>2</value>
+<name>B in</name>
+</option>
+<option>
+<value>3</value>
+<name>C in</name>
+</option>
+<option>
+<value>4</value>
+<name>D in</name>
+</option>
+<option>
+<value>5</value>
+<name>A out</name>
+</option>
+<option>
+<value>6</value>
+<name>B out</name>
+</option>
+<option>
+<value>7</value>
+<name>C out</name>
+</option>
+<option>
+<value>8</value>
+<name>D out</name>
+</option>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x6</offset>
+<name>flags</name>
+<bitmask>
+<bit>32</bit>
+<name>blend in hsv</name>
+<info>blend in hsv</info>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>...more colors</name>
+<info>...more colors</info>
+</bitmask>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x8</offset>
+<name>color lower bound</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x14</offset>
+<name>color upper bound</name>
+</value>
+</struct>
+
+
+<struct>
+<name>predicted resources 1</name>
+<size>8</size>
+
+<value>
+<type>id16</type>
+<offset>0x0</offset>
+<name>type</name>
+<option>
+<value>0</value>
+<name>bitmap</name>
+</option>
+<option>
+<value>1</value>
+<name>sound</name>
+</option>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x2</offset>
+<name>resource index</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x6</offset>
+<name>Tag index</name>
+</value>
+</struct>
+
+
+<struct>
+<name>predicted resources 2</name>
+<size>8</size>
+
+<value>
+<type>id16</type>
+<offset>0x0</offset>
+<name>type</name>
+<option>
+<value>0</value>
+<name>bitmap</name>
+</option>
+<option>
+<value>1</value>
+<name>sound</name>
+</option>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x2</offset>
+<name>resource index</name>
+</value>
+
+<value>
+<type>short</type>
+<offset>0x6</offset>
+<name>Tag index</name>
+</value>
+</struct>
+</plugin>

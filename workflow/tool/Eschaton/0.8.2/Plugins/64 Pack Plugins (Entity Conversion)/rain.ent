@@ -1,0 +1,158 @@
+<plugin class="rain" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <struct name="Particle Types" offset="0x24" visible="true" size="604">
+    <bitmask32 name="Flags" offset="0x20" Visible="true">
+      <option name="Interpolate Colours in HSV" value="0"/>
+      <option name="...Along Long Hue Path" value="1"/>
+      <option name="Random Rotation" value="2"/>
+    </bitmask32>
+    <float name="Fade-In Start Distance" offset="0x24" Visible="true"/>
+    <float name="Fade-In End Distance" offset="0x28" Visible="true"/>
+    <float name="Fade-Out Start Distance" offset="0x2C" Visible="true"/>
+    <float name="Fade-Out End Distance" offset="0x30" Visible="true"/>
+    <float name="Fade-In Start Height" offset="0x34" Visible="true"/>
+    <float name="Fade-In End Height" offset="0x38" Visible="true"/>
+    <float name="Fade-Out Start Height" offset="0x3C" Visible="true"/>
+    <float name="Fade-Out End Height" offset="0x40" Visible="true"/>
+    <float name="Minimum Particles" offset="0xA4" Visible="true"/>
+    <float name="Maximum Particles" offset="0xA8" Visible="true"/>
+    <float name="Minimum Acceleration Magnitude" offset="0xCC" Visible="true"/>
+    <float name="Maximum Acceleration Magnitude" offset="0xD0" Visible="true"/>
+    <float name="Acceleration Turning Rate" offset="0xD4" Visible="true"/>
+    <float name="Acceleration Change Rate" offset="0xD8" Visible="true"/>
+    <float name="Minimum Particle Radius" offset="0xFC" Visible="true"/>
+    <float name="Maximum Particle Radius" offset="0x100" Visible="true"/>
+    <float name="Minimum Animation Rate" offset="0x104" Visible="true"/>
+    <float name="Maximum Animation Rate" offset="0x108" Visible="true"/>
+    <float name="Minimum Rotation Rate" offset="0x10C" Visible="true"/>
+    <float name="Maximum Rotation Rate" offset="0x110" Visible="true"/>
+    <float name="Colour Lower Bound - A" offset="0x134" Visible="true"/>
+    <float name="Colour Lower Bound - R" offset="0x138" Visible="true"/>
+    <float name="Colour Lower Bound - G" offset="0x13C" Visible="true"/>
+    <float name="Colour Lower Bound - B" offset="0x140" Visible="true"/>
+    <float name="Colour Upper Bound - A" offset="0x144" Visible="true"/>
+    <float name="Colour Upper Bound - R" offset="0x148" Visible="true"/>
+    <float name="Colour Upper Bound - G" offset="0x14C" Visible="true"/>
+    <float name="Colour Upper Bound - B" offset="0x150" Visible="true"/>
+    <bitmask32 name="Shader" offset="0x190" Visible="true">
+      <option name="Shader" value="31"/>
+    </bitmask32>
+    <enum16 name="Render Mode" offset="0x1A4" Visible="true">
+      <option name="Screen Facing" value="0"/>
+      <option name="Parallel to Direction" value="1"/>
+      <option name="Perpendicular to Direction" value="2"/>
+    </enum16>
+    <enum16 name="Render Direction Source" offset="0x1A6" Visible="true">
+      <option name="From Velocity" value="0"/>
+      <option name="From Acceleration" value="1"/>
+    </enum16>
+    <bitmask32 name="Shader Flags" offset="0x1CE" Visible="true">
+      <option name="Sort Bias" value="0"/>
+      <option name="Non-Linear Tint" value="1"/>
+      <option name="Don't Overdraw First Person Weapon" value="2"/>
+    </bitmask32>
+    <enum16 name="Frame-Buffer Blend Function" offset="0x1D2" Visible="true">
+      <option name="Alpha Blend" value="0"/>
+      <option name="Multiply" value="1"/>
+      <option name="Double Multiply" value="2"/>
+      <option name="Add" value="3"/>
+      <option name="Subtract" value="4"/>
+      <option name="Component Minimum" value="5"/>
+      <option name="Component Maximum" value="6"/>
+      <option name="Alpha-Multiply Add" value="7"/>
+    </enum16>
+    <enum16 name="Frame-Buffer Fade Mode" offset="0x1D4" Visible="true">
+      <option name="None" value="0"/>
+      <option name="Fade When Perpendicular" value="1"/>
+      <option name="Fade When Parallel" value="2"/>
+    </enum16>
+    <bitmask32 name="Map Flags" offset="0x1D4" Visible="true">
+      <option name="Un-Filtered" value="0"/>
+    </bitmask32>
+    <bitmask32 name="Secondary Map" offset="0x190" Visible="true">
+      <option name="Secondary Map" value="31"/>
+    </bitmask32>
+    <enum16 name="Anchor" offset="0x204" Visible="true">
+      <option name="With Primary" value="0"/>
+      <option name="With Screen Space" value="1"/>
+      <option name="Z-Sprite" value="2"/>
+    </enum16>
+    <bitmask32 name="Flags" offset="0x206" Visible="true">
+      <option name="Un-Filtered" value="16"/>
+    </bitmask32>
+    <enum16 name="U-Animation Source" offset="0x208" Visible="true">
+      <option name="None" value="0"/>
+      <option name="&quot;A&quot; Out" value="1"/>
+      <option name="&quot;B&quot; Out" value="2"/>
+      <option name="&quot;C&quot; Out" value="3"/>
+      <option name="&quot;D&quot; Out" value="4"/>
+    </enum16>
+    <enum16 name="U-Animation Function" offset="0x20A" Visible="true">
+      <option name="One" value="0"/>
+      <option name="Zero" value="1"/>
+      <option name="Cosine" value="2"/>
+      <option name="Cosine (Variable Period)" value="3"/>
+      <option name="Diagonal Wave" value="4"/>
+      <option name="Diagonal Wave (Variable Period)" value="5"/>
+      <option name="Slide" value="6"/>
+      <option name="Slide (Variable Period)" value="7"/>
+      <option name="Noise" value="8"/>
+      <option name="Jitter" value="9"/>
+      <option name="Wander" value="10"/>
+      <option name="Spark" value="11"/>
+    </enum16>
+    <float name="U-Animation Period" offset="0x20C" Visible="true"/>
+    <float name="U-Animation Phase" offset="0x210" Visible="true"/>
+    <float name="U-Animation Scale" offset="0x214" Visible="true"/>
+    <enum16 name="V-Animation Source" offset="0x218" Visible="true">
+      <option name="None" value="0"/>
+      <option name="&quot;A&quot; Out" value="1"/>
+      <option name="&quot;B&quot; Out" value="2"/>
+      <option name="&quot;C&quot; Out" value="3"/>
+      <option name="&quot;D&quot; Out" value="4"/>
+    </enum16>
+    <enum16 name="V-Animation Function" offset="0x21A" Visible="true">
+      <option name="One" value="0"/>
+      <option name="Zero" value="1"/>
+      <option name="Cosine" value="2"/>
+      <option name="Cosine (Variable Period)" value="3"/>
+      <option name="Diagonal Wave" value="4"/>
+      <option name="Diagonal Wave (Variable Period)" value="5"/>
+      <option name="Slide" value="6"/>
+      <option name="Slide (Variable Period)" value="7"/>
+      <option name="Noise" value="8"/>
+      <option name="Jitter" value="9"/>
+      <option name="Wander" value="10"/>
+      <option name="Spark" value="11"/>
+    </enum16>
+    <float name="V-Animation Period" offset="0x21C" Visible="true"/>
+    <float name="V-Animation Phase" offset="0x220" Visible="true"/>
+    <float name="V-Animation Scale" offset="0x224" Visible="true"/>
+    <enum16 name="Rotation-Animation Source" offset="0x228" Visible="true">
+      <option name="None" value="0"/>
+      <option name="&quot;A&quot; Out" value="1"/>
+      <option name="&quot;B&quot; Out" value="2"/>
+      <option name="&quot;C&quot; Out" value="3"/>
+      <option name="&quot;D&quot; Out" value="4"/>
+    </enum16>
+    <enum16 name="Rotation-Animation Function" offset="0x22A" Visible="true">
+      <option name="One" value="0"/>
+      <option name="Zero" value="1"/>
+      <option name="Cosine" value="2"/>
+      <option name="Cosine (Variable Period)" value="3"/>
+      <option name="Diagonal Wave" value="4"/>
+      <option name="Diagonal Wave (Variable Period)" value="5"/>
+      <option name="Slide" value="6"/>
+      <option name="Slide (Variable Period)" value="7"/>
+      <option name="Noise" value="8"/>
+      <option name="Jitter" value="9"/>
+      <option name="Wander" value="10"/>
+      <option name="Spark" value="11"/>
+    </enum16>
+    <float name="Rotation-Animation Period" offset="0x22C" Visible="true"/>
+    <float name="Rotation-Animation Phase" offset="0x230" Visible="true"/>
+    <float name="Rotation-Animation Scale" offset="0x234" Visible="true"/>
+    <float name="Rotation-Animation Center (X)" offset="0x238" Visible="true"/>
+    <float name="Rotation-Animation Center (Y)" offset="0x23C" Visible="true"/>
+    <float name="Z-Sprite Radius Scale" offset="0x240" Visible="true"/>
+  </struct>
+</plugin>

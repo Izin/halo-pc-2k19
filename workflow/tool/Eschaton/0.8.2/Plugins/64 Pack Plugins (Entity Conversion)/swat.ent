@@ -1,0 +1,69 @@
+<plugin class="swat" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Simple Parameterization" value="0"/>
+    <option name="Ignore Normals" value="1"/>
+    <option name="Transparent Lit" value="2"/>
+  </bitmask32>
+  <enum16 name="Detail Level" offset="0x02" Visible="true">
+    <option name="High" value="0"/>
+    <option name="Medium" value="1"/>
+    <option name="Low" value="2"/>
+    <option name="Turd" value="3"/>
+  </enum16>
+  <float name="Power" offset="0x04" Visible="true"/>
+  <float name="Colour of Emitted Light - R" offset="0x08" Visible="true"/>
+  <float name="Colour of Emitted Light - G" offset="0x0C" Visible="true"/>
+  <float name="Colour of Emitted Light - B" offset="0x10" Visible="true"/>
+  <float name="Tint Colour - R" offset="0x14" Visible="true"/>
+  <float name="Tint Colour - G" offset="0x18" Visible="true"/>
+  <float name="Tint Colour - B" offset="0x1C" Visible="true"/>
+  <enum16 name="Material Type" offset="0x22" Visible="true">
+    <option name="Dirt" value="0"/>
+    <option name="Sand" value="1"/>
+    <option name="Stone" value="2"/>
+    <option name="Snow" value="3"/>
+    <option name="Wood" value="4"/>
+    <option name="Metal (Hollow)" value="5"/>
+    <option name="Metal (Thin)" value="6"/>
+    <option name="Metal (Thick)" value="7"/>
+    <option name="Rubber" value="8"/>
+    <option name="Glass" value="9"/>
+    <option name="Force Field" value="10"/>
+    <option name="Grunt" value="11"/>
+    <option name="Hunter Armor" value="12"/>
+    <option name="Hunter Skin" value="13"/>
+    <option name="Elite" value="14"/>
+    <option name="Jackal" value="15"/>
+    <option name="Jackal Energy Shield" value="16"/>
+    <option name="Engineer Skin" value="17"/>
+    <option name="Engineer Force Field" value="18"/>
+    <option name="Flood Combat Form" value="19"/>
+    <option name="Flood Carrier Form" value="20"/>
+    <option name="Cyborg Armor" value="21"/>
+    <option name="Cyborg Energy Shield" value="22"/>
+    <option name="Human Armor" value="23"/>
+    <option name="Human Skin" value="24"/>
+    <option name="Sentinel" value="25"/>
+    <option name="Monitor" value="26"/>
+    <option name="Plastic" value="27"/>
+    <option name="Water" value="28"/>
+    <option name="Leaves" value="29"/>
+    <option name="Elite Energy Shield" value="30"/>
+    <option name="Ice" value="31"/>
+    <option name="Hunter Shield" value="32"/>
+  </enum16>
+  <float name="Perpendicular Brightness" offset="0x6C" Visible="true"/>
+  <float name="Perpendicular Tint Colour - R" offset="0x70" Visible="true"/>
+  <float name="Perpendicular Tint Colour - G" offset="0x74" Visible="true"/>
+  <float name="Perpendicular Tint Colour - B" offset="0x78" Visible="true"/>
+  <float name="Parallel Brightness" offset="0x7C" Visible="true"/>
+  <float name="Parallel Tint Colour - R" offset="0x80" Visible="true"/>
+  <float name="Parallel Tint Colour - G" offset="0x84" Visible="true"/>
+  <float name="Parallel Tint Colour - B" offset="0x88" Visible="true"/>
+  <float name="Ripple Animation Angle" offset="0xBC" Visible="true"/>
+  <float name="Ripple Animation Velocity" offset="0xC0" Visible="true"/>
+  <float name="Ripple Scale" offset="0xC4" Visible="true"/>
+  <short name="Ripple Mipmap Levels" offset="0xD8" Visible="true"/>
+  <float name="Ripple Mipmap Fade Factor" offset="0xDC" Visible="true"/>
+  <float name="Ripple Mipmap Detail Bias" offset="0xE0" Visible="true"/>
+</plugin>

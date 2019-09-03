@@ -1,0 +1,26 @@
+<plugin class="font" author="conure" version="1" headersize="0">
+ <short name="flags" offset="0x2" visible="true"/>
+ <short name="ascending height" offset="0x4" visible="true"/>
+ <short name="decending height" offset="0x6" visible="true"/>
+ <short name="leading height" offset="0x8" visible="true"/>
+ <short name="leading width" offset="0xa" visible="true"/>
+ <struct name="character tables" offset="0x30" visible="true" size="12">
+  <struct name="character table" offset="0x0" visible="true" size="2">
+   <index name="character index" offset="0x0" reflexive="main:characters" visible="true"/> 
+  </struct>
+ </struct>
+ <dependency name="bold" offset="0x3c" visible="true"/>
+ <dependency name="italic" offset="0x4c" visible="true"/>
+ <dependency name="condense" offset="0x5c" visible="true"/>
+ <dependency name="underline" offset="0x6c" visible="true"/>
+ <struct name="characters" offset="0x7c" visible="true" size="20">
+  <short name="character" offset="0x0" visible="true"/>
+  <short name="character width" offset="0x2" visible="true"/>
+  <short name="bitmap width" offset="0x4" visible="true"/>
+  <short name="bitmap height" offset="0x6" visible="true"/>
+  <short name="bitmap origin x" offset="0x8" visible="true"/>
+  <short name="bitmap origin y" offset="0xa" visible="true"/>
+  <short name="hardware character index" offset="0xc" visible="true"/>
+  <short name="pixel offset" offset="0x12" visible="true"/>
+ </struct>
+</plugin>

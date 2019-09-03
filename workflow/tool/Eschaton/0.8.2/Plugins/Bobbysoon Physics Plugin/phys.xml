@@ -1,0 +1,272 @@
+<plugin>
+	<tag>phys</tag>
+	
+	<struct>
+		<name>Main</name>
+		<size>0</size>
+		<value>
+			<type>float</type>
+			<offset>0x000</offset>
+			<name>Radius</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x004</offset>
+			<name>Moment Scale</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x008</offset>
+			<name>Mass</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x00C</offset>
+			<name>Center of Mass X</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x010</offset>
+			<name>Center of Mass Y</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x014</offset>
+			<name>Center of Mass Z</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x018</offset>
+			<name>Density</name>
+			<info>0.25:cork, 1:water, 5:metal, 20:gold</info>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x01C</offset>
+			<name>Gravity Scale</name>
+			<info>Value	multiplied	by	level	gravity	to	effect	this	vehicle.	(Default	is	1.0)</info>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x020</offset>
+			<name>Ground Friction</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x024</offset>
+			<name>Ground Depth</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x028</offset>
+			<name>Ground Damp Fraction</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x02C</offset>
+			<name>Ground Normal K1</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x030</offset>
+			<name>Ground Normal K0</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x034</offset>
+			<name>water friction</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x038</offset>
+			<name>water depth</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x03C</offset>
+			<name>water density</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x040</offset>
+			<name>air friction</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x044</offset>
+			<name>xx moment</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x048</offset>
+			<name>yy moment</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x04C</offset>
+			<name>zz moment</name>
+		</value>
+		<value>
+			<type>reflexive</type>
+			<offset>0x068</offset>
+			<name>Powered Masspoints</name>
+		</value>
+		<value>
+			<type>reflexive</type>
+			<offset>0x074</offset>
+			<name>Mass Points</name>
+		</value>
+	</struct>
+	
+	<struct>
+		<name>Powered Masspoints</name>
+		<size>128</size>
+		<value>
+			<type>string32</type>
+			<offset>0x00</offset>
+			<name>Name</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x24</offset>
+			<name>Antigrav Strength</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x28</offset>
+			<name>Antigrav Offset</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x2C</offset>
+			<name>Antigrav Height</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x30</offset>
+			<name>Antigrav Damp Fraction</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x34</offset>
+			<name>Antigrav Normal K1</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x38</offset>
+			<name>Antigrav Normal K0</name>
+		</value>
+	</struct>
+
+	<struct>
+		<name>Mass Points</name>
+		<size>128</size>
+		<value>
+			<type>string32</type>
+			<offset>0x00</offset>
+			<name>Name</name>
+		</value>
+		<value>
+			<type>short</type>
+			<offset>0x20</offset>
+			<name>Powered Masspoint Index</name>
+		</value>
+		<value>
+			<type>short</type>
+			<offset>0x22</offset>
+			<name>Model Node</name>
+		</value>
+		<value>
+			<type>short</type>
+			<offset>0x24</offset>
+			<name>'Metallic' flag</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x28</offset>
+			<name>Relative Mass</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x2C</offset>
+			<name>Mass</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x30</offset>
+			<name>Relative Density</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x34</offset>
+			<name>Density</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x38</offset>
+			<name>Position X</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x3C</offset>
+			<name>Position Y</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x40</offset>
+			<name>Position Z</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x44</offset>
+			<name>Forward I</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x48</offset>
+			<name>Forward J</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x4C</offset>
+			<name>Forward K</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x50</offset>
+			<name>Up I</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x54</offset>
+			<name>Up J</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x58</offset>
+			<name>Up K</name>
+		</value>
+		
+		<value>
+			<type>short</type>
+			<offset>0x5C</offset>
+			<name>Friction Type</name>
+		</value>
+		
+		<value>
+			<type>float</type>
+			<offset>0x60</offset>
+			<name>Fr. Parallel Scale</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x64</offset>
+			<name>Fr. Perpen. Scale</name>
+		</value>
+		<value>
+			<type>float</type>
+			<offset>0x68</offset>
+			<name>Radius</name>
+		</value>
+	</struct>
+</plugin>

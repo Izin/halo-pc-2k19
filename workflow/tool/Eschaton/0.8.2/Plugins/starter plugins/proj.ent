@@ -1,0 +1,409 @@
+<plugin class="proj" author="conure" version="1" headersize="0">
+ <bitmask32 name="flags" offset="0x2" visible="true">
+  <option name="does not cast shadow" value="31"/>
+  <option name="transparemt self-occlusion" value="30"/>
+  <option name="brighter then it should be" value="29"/>
+  <option name="not a pathfinding obstacle" value="28"/>
+ </bitmask32>
+ <float name="bounding radius" offset="0x4" visible="true"/>
+ <float name="bounding offset - x" offset="0x8" visible="true"/>
+ <float name="bounding offset - y" offset="0xc" visible="true"/>
+ <float name="bounding offset - z" offset="0x10" visible="true"/>
+ <float name="origin offset - x" offset="0x14" visible="true"/>
+ <float name="origin offset - y" offset="0x18" visible="true"/>
+ <float name="origin offset - z" offset="0x1c" visible="true"/>
+ <float name="acceleration scale" offset="0x20" visible="true"/>
+ <dependency name="model" offset="0x28" visible="true"/>
+ <dependency name="animation graph" offset="0x38" visible="true"/>
+ <dependency name="collision model" offset="0x70" visible="true"/>
+ <dependency name="physics" offset="0x80" visible="true"/>
+ <dependency name="modifier shader" offset="0x90" visible="true"/>
+ <dependency name="creation effect" offset="0xa0" visible="true"/>
+ <float name="render bounding radius" offset="0x104" visible="true"/>
+ <text name="export to functions" visible="true"/>
+ <enum16 name="ETF - A in" offset="0x108" visible="true">
+  <option name="none" value="0"/>
+  <option name="body vitality" value="1"/>
+  <option name="shield vitality" value="2"/>
+  <option name="recent body damage" value="3"/>
+  <option name="recent shield damage" value="4"/>
+  <option name="random constant" value="5"/>
+  <option name="umbrella shield vitality" value="6"/>
+  <option name="shield stun" value="7"/>
+  <option name="recent umbrella shield vitality" value="8"/>
+  <option name="umbrella shield stun" value="9"/>
+  <option name="region 00 damage" value="10"/>
+  <option name="region 01 damage" value="11"/>
+  <option name="region 02 damage" value="12"/>
+  <option name="region 03 damage" value="13"/>
+  <option name="region 04 damage" value="14"/>
+  <option name="region 05 damage" value="15"/>
+  <option name="region 06 damage" value="16"/>
+  <option name="region 07 damage" value="17"/>
+  <option name="alive" value="18"/>
+  <option name="compass" value="19"/>
+ </enum16>
+ <enum16 name="ETF - B in" offset="0x10a" visible="true">
+  <option name="none" value="0"/>
+  <option name="body vitality" value="1"/>
+  <option name="shield vitality" value="2"/>
+  <option name="recent body damage" value="3"/>
+  <option name="recent shield damage" value="4"/>
+  <option name="random constant" value="5"/>
+  <option name="umbrella shield vitality" value="6"/>
+  <option name="shield stun" value="7"/>
+  <option name="recent umbrella shield vitality" value="8"/>
+  <option name="umbrella shield stun" value="9"/>
+  <option name="region 00 damage" value="10"/>
+  <option name="region 01 damage" value="11"/>
+  <option name="region 02 damage" value="12"/>
+  <option name="region 03 damage" value="13"/>
+  <option name="region 04 damage" value="14"/>
+  <option name="region 05 damage" value="15"/>
+  <option name="region 06 damage" value="16"/>
+  <option name="region 07 damage" value="17"/>
+  <option name="alive" value="18"/>
+  <option name="compass" value="19"/>
+ </enum16>
+ <enum16 name="ETF - C in" offset="0x10c" visible="true">
+  <option name="none" value="0"/>
+  <option name="body vitality" value="1"/>
+  <option name="shield vitality" value="2"/>
+  <option name="recent body damage" value="3"/>
+  <option name="recent shield damage" value="4"/>
+  <option name="random constant" value="5"/>
+  <option name="umbrella shield vitality" value="6"/>
+  <option name="shield stun" value="7"/>
+  <option name="recent umbrella shield vitality" value="8"/>
+  <option name="umbrella shield stun" value="9"/>
+  <option name="region 00 damage" value="10"/>
+  <option name="region 01 damage" value="11"/>
+  <option name="region 02 damage" value="12"/>
+  <option name="region 03 damage" value="13"/>
+  <option name="region 04 damage" value="14"/>
+  <option name="region 05 damage" value="15"/>
+  <option name="region 06 damage" value="16"/>
+  <option name="region 07 damage" value="17"/>
+  <option name="alive" value="18"/>
+  <option name="compass" value="19"/>
+ </enum16>
+ <enum16 name="ETF - D in" offset="0x10e" visible="true">
+  <option name="none" value="0"/>
+  <option name="body vitality" value="1"/>
+  <option name="shield vitality" value="2"/>
+  <option name="recent body damage" value="3"/>
+  <option name="recent shield damage" value="4"/>
+  <option name="random constant" value="5"/>
+  <option name="umbrella shield vitality" value="6"/>
+  <option name="shield stun" value="7"/>
+  <option name="recent umbrella shield vitality" value="8"/>
+  <option name="umbrella shield stun" value="9"/>
+  <option name="region 00 damage" value="10"/>
+  <option name="region 01 damage" value="11"/>
+  <option name="region 02 damage" value="12"/>
+  <option name="region 03 damage" value="13"/>
+  <option name="region 04 damage" value="14"/>
+  <option name="region 05 damage" value="15"/>
+  <option name="region 06 damage" value="16"/>
+  <option name="region 07 damage" value="17"/>
+  <option name="alive" value="18"/>
+  <option name="compass" value="19"/>
+ </enum16>
+ <short name="ETF - hud text message index" offset="0x13c" visible="true"/>
+ <short name="ETF - forced shader permuation index" offset="0x13e" visible="true"/>
+ <struct name="attachments" offset="0x140" visible="true" size="72">
+  <dependency name="type" offset="0x0" visible="true"/>
+  <string32 name="marker" offset="0x10" visible="true"/>
+  <enum16 name="primary scale" offset="0x30" visible="true">
+   <option name="none" value="0"/>
+   <option name="A out" value="1"/>
+   <option name="B out" value="2"/>
+   <option name="C out" value="3"/>
+   <option name="D out" value="4"/>
+  </enum16>
+  <enum16 name="secondary scale" offset="0x32" visible="true">
+   <option name="none" value="0"/>
+   <option name="A out" value="1"/>
+   <option name="B out" value="2"/>
+   <option name="C out" value="3"/>
+   <option name="D out" value="4"/>
+  </enum16>
+  <enum16 name="change color" offset="0x34" visible="true">
+   <option name="none" value="0"/>
+   <option name="A" value="1"/>
+   <option name="B" value="2"/>
+   <option name="C" value="3"/>
+   <option name="D" value="4"/>
+  </enum16>
+ </struct>
+
+ <struct name="attachments" offset="0x14c" visible="true" size="32">
+  <dependency name="reference" offset="0x0" visible="true"/>
+ </struct>
+ <struct name="functions" offset="0x158" visible="true" size="360">
+  <bitmask32 name="flags" offset="0x2" visible="true">
+   <option name="invert" value="31" />
+   <option name="additive" value="30" />
+   <option name="always active" value="29" />
+  </bitmask32>
+  <float name="period (seconds)" offset="0x4" visible="true" />
+  <enum16 name="scale period by" offset="0x8" visible="true" >
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="function" offset="0xa" visible="true">
+   <option name="one" value="0"/>
+   <option name="zero" value="1"/>
+   <option name="consine" value="2"/>
+   <option name="cosine (varible period)" value="3"/>
+   <option name="diagonal" value="4"/>
+   <option name="diagonal (vairible period)" value="5"/>
+   <option name="slide" value="6"/>
+   <option name="slide (varible period)" value="7"/>
+   <option name="noise" value="8"/>
+   <option name="jitter" value="9"/>
+   <option name="wander" value="10"/>
+   <option name="spark" value="11"/>
+  </enum16>
+  <enum16 name="scale function by" offset="0xc" visible="true" >
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="wobble function" offset="0xe" visible="true">
+   <option name="one" value="0"/>
+   <option name="zero" value="1"/>
+   <option name="consine" value="2"/>
+   <option name="cosine (varible period)" value="3"/>
+   <option name="diagonal" value="4"/>
+   <option name="diagonal (vairible period)" value="5"/>
+   <option name="slide" value="6"/>
+   <option name="slide (varible period)" value="7"/>
+   <option name="noise" value="8"/>
+   <option name="jitter" value="9"/>
+   <option name="wander" value="10"/>
+   <option name="spark" value="11"/>
+  </enum16>
+  <float name="wobble period" offset="0x10" visible="true"/>
+  <float name="wobble magnitude" offset="0x14" visible="true"/>
+  <float name="square wave threshold" offset="0x18" visible="true"/>
+  <short name="step count" offset="0x1c" visible="true"/>
+  <enum16 name="map to" offset="0x1e" visible="true">
+   <option name="linear" value="0"/>
+   <option name="early" value="1"/>
+   <option name="very early" value="2"/>
+   <option name="late" value="3"/>
+   <option name="very late" value="4"/>
+   <option name="cosine" value="5"/>
+  </enum16>
+  <short name="sawtooth count" offset="0x20" visible="true"/>
+  <enum16 name="add" offset="0x22" visibilty="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="scale result by" offset="0x24" visibilty="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="bounds mode" offset="0x26" visibilty="true">
+   <option name="clip" value="0" />
+   <option name="slip and normalize" value="1" />
+   <option name="scale to fit" value="2" />
+  </enum16>
+  <float name="bounds - from" offset="0x28" visible="true"/>
+  <float name="bounds - to" offset="0x2c" visible="true"/>
+  <index name="turn off with" offset="0x36" reflexive="main:functions" visible="true"/>
+  <float name="scale by" offset="0x38" visible="true"/>
+  <string32 name="usage" offset="0x148" visible="true"/>
+ </struct>
+ <struct name="change color" offset="0x164" visible="true" size="44">
+  <enum16 name="darken by" offset="0x0" visible="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="scale by" offset="0x2" visible="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <bitmask32 name="flags" offset="0x6" visible="true">
+   <option name="blend in hsv" value="31"/>
+   <option name="...more colors" value="30"/>
+  </bitmask32>
+  <colorByte name="color lower bound" offset="0x8" visible="True" />
+  <colorByte name="color upper bound" offset="0x14" visible="True" />
+  <struct name="permutations" offset="0x22" visible="true" size="28">
+   <colorRGB name="color lower bound [0,1]" offset="0x0" visible="True" />
+   <colorRGB name="color upper bound [0,1]" offset="0x6" visible="True" />
+  </struct>
+ </struct>
+ <struct name="predicted resources" offset="0x170" visible="true" size="8">
+  <loneID name="tag refernce" offset="0x0" visible="true"/>
+ </struct>
+ <text name="SSS PROJECTILE SSS" visible="true"/>
+ <bitmask32 name="SPS - flags" offset="0x17e" visible="true">
+  <option name="oriented along velocity" value="31"/>
+  <option name="ai must use ballistic aiming" value="30"/>
+  <option name="detonation max time if attached" value="29"/>
+  <option name="has super combinging explosion" value="28"/>
+  <option name="combine initial velocity with the parent velocity" value="27"/>
+  <option name="random attached detonation time" value="26"/>
+  <option name="minimum unattached detonation time" value="25"/>
+ </bitmask32>
+ <enum16 name="SPS - detonation timer starts" offset="0x180" visible="true">
+  <option name="immediately" value="0"/>
+  <option name="after first bounce" value="1"/>
+  <option name="when at rest" value="2"/>
+ </enum16>
+ <enum16 name="SPS - impact noise" offset="0x182" visible="true">
+  <option name="silent" value="0"/>
+  <option name="medium" value="1"/>
+  <option name="loud" value="2"/>
+  <option name="shout" value="3"/>
+  <option name="quite" value="4"/>
+ </enum16>
+ <enum16 name="SPS - A in" offset="0x184" visible="true">
+  <option name="none" value="0"/>
+  <option name="range remaining" value="1"/>
+  <option name="time remaining" value="2"/>
+  <option name="tracer" value="3"/>
+ </enum16>
+ <enum16 name="SPS - B in" offset="0x186" visible="true">
+  <option name="none" value="0"/>
+  <option name="range remaining" value="1"/>
+  <option name="time remaining" value="2"/>
+  <option name="tracer" value="3"/>
+ </enum16>
+ <enum16 name="SPS - C in" offset="0x188" visible="true">
+  <option name="none" value="0"/>
+  <option name="range remaining" value="1"/>
+  <option name="time remaining" value="2"/>
+  <option name="tracer" value="3"/>
+ </enum16>
+ <enum16 name="SPS - D in" offset="0x18a" visible="true">
+  <option name="none" value="0"/>
+  <option name="range remaining" value="1"/>
+  <option name="time remaining" value="2"/>
+  <option name="tracer" value="3"/>
+ </enum16>
+ <dependency name="SPS - super detonation" offset="0x18c" visible="true"/>
+ <float name="SPS - ai perception radius" offset="0x19c" visible="true"/>
+ <float name="SPS - collision radius" offset="0x1a0" visible="true"/>
+ <text name="detonation" visible="true"/>
+ <float name="D - arming time" offset="0x1a4" visible="true"/>
+ <float name="D - danger radius" offset="0x1a8" visible="true"/>
+ <dependency name="D - effect" offset="0x1ac" visible="true"/>
+ <float name="D - timer - from" offset="0x1bc" visible="true"/>
+ <float name="D - timer - to" offset="0x1c0" visible="true"/>
+ <float name="D - minimum velocity" offset="0x1c4" visible="true"/>
+ <float name="D - maximum range" offset="0x1c8" visible="true"/>
+ <Text name="physics" visible="true"/>
+ <float name="P - air gravity scale" offset="0x1cc" visible="true"/>
+ <float name="P - air damage range - from" offset="0x1d0" visible="true"/>
+ <float name="P - air damage range - to" offset="0x1d4" visible="true"/>
+ <float name="P - water gravity scale" offset="0x1d8" visible="true"/>
+ <float name="P - water damage range - from" offset="0x1dc" visible="true"/>
+ <float name="P - water damage range - to" offset="0x1e0" visible="true"/>
+
+ <float name="P - initial velocity" offset="0x1e4" visible="true"/>
+ <float name="P - final velocity" offset="0x1e8" visible="true"/>
+ <float name="P - guided angular velocity" offset="0x1ec" visible="true"/>
+ <enum16 name="P - detonation noise" offset="0x1F0" visible="true">
+  <option name="silent" value="0"/>
+  <option name="medium" value="1"/>
+  <option name="loud" value="2"/>
+  <option name="shout" value="3"/>
+  <option name="quite" value="4"/>
+ </enum16>
+ <dependency name="P - detonation started" offset="0x1f4" visible="true"/>
+ <dependency name="P - flyby sound" offset="0x204" visible="true"/>
+ <dependency name="P - attached detonation damage" offset="0x214" visible="true"/>
+ <dependency name="P - impact damage" offset="0x224" visible="true"/>
+ <struct name="material responses" offset="0x240" visible="true" size="160">
+  <bitmask32 name="flags" offset="0x0" visible="true">
+   <option name="cannot be over penetrated" value="31"/>
+  </bitmask32>
+  <text name="default result" visible="true">
+   <subtext text="(if the potential result, below, fails to happen)"/>
+  </text>
+  <enum16 name="DR - response" offset="0x2" visible="true">
+   <option name="disapper" value="0"/>
+   <option name="detonate" value="1"/>
+   <option name="reflect" value="2"/>
+   <option name="overpentrate" value="3"/>
+   <option name="attach" value="4"/>
+  </enum16>
+  <dependency name="DR - effect" offset="0x4" visible="true"/>
+  <text name="potential result" visible="true"/>
+  <enum16 name="PR - response" offset="0x24" visible="true">
+   <option name="disapper" value="0"/>
+   <option name="detonate" value="1"/>
+   <option name="reflect" value="2"/>
+   <option name="overpentrate" value="3"/>
+   <option name="attach" value="4"/>
+  </enum16>
+  <bitmask32 name="PR - flags" offset="0x26" visible="true">
+   <option name="only against units" value="31"/>
+  </bitmask32>
+  <float name="PR - skip fraction" offset="0x28" visible="true"/>
+  <float name="PR - between - from" offset="0x2c" visible="true"/>
+  <float name="PR - between - to" offset="0x30" visible="true"/>
+  <float name="PR - and - from" offset="0x34" visible="true"/>
+  <float name="PR - and - to" offset="0x38" visible="true"/>
+  <dependency name="PR - effect" offset="0x4" visible="true"/>
+  <text name="misc" visible="true"/>
+  <enum16 name="M - scale effects by" offset="0x5c" visible="true">
+   <option name="damage" value="0"/>
+   <option name="angle" value="1"/>
+  </enum16>
+  <float name="M - angular noise" offset="0x60" visible="true"/>
+  <float name="M - velocity noise" offset="0x64" visible="true"/>
+  <dependency name="M - detonation effect" offset="0x68" visible="true"/>
+  <text name="penetration" visible="true"/>
+  <float name="P - initial friction" offset="0x90" visible="true"/>
+  <float name="P - maximum distance" offset="0x94" visible="true"/>
+  <text name="reflection" visible="true"/>
+  <float name="R - parallel friction" offset="0x98" visible="true"/>
+  <float name="R - perpendicular friction" offset="0x9c" visible="true"/>
+ </struct>
+</plugin>

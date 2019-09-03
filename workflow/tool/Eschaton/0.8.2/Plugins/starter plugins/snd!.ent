@@ -1,0 +1,147 @@
+<plugin class="snd!" Author="Conure's GuiCreator v0.30" version="1" headersize="Main">
+  <bitmask32 name="flags" offset="0x0" visible="true" helptag="">
+    <option name="fit to adpcm blocksize" value="31"/>
+    <option name="split long sound into permutations" value="30"/>
+  </bitmask32>
+  <enum16 name="class" offset="0x4" visible="true" helptag="">
+    <option name="projectile_impact" value="0"/>
+    <option name="projectile_detonation" value="1"/>
+    <option name="" value="2"/>
+    <option name="" value="3"/>
+    <option name="weapon_fire" value="4"/>
+    <option name="weapon_ready" value="5"/>
+    <option name="weapon_reload" value="6"/>
+    <option name="weapon_empty" value="7"/>
+    <option name="weapon_charge" value="8"/>
+    <option name="weapon_overheat" value="9"/>
+    <option name="weapon_idle" value="10"/>
+    <option name="" value="11"/>
+    <option name="" value="12"/>
+    <option name="object_impact" value="13"/>
+    <option name="particle_impacts" value="14"/>
+    <option name="slow_particle_impact" value="15"/>
+    <option name="" value="16"/>
+    <option name="" value="17"/>
+    <option name="unit_footsteps" value="18"/>
+    <option name="unit_dialog" value="19"/>
+    <option name="" value="20"/>
+    <option name="" value="21"/>
+    <option name="vehicle_collison" value="22"/>
+    <option name="vehicle_engine" value="23"/>
+    <option name="" value="24"/>
+    <option name="" value="25"/>
+    <option name="device_door" value="26"/>
+    <option name="device_forcefield" value="27"/>
+    <option name="device_machinery" value="28"/>
+    <option name="device_nature" value="29"/>
+    <option name="device_computers" value="30"/>
+    <option name="" value="31"/>
+    <option name="music" value="32"/>
+    <option name="ambient_nature" value="33"/>
+    <option name="ambient_machinery" value="34"/>
+    <option name="ambient_computers" value="35"/>
+    <option name="" value="36"/>
+    <option name="" value="37"/>
+    <option name="" value="38"/>
+    <option name="first_person_damage" value="39"/>
+    <option name="" value="40"/>
+    <option name="" value="41"/>
+    <option name="" value="42"/>
+    <option name="" value="43"/>
+    <option name="scripted_dialog_player" value="44"/>
+    <option name="scripted_effect" value="45"/>
+    <option name="scripted_dialog_other" value="46"/>
+    <option name="scripted_dialog_force_unspatialized" value="47"/>
+    <option name="" value="48"/>
+    <option name="" value="49"/>
+    <option name="game_event" value="50"/>
+  </enum16>
+  <enum16 name="sample rate" offset="0x6" visible="true" helptag="">
+    <option name="22kHz" value="0"/>
+    <option name="44kHz" value="1"/>
+  </enum16>
+  <float name="minimum distance" offset="0x8" visible="true" helptag=""/>
+  <float name="maximum distance" offset="0xc" visible="true" helptag=""/>
+  <float name="skip fraction" offset="0x10" visible="true" helptag=""/>
+
+
+
+  <descbox title="randomization">
+    <line text="these settings control random variation of volume and pitch"/>
+  </descbox>
+  <floatBounds name="random pitch bounds" offset="0x14" visible="true" helptag=""/>
+  <angle name="inner cone angle" offset="0x1c" visible="true" helptag=""/>
+  <angle name="outer cone angle" offset="0x20" visible="true" helptag=""/>
+  <float name="outer cone gain" offset="0x24" visible="true" helptag=""/>
+  <float name="gain modifier" offset="0x28" visible="true" helptag=""/>
+  <float name="maximum bend per second" offset="0x2c" visible="true" helptag=""/>
+
+
+
+  <descbox title="when scale is ZERO">
+    <line text="as the sounds input scale changes from zero to one, these modifiers move between the two values specified"/>
+    <line text="here. the sound will play using the current scale modifier multiplied by the value specified above. (0 values are"/>
+    <line text="ignored.)"/>
+  </descbox>
+  <float name="skip fraction modifier" offset="0x3c" visible="true" helptag=""/>
+  <float name="gain modifier" offset="0x40" visible="true" helptag=""/>
+  <float name="pitch modifier" offset="0x44" visible="true" helptag=""/>
+
+
+
+
+  <descbox title="when scale is ONE">
+    <line text="as the sounds input scale changes from zero to one, these modifiers move between the two values specified"/>
+    <line text="here. the sound will play using the current scale modifier multiplied by the value specified above. (0 values are"/>
+    <line text="ignored.)"/>
+  </descbox>
+  <float name="skip fraction modifier" offset="0x54" visible="true" helptag=""/>
+  <float name="gain modifier" offset="0x58" visible="true" helptag=""/>
+  <float name="pitch modifier" offset="0x5c" visible="true" helptag=""/>
+
+
+  <descbox title="Import properties"/>
+  <enum16 name="encoding" offset="0x6c" visible="true" helptag="">
+    <option name="mono" value="0"/>
+    <option name="stero" value="1"/>
+  </enum16>
+  <enum16 name="compression" offset="0x6e" visible="true" helptag="">
+    <option name="none" value="0"/>
+    <option name="xbox adpcm" value="1"/>
+    <option name="ima adpcm" value="2"/>
+    <option name="ogg" value="3"/>
+  </enum16>
+  <dependency name="promotion sound" offset="0x70" visible="true" helptag="" tags="snd!"/>
+  <short name="promotion count" offset="0x80" visible="true" helptag=""/>
+  <struct name="pitch ranges" offset="0x98" visible="true" size="72">
+    <String32 name="name" offset="0x0" visible="true" helptag=""/>
+
+    <descbox title="Pitch control">
+      <line text="these settings control what pitches this set of samples represents. if there is only one pitch range, all thre"/>
+      <line text="values are ignored."/>
+    </descbox>
+    <float name="natural pitch" offset="0x20" visible="true" helptag=""/>
+    <floatBounds name="bend bounds" offset="0x24" visible="true" helptag=""/>
+    <short name="actual permutation count" offset="0x2c" visible="true" helptag=""/>
+    <struct name="permutations" offset="0x3c" visible="true" size="124">
+      <String32 name="name" offset="0x0" visible="true" helptag=""/>
+      <float name="skip fraction" offset="0x20" visible="true" helptag=""/>
+      <float name="gain" offset="0x24" visible="true" helptag=""/>
+      <enum16 name="compression" offset="0x28" visible="true" helptag="">
+        <option name="none" value="0"/>
+        <option name="xbox adpcm" value="1"/>
+        <option name="ima adpcm" value="2"/>
+        <option name="ogg" value="3"/>
+      </enum16>
+      <short name="next permutation index" offset="0x2a" visible="true" helptag=""/>
+      <long name="Raw chunk size" offset="0x40" visible="true" helptag=""/>
+      <char name="internal/external" offset="0x44" visible="true" helptag=""/>
+      <long name="offset to raw data" offset="0x48" visible="true" helptag=""/>
+      <long name="Song length" offset="0x38" visible="true" helptag=""/>
+
+      <data name="samples" offset="??" visible="true" helptag=""/>
+      <data name="mouth data" offset="??" visible="true" helptag=""/>
+      <data name="subtitle data" offset="??" visible="true" helptag=""/>
+    </struct>
+  </struct>
+</plugin>

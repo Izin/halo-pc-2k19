@@ -1,0 +1,18 @@
+<plugin class="ligh" author="Altimit01" version="0.1" headersize="0">
+<bitmask32 name="Flags" offset="0" visible="True">
+	<option name="Dynamic" value="31" />
+	<option name="No Specular" value="30" />
+	<option name="Don't Light Own Object" value="29" />
+	<option name="Supersize in FP" value="28" />
+	<option name="First Person Flashlight" value="27" />
+	<option name="Don't Fade Active Camo" value="26" />
+</bitmask32>
+<float name="Radius" offset="4" visible="True" />
+<float name="Light Intensity Burst" offset="8" visible="True" />
+<float name="Light Intensity" offset="12" visible="True" />
+<float name="Falloff Angle" offset="16" visible="True" />
+<float name="Cutoff Angle" offset="20" visible="True" />
+<float name="Lens Flare Only Radius" offset="24" visible="True" />
+<colorARGB name="Color lower bound" offset="56" visible="True" />
+<colorARGB name="Color upper bound" offset="72" visible="True" />
+</plugin>

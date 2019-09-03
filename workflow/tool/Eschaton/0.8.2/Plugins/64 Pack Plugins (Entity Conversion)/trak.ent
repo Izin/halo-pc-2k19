@@ -1,0 +1,11 @@
+<plugin class="trak" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <struct name="Control Point" offset="0x04" visible="true" size="60">
+    <float name="Postion - I" offset="0x00" Visible="true"/>
+    <float name="Postion - I" offset="0x04" Visible="true"/>
+    <float name="Postion - K" offset="0x08" Visible="true"/>
+    <float name="Orientation - I" offset="0x0C" Visible="true"/>
+    <float name="Orientation - I" offset="0x10" Visible="true"/>
+    <float name="Orientation - K" offset="0x14" Visible="true"/>
+    <float name="Orientation - W" offset="0x18" Visible="true"/>
+  </struct>
+</plugin>

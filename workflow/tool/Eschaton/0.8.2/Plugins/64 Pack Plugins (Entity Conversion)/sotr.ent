@@ -1,0 +1,10 @@
+<plugin class="sotr" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="Light Power" offset="0x4" Visible="true"/>
+  <float name="Light: Red" offset="0x8" Visible="true"/>
+  <float name="Light: Green" offset="0xc" Visible="true"/>
+  <float name="Light: Blue" offset="0x10" Visible="true"/>
+  <float name="Tint: Red" offset="0x14" Visible="true"/>
+  <float name="Tint: Green" offset="0x18" Visible="true"/>
+  <float name="Tint: Blue" offset="0x1c" Visible="true"/>
+  <float name="Lens Flare Spacing" offset="0x34" Visible="true"/>
+</plugin>

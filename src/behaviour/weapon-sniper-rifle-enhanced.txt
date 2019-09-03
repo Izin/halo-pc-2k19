@@ -1,0 +1,60 @@
+I want a sniper more powerfull, like an antimaterial sniper rifle: less DPS,
+more damages, less ammo. Examples: APEX Legends Krabber, Mass Effect Veuve Noire
+
+@todo réduire les 64 munitions de départ sur A50, mettre genre 32 ?
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/sniper rifle/sniper bullet
+------------------------------------------------------------------
+Minimum Damage: 	           101 -> 151
+Maximum Damage (min) :	     101 -> 151
+Maximum Damage (max) :       101 -> 151
+
+# Less effective against some armored units
+Elite:                        2.00 ->   1.00
+
+# More effective against other things
+Force Field:                  0.00 ->   0.25
+Jackal Energy Shield:         0.00 ->   0.50
+
+# More effective against vehicles (a lot more!)
+Vehicle Passthrough penalty:   0.50 -> 0.25
+Metal (Hollow):                0.00 -> 0.50
+Metal (Thin):                  0.00 -> 0.50
+Metal (Thick):                 0.00 -> 0.50
+Rubber:                        0.00 -> 0.50
+
+
+
+[weap: Weapon] weapons/sniper rifle/sniper rifle
+------------------------------------------------------------------
+# The difference of magnification between 0x > 4x and 4x > 8x appears wrong
+# for a sniper rifle using a scope with 4x, 8x magnification. So I chose to
+# reduce the first magnification zoom and increase the last one. Even if the
+# HUD still displays 4x and 8x, it is a wrong value. Nevertheless, the human
+# eye don't see the difference.
+
+magnification range - from:     2 ->  3
+magnification range - to:       8 ->  9
+
+rounds total initial: 	       12 ->  8
+rounds total maximum: 	       24 -> 16
+rounds loaded maximum: 	        4 ->  4
+magazine (chunk 1):            16 ->  8
+
+rounds per second - from:       2 -> 0.6
+rounds per second - to:	        2 -> 0.6
+
+
+[wphi: Weapon HUD Interface] weapons/sniper rifle/sniper rifle
+------------------------------------------------------------------
+# Color in the zoom area when infra red is activated
+screen effect
+
+intensity[0,1]:             1.00  -> 1.00 # there are 2 same properties
+intensity[0,1]:             1.00  -> 0.70 # there are 2 same properties
+colorRGB:         rgb(80,240,120) -> rgb(74,117,117)

@@ -1,0 +1,290 @@
+<plugin class="matg" author="conure" version="1" headersize="0">
+ <struct name="sounds" offset="0xf8" visible="true" size="16">
+  <dependency name="sound" offset="0x0" visible="true"/>
+ </struct>
+ <struct name="camera" offset="0x104" visible="true" size="16">
+  <dependency name="sound" offset="0x0" visible="true"/>
+ </struct>
+ <struct name="player control" offset="0x110" visible="true" size="128">
+  <float name="magnetism friction" offset="0x0" visible="false"/>
+  <float name="magnetism adhesion" offset="0x4" visible="false"/>
+  <float name="inconsequential target scale" offset="0x8" visible="true"/>
+  <float name="look acceleration time" offset="0x40" visible="true"/>
+  <float name="look acceleration scale" offset="0x44" visible="true"/>
+  <float name="look peg threshold [0,1]" offset="0x48" visible="true"/>
+  <float name="look default pitch rate" offset="0x4c" visible="true"/>
+  <float name="look default yaw rate" offset="0x50" visible="true"/>
+  <float name="look autolevelling scale" offset="0x54" visible="true"/>
+  <short name="minimum weapon swap ticks" offset="0x6c" visible="true"/>
+  <short name="minimum autolevelling ticks" offset="0x6e" visible="true"/>
+  <float name="minimum angle for vehicle flipping" offset="0x70" visible="true"/>
+  <struct name="player control" offset="0x74" visible="true" size="4">
+   <float name="scale" offset="0x0" visible="true"/>
+  </struct>
+ </struct>
+ <struct name="difficulty" offset="0x11c" visible="true" size="644">
+  <float name="easy enemy damage" offset="0x0" visible="true"/>
+  <float name="normal enemy damage" offset="0x4" visible="true"/>
+  <float name="hard enemy damage" offset="0x8" visible="true"/>
+  <float name="imposs. enemy damage" offset="0xc" visible="true"/>
+  <float name="easy enemy vitality" offset="0x10" visible="true"/>
+  <float name="normal enemy vitality" offset="0x14" visible="true"/>
+  <float name="hard enemy vitality" offset="0x18" visible="true"/>
+  <float name="imposs. enemy vitality" offset="0x1c" visible="true"/>
+  <float name="easy enemy shield" offset="0x20" visible="true"/>
+  <float name="normal enemy shield" offset="0x24" visible="true"/>
+  <float name="hard enemy shield" offset="0x28" visible="true"/>
+  <float name="imposs. enemy shield" offset="0x2c" visible="true"/>
+  <float name="easy enemy recharge" offset="0x30" visible="true"/>
+  <float name="normal enemy recharge" offset="0x34" visible="true"/>
+  <float name="hard enemy recharge" offset="0x38" visible="true"/>
+  <float name="imposs. enemy recharge" offset="0x3c" visible="true"/>
+  <float name="easy friend damage" offset="0x40" visible="true"/>
+  <float name="normal friend damage" offset="0x44" visible="true"/>
+  <float name="hard friend damage" offset="0x48" visible="true"/>
+  <float name="imposs. friend damage" offset="0x4c" visible="true"/>
+  <float name="easy friend vitality" offset="0x50" visible="true"/>
+  <float name="normal friend vitality" offset="0x54" visible="true"/>
+  <float name="hard friend vitality" offset="0x58" visible="true"/>
+  <float name="imposs. friend vitality" offset="0x5c" visible="true"/>
+  <float name="easy friend shield" offset="0x60" visible="true"/>
+  <float name="normal friend shield" offset="0x64" visible="true"/>
+  <float name="hard friend shield" offset="0x68" visible="true"/>
+  <float name="imposs. friend shield" offset="0x6c" visible="true"/>
+  <float name="easy friend recharge" offset="0x70" visible="true"/>
+  <float name="normal friend recharge" offset="0x74" visible="true"/>
+  <float name="hard friend recharge" offset="0x78" visible="true"/>
+  <float name="imposs. friend recharge" offset="0x7c" visible="true"/>
+  <float name="easy infection form" offset="0x80" visible="true"/>
+  <float name="normal infection form" offset="0x84" visible="true"/>
+  <float name="hard infection form" offset="0x88" visible="true"/>
+  <float name="imposs. infection form" offset="0x8c" visible="true"/>
+  <float name="easy rate of fire" offset="0xa0" visible="true"/>
+  <float name="normal rate of fire" offset="0xa4" visible="true"/>
+  <float name="hard rate of fire" offset="0xa8" visible="true"/>
+  <float name="imposs. rate of fire" offset="0xac" visible="true"/>
+  <float name="easy projectile fire" offset="0xb0" visible="true"/>
+  <float name="normal projectile fire" offset="0xb4" visible="true"/>
+  <float name="hard projectile fire" offset="0xb8" visible="true"/>
+  <float name="imposs. projectile fire" offset="0xbc" visible="true"/>
+  <float name="easy burst error" offset="0xc0" visible="true"/>
+  <float name="normal burst error" offset="0xc4" visible="true"/>
+  <float name="hard burst error" offset="0xc8" visible="true"/>
+  <float name="imposs. burst error" offset="0xcc" visible="true"/>
+  <float name="easy target delay" offset="0xd0" visible="true"/>
+  <float name="normal target delay" offset="0xd4" visible="true"/>
+  <float name="hard target delay" offset="0xd8" visible="true"/>
+  <float name="imposs. target delay" offset="0xdc" visible="true"/>
+  <float name="easy burst separation" offset="0xe0" visible="true"/>
+  <float name="normal burst separation" offset="0xe4" visible="true"/>
+  <float name="hard burst separation" offset="0xe8" visible="true"/>
+  <float name="imposs. burst separation" offset="0xec" visible="true"/>
+  <float name="easy target tracking" offset="0xf0" visible="true"/>
+  <float name="normal target tracking" offset="0xf4" visible="true"/>
+  <float name="hard target tracking" offset="0xf8" visible="true"/>
+  <float name="imposs. target tracking" offset="0xfc" visible="true"/>
+  <float name="easy target leading" offset="0x100" visible="true"/>
+  <float name="normal target leading" offset="0x104" visible="true"/>
+  <float name="hard target leading" offset="0x108" visible="true"/>
+  <float name="imposs. target leading" offset="0x10c" visible="true"/>
+  <float name="easy overcharge chance" offset="0x110" visible="true"/>
+  <float name="normal overcharge chance" offset="0x114" visible="true"/>
+  <float name="hard overcharge chance" offset="0x118" visible="true"/>
+  <float name="imposs. overcharge chance" offset="0x11c" visible="true"/>
+  <float name="easy special fire delay" offset="0x120" visible="true"/>
+  <float name="normal special fire delay" offset="0x124" visible="true"/>
+  <float name="hard special fire delay" offset="0x128" visible="true"/>
+  <float name="imposs. special fire delay" offset="0x12c" visible="true"/>
+  <float name="easy guidance vs player" offset="0x130" visible="true"/>
+  <float name="normal guidance vs player" offset="0x134" visible="true"/>
+  <float name="hard guidance vs player" offset="0x138" visible="true"/>
+  <float name="imposs. guidance vs player" offset="0x13c" visible="true"/>
+  <float name="easy melee delay base" offset="0x140" visible="true"/>
+  <float name="normal melee delay base" offset="0x144" visible="true"/>
+  <float name="hard melee delay base" offset="0x148" visible="true"/>
+  <float name="imposs. melee delay base" offset="0x143c" visible="true"/>
+  <float name="easy melee delay scale" offset="0x150" visible="true"/>
+  <float name="normal melee delay scale" offset="0x154" visible="true"/>
+  <float name="hard melee delay scale" offset="0x158" visible="true"/>
+  <float name="imposs. melee delay scale" offset="0x15c" visible="true"/>
+  <float name="easy chance scale" offset="0x170" visible="true"/>
+  <float name="normal chance scale" offset="0x174" visible="true"/>
+  <float name="hard chance scale" offset="0x178" visible="true"/>
+  <float name="imposs. chance scale" offset="0x17c" visible="true"/>
+  <float name="easy grenade timer scale" offset="0x180" visible="true"/>
+  <float name="normal grenade timer scale" offset="0x184" visible="true"/>
+  <float name="hard grenade timer scale" offset="0x188" visible="true"/>
+  <float name="imposs. grenade timer scale" offset="0x18c" visible="true"/>
+  <float name="easy major upgrade(normal)" offset="0x1c0" visible="true"/>
+  <float name="normal major upgrade(normal)" offset="0x1c4" visible="true"/>
+  <float name="hard major upgrade(normal)" offset="0x1c8" visible="true"/>
+  <float name="imposs. major upgrade(normal)" offset="0x1cc" visible="true"/>
+  <float name="easy major upgrade(few)" offset="0x1d0" visible="true"/>
+  <float name="normal major upgrade(few)" offset="0x1d4" visible="true"/>
+  <float name="hard major upgrade(few)" offset="0x1d8" visible="true"/>
+  <float name="imposs. major upgrade(few)" offset="0x1dc" visible="true"/>
+  <float name="easy major upgrade(many)" offset="0x1e0" visible="true"/>
+  <float name="normal major upgrade(many)" offset="0x1e4" visible="true"/>
+  <float name="hard major upgrade(many)" offset="0x1e8" visible="true"/>
+  <float name="imposs. major upgrade(many)" offset="0x1ec" visible="true"/>
+ </struct>
+ <struct name="grenades" offset="0x128" visible="true" size="68">
+  <short name="maximum count" offset="0x0" visible="true"/>
+  <short name="mp spawn default" offset="0x2" visible="true"/>
+  <dependency name="throwing effect" offset="0x4" visible="true"/>
+  <dependency name="hud interface" offset="0x14" visible="true"/>
+  <dependency name="equipment" offset="0x24" visible="true"/>
+  <dependency name="projectile" offset="0x34" visible="true"/>
+ </struct>
+ <struct name="rasterizer data" offset="0x134" visible="true" size="428">
+  <dependency name="distance attenuation" offset="0x0" visible="true"/>
+  <dependency name="vector normalization" offset="0x10" visible="true"/>
+  <dependency name="atmospheric fog density" offset="0x20" visible="true"/>
+  <dependency name="planar fog densisty" offset="0x30" visible="true"/>
+  <dependency name="linear corner fade" offset="0x40" visible="true"/>
+  <dependency name="active camouflage distortion" offset="0x50" visible="true"/>
+  <dependency name="glow" offset="0x60" visible="true"/>
+  <dependency name="defualt 2d" offset="0xac" visible="true"/>
+  <dependency name="defualt 3d" offset="0xbc" visible="true"/>
+  <dependency name="defualt cube map" offset="0xcc" visible="true"/>
+  <dependency name="test 0" offset="0xdc" visible="true"/>
+  <dependency name="test 1" offset="0xec" visible="true"/>
+  <dependency name="test 2" offset="0xfc" visible="true"/>
+  <dependency name="test 3" offset="0x10c" visible="true"/>
+  <dependency name="video scanline map" offset="0x11c" visible="true"/>
+  <dependency name="video noise map" offset="0x12c" visible="true"/>
+  <bitmask32 name="flags" offset="0x170" visible="true">
+   <option name="tint edge density" value="31"/>
+  </bitmask32>
+  <float name="refraction amount" offset="0x174" visible="false"/>
+  <float name="distance falloff" offset="0x178" visible="false"/>
+  <colorRGB name="tint color" offset="0x17c" visible="false"/>
+  <float name="hyper-stealth refraction" offset="0x188" visible="false"/>
+  <float name="hyper-stealth distance falloff" offset="0x18c" visible="false"/>
+  <colorRGB name="hyper-stealth tint color" offset="0x190" visible="false"/>
+  <dependency name="distance attenuation 2d" offset="0x19c" visible="true"/>
+ </struct>
+ <struct name="interface bitmaps" offset="0x140" visible="true" size="304">
+  <dependency name="font system" offset="0x0" visible="true"/>
+  <dependency name="font terminal" offset="0x10" visible="true"/>
+  <dependency name="screen color table" offset="0x20" visible="true"/>
+  <dependency name="hud color table" offset="0x30" visible="true"/>
+  <dependency name="editor color table" offset="0x40" visible="true"/>
+  <dependency name="dialog color table" offset="0x50" visible="true"/>
+  <dependency name="hud globals" offset="0x60" visible="true"/>
+  <dependency name="motion sensor sweep bitmap" offset="0x70" visible="true"/>
+  <dependency name="motion sensor sweep bitmap m" offset="0x80" visible="true"/>
+  <dependency name="multiplayer hud bitmap" offset="0x90" visible="true"/>
+  <dependency name="localization" offset="0xa0" visible="true"/>
+  <dependency name="hud digits" offset="0xb0" visible="true"/>
+  <dependency name="motion sensor blip bitmap" offset="0xc0" visible="true"/>
+  <dependency name="interface goo map1" offset="0xd0" visible="true"/>
+  <dependency name="interface goo map2" offset="0xe0" visible="true"/>
+  <dependency name="interface goo map3" offset="0xf0" visible="true"/>
+ </struct>
+ <struct name="weapon list (update_" offset="0x14c" visible="true" size="16">
+  <dependency name="weapon" offset="0x0" visible="true"/>
+ </struct>
+ <struct name="cheat powerups" offset="0x158" visible="true" size="16">
+  <dependency name="powerup" offset="0x0" visible="true"/>
+ </struct>
+ <struct name="multiplayer information" offset="0x164" visible="true" size="160">
+  <dependency name="flag" offset="0x0" visible="true"/>
+  <dependency name="unit" offset="0x10" visible="true"/>
+  <struct name="vehicles" offset="0x20" visible="true" size="16">
+   <dependency name="powerup" offset="0x0" visible="true"/>
+  </struct>
+  <dependency name="hill shader" offset="0x2c" visible="true"/>
+  <dependency name="flag shader" offset="0x3c" visible="true"/>
+  <dependency name="ball" offset="0x4c" visible="true"/>
+  <struct name="sounds" offset="0x5c" visible="true" size="16">
+   <dependency name="powerup" offset="0x0" visible="true"/>
+  </struct>
+ </struct>
+ <struct name="player information" offset="0x170" visible="true" size="244">
+  <dependency name="powerup" offset="0x0" visible="true"/>
+  <float name="walking speed" offset="0x2c" visible="true"/>
+  <float name="'double speed' multiplier" offset="0x30" visible="true"/>
+  <float name="run forward" offset="0x34" visible="true"/>
+  <float name="run backwards" offset="0x38" visible="true"/>
+  <float name="run sideways" offset="0x3c" visible="true"/>
+  <float name="run acceleration" offset="0x40" visible="true"/>
+  <float name="sneak forward" offset="0x44" visible="true"/>
+  <float name="sneak backwards" offset="0x48" visible="true"/>
+  <float name="sneak sidewats" offset="0x4c" visible="true"/>
+  <float name="sneak acceleration" offset="0x50" visible="true"/>
+  <float name="airborne acceleration" offset="0x54" visible="true"/>
+  <float name="speed multiplier" offset="0x58" visible="true"/>
+  <float name="grenade origin - x" offset="0x68" visible="true"/>
+  <float name="grenade origin - y" offset="0x6c" visible="true"/>
+  <float name="grenade origin - z" offset="0x70" visible="true"/>
+  <float name="stun movement penality [0,1]" offset="0x80" visible="true"/>
+  <float name="stun turning penalty [0,1]" offset="0x84" visible="true"/>
+  <float name="stun jumping penality [0,1]" offset="0x88" visible="true"/>
+  <float name="minimum stun time" offset="0x8c" visible="true"/>
+  <float name="maximum stun time" offset="0x90" visible="true"/>
+  <float name="first person idle time" offset="0x9c" visible="true"/>
+  <float name="first person idle time - to" offset="0xa0" visible="true"/>
+  <float name="first person skip fraction [0,1]" offset="0xa4" visible="true"/>
+  <dependency name="coop respawn effect" offset="0xb8" visible="true"/>
+ </struct>
+ <struct name="first person interface" offset="0x17c" visible="true" size="192">
+  <dependency name="first person hands" offset="0x0" visible="true"/>
+  <dependency name="base bitmap" offset="0x10" visible="true"/>
+  <dependency name="shield meter" offset="0x20" visible="true"/>
+  <short name="shield meter origin - x" offset="0x30" visible="true"/>
+  <short name="shield meter origin - y" offset="0x32" visible="true"/>
+  <dependency name="body meter" offset="0x34" visible="true"/>
+  <short name="body meter origin - x" offset="0x44" visible="true"/>
+  <short name="body meter origin - y" offset="0x46" visible="true"/>
+  <dependency name="night-vision off->on effect" offset="0x48" visible="true"/>
+  <dependency name="night-vision on->off effect" offset="0x58" visible="true"/>
+ </struct>
+ <struct name="falling damage" offset="0x188" visible="true" size="152">
+  <float name="harmful falling distance" offset="0x8" visible="true"/>
+  <float name="harmful falling distance - to" offset="0xc" visible="true"/>
+  <dependency name="falling damage" offset="0x10" visible="true"/>
+  <float name="maximum falling distance" offset="0x28" visible="true"/>
+  <dependency name="distance damage" offset="0x2c" visible="true"/>
+  <dependency name="vehicle environemtn collision damage" offset="0x3c" visible="true"/>
+  <dependency name="vehicle killed unit damage effect" offset="0x4c" visible="true"/>
+  <dependency name="vehicle collision damage" offset="0x5c" visible="true"/>
+  <dependency name="flameing death damage" offset="0x6c" visible="true"/>
+ </struct>
+ <struct name="materials" offset="0x194" visible="true" size="884">
+  <float name="ground friction scale" offset="0x94" visible="true"/>
+  <float name="ground friction normal k1 scale" offset="0x98" visible="true"/>
+  <float name="ground friction normal k0 scale" offset="0x9c" visible="true"/>
+  <float name="ground depth scale" offset="0xa0" visible="true"/>
+  <float name="ground damp fraction scale" offset="0xa4" visible="true"/>
+  <float name="maximum vitality" offset="0x2d4" visible="true"/>
+  <dependency name="vehicle collision damage" offset="0x2e4" visible="true"/>
+  <dependency name="flameing death damage" offset="0x2f4" visible="true"/>
+  <struct name="particle effects" offset="0x31c" visible="true" size="128">
+   <dependency name="particle type" offset="0x0" visible="true"/>
+   <bitmask32 name="flags" offset="0x12" visible="true">
+    <option name="interpolate color in hsv" value="31"/>
+    <option name="...more colors" value="30"/>
+   </bitmask32>
+   <float name="density" offset="0x14" visible="true"/>
+   <float name="velocity scale" offset="0x18" visible="true"/>
+   <float name="velocity scale - to" offset="0x1c" visible="true"/>
+   <float name="angular velocity" offset="0x24" visible="true"/>
+   <float name="angular velocity - to" offset="0x28" visible="true"/>
+   <float name="radius" offset="0x34" visible="true"/>
+   <float name="radius - to" offset="0x38" visible="true"/>
+   <colorARGB name="tint lower bound" offset="0x44" visible="true"/>
+   <colorARGB name="tint upper bound" offset="0x54" visible="true"/>
+  </struct>
+  <dependency name="melee hit sound" offset="0x364" visible="true"/>
+ </struct>
+ <struct name="playlist members" offset="0x1a0" visible="true" size="148">
+  <string32 name="map name" offset="0x0" visible="true"/>
+  <string32 name="game variant" offset="0x20" visible="true"/>
+  <short name="minimum experience" offset="0x40" visible="true"/>
+  <short name="maximum experience" offset="0x44" visible="true"/>
+  <short name="minimum player count" offset="0x48" visible="true"/>
+  <short name="maximum player count" offset="0x4c" visible="true"/>
+  <short name="rating" offset="0x50" visible="true"/>
+ </struct>
+</plugin>

@@ -1,0 +1,527 @@
+<plugin class="weap" author="conure" version="1" headersize="0">
+ <bitmask32 name="Flags" offset="0x2" visible="True">
+  <option name="does not cast shadow" value="31"/>
+  <option name="transparent self-occlusion" value="30" />
+  <option name="brighter then it should be" value="29" />
+  <option name="not a pathfinding onbstacle" value="28" />
+ </bitmask32>
+ <float name="bounding radius" offset="0x104" visible="true" />
+ <float name="bounding offset - x" offset="0x8" visible="true" />
+ <float name="bounding offset - y" offset="0xc" visible="true" />
+ <float name="bounding offset - z" offset="0x10" visible="true" />
+ <float name="origin offset - x" offset="0x14" visible="true" />
+ <float name="origin offset - y" offset="0x18" visible="true" />
+ <float name="origin offset - z" offset="0x1c" visible="true" />
+ <enum16 name="export to functions: A in" offset="0x108" visible="true">
+  <option name="none" value="0" />
+  <option name="body vitality" value="1" />
+  <option name="shield vitality" value="2" />
+  <option name="recent body damge" value="3" />
+  <option name="recent shield damge" value="4" />
+  <option name="random constant" value="5" />
+  <option name="umbrella shield vitality" value="6" />
+  <option name="shield stun" value="7" />
+  <option name="recent umbrella shield vitality" value="8" />
+  <option name="umbrella shield stun" value="9" />
+  <option name="region #00 damage" value="10" />
+  <option name="region #01 damage" value="11" />
+  <option name="region #02 damage" value="12" />
+  <option name="region #03 damage" value="13" />
+  <option name="region #04 damage" value="14" />
+  <option name="region #05 damage" value="15" />
+  <option name="region #06 damage" value="16" />
+  <option name="region #07 damage" value="17" />
+  <option name="alive" value="18" />
+  <option name="compass" value="19" />
+ </enum16>
+ <enum16 name="export to functions: B in" offset="0x10A" visible="true">
+  <option name="none" value="0" />
+  <option name="body vitality" value="1" />
+  <option name="shield vitality" value="2" />
+  <option name="recent body damge" value="3" />
+  <option name="recent shield damge" value="4" />
+  <option name="random constant" value="5" />
+  <option name="umbrella shield vitality" value="6" />
+  <option name="shield stun" value="7" />
+  <option name="recent umbrella shield vitality" value="8" />
+  <option name="umbrella shield stun" value="9" />
+  <option name="region #00 damage" value="10" />
+  <option name="region #01 damage" value="11" />
+  <option name="region #02 damage" value="12" />
+  <option name="region #03 damage" value="13" />
+  <option name="region #04 damage" value="14" />
+  <option name="region #05 damage" value="15" />
+  <option name="region #06 damage" value="16" />
+  <option name="region #07 damage" value="17" />
+  <option name="alive" value="18" />
+  <option name="compass" value="19" />
+ </enum16>
+ <enum16 name="export to functions: C in" offset="0x10C" visible="true">
+  <option name="none" value="0" />
+  <option name="body vitality" value="1" />
+  <option name="shield vitality" value="2" />
+  <option name="recent body damge" value="3" />
+  <option name="recent shield damge" value="4" />
+  <option name="random constant" value="5" />
+  <option name="umbrella shield vitality" value="6" />
+  <option name="shield stun" value="7" />
+  <option name="recent umbrella shield vitality" value="8" visible="true"/>
+  <option name="umbrella shield stun" value="9" />
+  <option name="region #00 damage" value="10" />
+  <option name="region #01 damage" value="11" />
+  <option name="region #02 damage" value="12" />
+  <option name="region #03 damage" value="13" />
+  <option name="region #04 damage" value="14" />
+  <option name="region #05 damage" value="15" />
+  <option name="region #06 damage" value="16" />
+  <option name="region #07 damage" value="17" />
+  <option name="alive" value="18" />
+  <option name="compass" value="19" />
+ </enum16>
+ <enum16 name="export to functions: D in" offset="0x10E" visible="true">
+  <option name="none" value="0" />
+  <option name="body vitality" value="1" />
+  <option name="shield vitality" value="2" />
+  <option name="recent body damge" value="3" />
+  <option name="recent shield damge" value="4" />
+  <option name="random constant" value="5" />
+  <option name="umbrella shield vitality" value="6" />
+  <option name="shield stun" value="7" />
+  <option name="recent umbrella shield vitality" value="8" />
+  <option name="umbrella shield stun" value="9" />
+  <option name="region #00 damage" value="10" />
+  <option name="region #01 damage" value="11" />
+  <option name="region #02 damage" value="12" />
+  <option name="region #03 damage" value="13" />
+  <option name="region #04 damage" value="14" />
+  <option name="region #05 damage" value="15" />
+  <option name="region #06 damage" value="16" />
+  <option name="region #07 damage" value="17" />
+  <option name="alive" value="18" />
+  <option name="compass" value="19" />
+ </enum16>
+ <short name="hud text message index" offset="0x13c" visible="true" />
+ <short name="forced shader permuation index" offset="0x13e" visible="true" />
+ <struct name="attchments" offset="0x140" visible="true" size="72">
+  <string32 name="marker" offset="0x10" visible="true" />
+  <enum16 name="primary scale" offset="0x30" visible="true">
+   <option name="none" value="0" />
+   <option name="A out" value="1" />
+   <option name="B out" value="2" />
+   <option name="C out" value="3" />
+   <option name="D out" value="4" />
+  </enum16>
+  <enum16 name="secondary scale" offset="0x32" visible="true">
+   <option name="none" value="0" />
+   <option name="A out" value="1" />
+   <option name="B out" value="2" />
+   <option name="C out" value="3" />
+   <option name="D out" value="4" />
+  </enum16>
+  <enum16 name="change color" offset="0x34" visible="true">
+   <option name="none" value="0" />
+   <option name="A" value="1" />
+   <option name="B" value="2" />
+   <option name="C" value="3" />
+   <option name="D" value="4" />
+  </enum16>
+ </struct>
+
+
+
+ <struct name="functions" offset="0x158" visible="true" size="360">
+  <bitmask32 name="flags" offset="0x2" visible="true">
+   <option name="invert" value="31" />
+   <option name="additive" value="30" />
+   <option name="always active" value="29" />
+  </bitmask32>
+  <float name="period (seconds)" offset="0x4" visible="true" />
+  <enum16 name="scale period by" offset="0x8" visible="true" >
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="function" offset="0xa" visible="true">
+   <option name="one" value="0"/>
+   <option name="zero" value="1"/>
+   <option name="consine" value="2"/>
+   <option name="cosine (varible period)" value="3"/>
+   <option name="diagonal" value="4"/>
+   <option name="diagonal (vairible period)" value="5"/>
+   <option name="slide" value="6"/>
+   <option name="slide (varible period)" value="7"/>
+   <option name="noise" value="8"/>
+   <option name="jitter" value="9"/>
+   <option name="wander" value="10"/>
+   <option name="spark" value="11"/>
+  </enum16>
+  <enum16 name="scale function by" offset="0xc" visible="true" >
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="wobble function" offset="0xe" visible="true">
+   <option name="one" value="0"/>
+   <option name="zero" value="1"/>
+   <option name="consine" value="2"/>
+   <option name="cosine (varible period)" value="3"/>
+   <option name="diagonal" value="4"/>
+   <option name="diagonal (vairible period)" value="5"/>
+   <option name="slide" value="6"/>
+   <option name="slide (varible period)" value="7"/>
+   <option name="noise" value="8"/>
+   <option name="jitter" value="9"/>
+   <option name="wander" value="10"/>
+   <option name="spark" value="11"/>
+  </enum16>
+  <float name="wobble period" offset="0x10" visible="true"/>
+  <float name="wobble magnitude" offset="0x14" visible="true"/>
+  <float name="square wave threshold" offset="0x18" visible="true"/>
+  <short name="step count" offset="0x1c" visible="true"/>
+  <enum16 name="map to" offset="0x1e" visible="true">
+   <option name="linear" value="0"/>
+   <option name="early" value="1"/>
+   <option name="very early" value="2"/>
+   <option name="late" value="3"/>
+   <option name="very late" value="4"/>
+   <option name="cosine" value="5"/>
+  </enum16>
+  <short name="sawtooth count" offset="0x20" visible="true"/>
+  <enum16 name="add" offset="0x22" visibilty="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="scale result by" offset="0x24" visibilty="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="bounds mode" offset="0x26" visibilty="true">
+   <option name="clip" value="0" />
+   <option name="slip and normalize" value="1" />
+   <option name="scale to fit" value="2" />
+  </enum16>
+  <float name="bounds - from" offset="0x28" visible="true"/>
+  <float name="bounds - to" offset="0x2c" visible="true"/>
+  <float name="scale by" offset="0x38" visible="true"/>
+  <string32 name="usage" offset="0x148" visible="true"/>
+ </struct>
+ <struct name="change color" offset="0x164" visible="true" size="44">
+  <enum16 name="darken by" offset="0x0" visible="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <enum16 name="scale by" offset="0x2" visible="true">
+   <option name="none" value="0" />
+   <option name="A in" value="1" />
+   <option name="B in" value="2" />
+   <option name="C in" value="3" />
+   <option name="D in" value="4" />
+   <option name="A out" value="5" />
+   <option name="B out" value="6" />
+   <option name="C out" value="7" />
+   <option name="D out" value="8" />
+  </enum16>
+  <bitmask32 name="flags" offset="0x6" visible="true">
+   <option name="blend in hsv" value="31"/>
+   <option name="...more colors" value="30"/>
+  </bitmask32>
+  <colorByte name="color lower bound" offset="0x8" visible="True" />
+  <colorByte name="color upper bound" offset="0x14" visible="True" />
+  <struct name="permutations" offset="0x22" visible="true" size="28">
+   <colorRGB name="color lower bound [0,1]" offset="0x0" visible="True" />
+   <colorRGB name="color upper bound [0,1]" offset="0x6" visible="True" />
+  </struct>
+ </struct>
+ <struct name="predicted resources" offset="0x170" visible="true" size="8">
+  <enum16 name="type" offset="0x0" visible="true">
+   <option name="bitmap" value="0" />
+   <option name="sound" value="1" />
+  </enum16>
+  <short name="resource index" offset="0x2" visible="true"/>
+  <short name="tag index" offset="0x6" visible="true"/>
+ </struct>
+
+
+ <bitmask32 name="flags (item)" offset="0x17c" visible="true">
+  <option name="always maintains Z up" value="31" />
+  <option name="Destroyed by explosions" value="30" />  
+  <option name="unaffected by gravity" value="29" />  
+ </bitmask32>
+ <short name="message index" offset="0x180" visible="true"/>
+ <float name="sort order" offset="0x182" visible="true"/>
+ <short name="scale" offset="0x184" visible="true"/>
+ <short name="hud message scale value" offset="0x188" visible="true"/>
+ <float name="detation delay - from" offset="0x2E0" visible="true"/>
+ <float name="detation delay - to" offset="0x2E4" visible="true"/>
+ <bitmask32 name="flags(weapon)" offset="0x308" visible="true">
+  <option name="verticle heat display" value="31"/>
+  <option name="mutually eclusive triggers" value="30"/>
+  <option name="attack automatically on bump" value="29"/>
+  <option name="must be readied" value="28"/>
+  <option name="doesnt count towards max" value="26"/>
+  <option name="aim assist only when zoomed" value="25"/>
+  <option name="prevents grenade throwing" value="24"/>
+  <option name="must be picked up" value="23"/>
+  <option name="holds trigger when dropped" value="22"/>
+  <option name="prevents melee attack" value="21"/>
+  <option name="detonates when dropped" value="20"/>
+  <option name="cannot fire at max age" value="19"/>
+  <option name="secondary trigger override" value="18"/>
+  <option name="(OBSOLETE) Does not Depower active" value="17"/>
+  <option name="enables intergrated night visions" value="16"/>
+  <option name="AIs use weapons melee damge" value="15"/>
+ </bitmask32>
+ <string32 name="label" offset="0x30c" visible="true"/>
+ <enum16 name="secondary trigger mode" offset="0x32A" visible="true">
+  <option name="normal" value="0" />
+  <option name="slaved to primary" value="1" />
+  <option name="inhibits primary" value="2" />
+  <option name="loads alterate ammunition" value="3" />
+  <option name="load multiple primary ammunition" value="4" />
+ </enum16>
+ <short name="maximum alternate shots loaded" offset="0x32e" visible="true"/>
+ <enum16 name="export to functions: A in 2" offset="0x330" visible="true">
+  <option name="none" value="0" />
+  <option name="heat" value="1" />
+  <option name="primary ammunition" value="2" />
+  <option name="secondary ammunition" value="3" />
+  <option name="primary rate of fire" value="4" />
+  <option name="secondary rate of fire" value="5" />
+  <option name="ready" value="6" />
+  <option name="primary ejection port" value="7" />
+  <option name="secondary ejection port" value="8" />
+  <option name="overheat" value="9" />
+  <option name="primary charged" value="10" />
+  <option name="secondary charged" value="11" />
+  <option name="illumination" value="12" />
+  <option name="age" value="13" />
+  <option name="primary firing" value="14" />
+  <option name="secondary firing" value="15" />
+  <option name="primary firing on" value="16" />
+  <option name="secondary firing on" value="17" />
+ </enum16>
+ <enum16 name="export to functions: B in 2" offset="0x332" visible="true">
+  <option name="none" value="0" />
+  <option name="heat" value="1" />
+  <option name="primary ammunition" value="2" />
+  <option name="secondary ammunition" value="3" />
+  <option name="primary rate of fire" value="4" />
+  <option name="secondary rate of fire" value="5" />
+  <option name="ready" value="6" />
+  <option name="primary ejection port" value="7" />
+  <option name="secondary ejection port" value="8" />
+  <option name="overheat" value="9" />
+  <option name="primary charged" value="10" />
+  <option name="secondary charged" value="11" />
+  <option name="illumination" value="12" />
+  <option name="age" value="13" />
+  <option name="primary firing" value="14" />
+  <option name="secondary firing" value="15" />
+  <option name="primary firing on" value="16" />
+  <option name="secondary firing on" value="17" />
+ </enum16>
+ <enum16 name="export to functions: C in 2" offset="0x334" visible="true">
+  <option name="none" value="0" />
+  <option name="heat" value="1" />
+  <option name="primary ammunition" value="2" />
+  <option name="secondary ammunition" value="3" />
+  <option name="primary rate of fire" value="4" />
+  <option name="secondary rate of fire" value="5" />
+  <option name="ready" value="6" />
+  <option name="primary ejection port" value="7" />
+  <option name="secondary ejection port" value="8" />
+  <option name="overheat" value="9" />
+  <option name="primary charged" value="10" />
+  <option name="secondary charged" value="11" />
+  <option name="illumination" value="12" />
+  <option name="age" value="13" />
+  <option name="primary firing" value="14" />
+  <option name="secondary firing" value="15" />
+  <option name="primary firing on" value="16" />
+  <option name="secondary firing on" value="17" />
+ </enum16>
+ <enum16 name="export to functions: D in 2" offset="0x336" visible="true">
+  <option name="none" value="0" />
+  <option name="heat" value="1" />
+  <option name="primary ammunition" value="2" />
+  <option name="secondary ammunition" value="3" />
+  <option name="primary rate of fire" value="4" />
+  <option name="secondary rate of fire" value="5" />
+  <option name="ready" value="6" />
+  <option name="primary ejection port" value="7" />
+  <option name="secondary ejection port" value="8" />
+  <option name="overheat" value="9" />
+  <option name="primary charged" value="10" />
+  <option name="secondary charged" value="11" />
+  <option name="illumination" value="12" />
+  <option name="age" value="13" />
+  <option name="primary firing" value="14" />
+  <option name="secondary firing" value="15" />
+  <option name="primary firing on" value="16" />
+  <option name="secondary firing on" value="17" />
+ </enum16>
+ <float name="ready time" offset="0x338" visible="true"/>
+ <float name="Heat Recovery Threshold [0,1]" offset="0x34c" visible="true"/>
+ <float name="overheat Threshold [0,1]" offset="0x350" visible="true"/>
+ <float name="Heat detonation Threshold [0,1]" offset="0x354" visible="true"/>
+ <float name="Heat detonation fraction [0,1]" offset="0x358" visible="true"/>
+ <float name="Heat loss per second [0,1]" offset="0x35c" visible="true"/>
+ <float name="Heat illumination [0,1]" offset="0x360" visible="true"/>
+ <float name="near recticle range" offset="0x3CC" visible="true"/>
+ <float name="far recticle rang" offset="0x3D0" visible="true"/>
+ <float name="intersection reticle range" offset="0x3D4" visible="true"/>
+ <short name="magnification levels" offset="0x3DA" visible="true"/>
+ <float name="magnification range - from" offset="0x3DC" visible="true"/>
+ <float name="magnification range - to" offset="0x3E0" visible="true"/>
+ <float name="autoaim angle" offset="0x3E4" visible="true"/>
+ <float name="autoaim range" offset="0x3E8" visible="true"/>
+ <float name="magnetism angle" offset="0x3EC" visible="true"/>
+ <float name="magnetism range" offset="0x3F0" visible="true"/>
+ <float name="deviation angle" offset="0x3F4" visible="true"/>
+ <enum16 name="movement penalized" offset="0x3FC" visible="true">
+  <option name="always" value="0"/>
+  <option name="when zoomed" value="1"/>
+  <option name="when zommed or reloading" value="2"/>
+ </enum16>
+ <float name="forward movement penalty" offset="0x400" visible="true"/>
+ <float name="sideways movement penality" offset="0x404" visible="true"/>
+ <float name="minimum target range" offset="0x40C" visible="true"/>
+ <float name="looking time modifier" offset="0x410" visible="true"/>
+ <float name="light power-on time" offset="0x418" visible="true"/>
+ <float name="light power-off time" offset="0x41C" visible="true"/>
+ <float name="age heat recovery penalty" offset="0x440" visible="true"/>
+ <float name="age rate of fire penalty" offset="0x444" visible="true"/>
+ <float name="age misfire start [0,1]" offset="0x448" visible="true"/>
+ <float name="age misfire change [0,1]" offset="0x44C" visible="true"/>
+ <enum16 name="weapon type" offset="0x4e2" visible="true">
+  <option name="undefined" value="0"/>
+  <option name="shotgun" value="1"/>
+  <option name="needler" value="2"/>
+  <option name="plasma pistol" value="3"/>
+  <option name="plasma rifle" value="4"/>
+ </enum16>
+ <struct name="predicted resources" offset="0x4E4" visible="true" size="8">
+  <enum16 name="type" offset="0x0" visible="true">
+   <option name="bitmap" value="0" />
+   <option name="sound" value="1" />
+  </enum16>
+  <short name="resource index" offset="0x2" visible="true"/>
+  <short name="tag index" offset="0x6" visible="true"/>
+ </struct>
+ <struct name="magazines" offset="0x4F0" visible="true" size="112">
+  <bitmask32 name="flags" offset="0x2" visible="true">
+   <option name="waste rounds when reloading" value="31"/>
+   <option name="every round must be chambered" value="30"/>
+  </bitmask32>
+  <short name="rounds recharged" offset="0x4" visible="true"/>
+  <short name="rounds total initial" offset="0x6" visible="true"/>
+  <short name="rounds total maximum" offset="0x8" visible="true"/>
+  <short name="rounds loaded maximum" offset="0xa" visible="true"/>
+  <float name="reload time" offset="0x14" visible="true"/>
+  <short name="rounds reloaded" offset="0x18" visible="true"/>
+  <float name="chamber time" offset="0x1c" visible="true"/>
+  <struct name="magazine" offset="0x64" visible="true" size="28">
+   <short name="rounds" offset="0x0" visible="true"/>
+  </struct>
+ </struct>
+ <struct name="triggers" offset="0x4FC" visible="true" size="276">
+  <bitmask32 name="flags" offset="0x0" visible="true">
+   <option name="tracks fired projectile" value="31"/>
+   <option name="random firing effects" value="30"/>
+   <option name="can fire with patrial ammo" value="29"/>
+   <option name="does not repeat automatically" value="28"/>
+   <option name="locks in on/off state" value="27"/>
+   <option name="projectiles use weapon origin" value="26"/>
+   <option name="sticks when dropped" value="25"/>
+   <option name="ejects during chambering" value="24"/>
+   <option name="discharging spews" value="23"/>
+   <option name="analog rate of fire" value="22"/>
+   <option name="use error when unzoomed" value="21"/>
+   <option name="projectile vector cannot be adjusted" value="19"/>
+   <option name="projectiles have identical error" value="18"/>
+   <option name="projectile is client-side only" value="17"/>
+  </bitmask32>
+  <float name="rounds per second - from" offset="0x4" visible="true"/>
+  <float name="rounds per second - to" offset="0x8" visible="true"/>
+  <float name="acceleration time (secs)" offset="0xC" visible="true"/>
+  <float name="deceleration time (secs)" offset="0x10" visible="true"/>
+  <float name="blurred rate of fire" offset="0x14" visible="true"/>
+  <short name="rounds per shot" offset="0x22" visible="true"/>
+  <short name="minimum rounds loaded" offset="0x24" visible="true"/>
+  <short name="rounds between tracers" offset="0x26" visible="true"/>
+  <enum16 name="firing noise" offset="0x2e" visible="true">
+   <option name="silent" value="0"/>
+   <option name="medium" value="1"/>
+   <option name="loud" value="2"/>
+   <option name="shout" value="3"/>
+   <option name="quite" value="4"/>
+  </enum16>
+  <float name="error - from" offset="0x30" visible="true"/>
+  <float name="error - to" offset="0x34" visible="true"/>
+  <float name="error- acceleration time" offset="0x38" visible="true"/>
+  <float name="error- deceleration time" offset="0x3c" visible="true"/>
+  <float name="charging time" offset="0x48" visible="true"/>
+  <float name="charged time" offset="0x4C" visible="true"/>
+  <enum16 name="overcharge action" offset="0x50" visible="true">
+   <option name="none" value="0"/>
+   <option name="explode" value="1"/>
+   <option name="discharge" value="2"/>
+  </enum16>
+  <float name="charge illumination [0, 1]" offset="0x54" visible="true"/>
+  <float name="spew time" offset="0x58" visible="true"/>
+  <enum16 name="distribution function" offset="0x6C" visible="true">
+   <option name="point" value="0"/>
+   <option name="horizontal fan" value="1"/>
+  </enum16>
+  <short name="projectiles per shot" offset="0x6E" visible="true"/>
+  <float name="distribution angle" offset="0x70" visible="true"/>
+  <float name="minimum error" offset="0x78" visible="true"/>
+  <float name="error angle - from" offset="0x7c" visible="true"/>
+  <float name="error angle - to" offset="0x80" visible="true"/>
+  <float name="first person offset - x" offset="0x84" visible="true"/>
+  <float name="first person offset - y" offset="0x88" visible="true"/>
+  <float name="first person offset - z" offset="0x8C" visible="true"/>
+  <float name="ejection port recovery time" offset="0xA4" visible="true"/>
+  <float name="illumination recovery time" offset="0xA8" visible="true"/>
+  <float name="heat generated per round [0,1]" offset="0xB8" visible="true"/>
+  <float name="age generated per round [0,1]" offset="0xBC" visible="true"/>
+  <float name="overload time (secs)" offset="0xC4" visible="true"/>
+  <struct name="firing effects" offset="0x108" visible="true" size="132">
+   <short name="shot count lower bound" offset="0x0" visible="true"/>
+   <short name="shot count upper bound" offset="0x2" visible="true"/>
+  </struct>
+ </struct>
+</plugin>

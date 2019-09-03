@@ -1,0 +1,388 @@
+<plugin>
+<tag>smet</tag>
+<struct>
+<name>Main</name>
+<size>0</size>
+<value>
+<type>bitmask32</type>
+<offset>0x00</offset>
+<name>Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Simple Parameterization</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Ignore Normals</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Transparent Lit</name>
+</bitmask>
+</value>
+<value>
+<type>id16</type>
+<offset>0x02</offset>
+<name>Detail Level</name>
+<option>
+<value>00</value>
+<name>High</name>
+</option>
+<option>
+<value>01</value>
+<name>Medium</name>
+</option>
+<option>
+<value>02</value>
+<name>Low</name>
+</option>
+<option>
+<value>03</value>
+<name>Turd</name>
+</option>
+</value>
+<value>
+<type>float</type>
+<offset>0x04</offset>
+<name>Power</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x08</offset>
+<name>Color of Emitted Light</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x08</offset>
+<name>Colour of Emitted Light - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x0C</offset>
+<name>Colour of Emitted Light - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>Colour of Emitted Light - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x14</offset>
+<name>Tint Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>Tint Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x18</offset>
+<name>Tint Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1C</offset>
+<name>Tint Colour - B</name>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x22</offset>
+<name>Material Type</name>
+<option>
+<value>00</value>
+<name>Dirt</name>
+</option>
+<option>
+<value>01</value>
+<name>Sand</name>
+</option>
+<option>
+<value>02</value>
+<name>Stone</name>
+</option>
+<option>
+<value>03</value>
+<name>Snow</name>
+</option>
+<option>
+<value>04</value>
+<name>Wood</name>
+</option>
+<option>
+<value>05</value>
+<name>Metal (Hollow)</name>
+</option>
+<option>
+<value>06</value>
+<name>Metal (Thin)</name>
+</option>
+<option>
+<value>07</value>
+<name>Metal (Thick)</name>
+</option>
+<option>
+<value>08</value>
+<name>Rubber</name>
+</option>
+<option>
+<value>09</value>
+<name>Glass</name>
+</option>
+<option>
+<value>10</value>
+<name>Force Field</name>
+</option>
+<option>
+<value>11</value>
+<name>Grunt</name>
+</option>
+<option>
+<value>12</value>
+<name>Hunter Armor</name>
+</option>
+<option>
+<value>13</value>
+<name>Hunter Skin</name>
+</option>
+<option>
+<value>14</value>
+<name>Elite</name>
+</option>
+<option>
+<value>15</value>
+<name>Jackal</name>
+</option>
+<option>
+<value>16</value>
+<name>Jackal Energy Shield</name>
+</option>
+<option>
+<value>17</value>
+<name>Engineer Skin</name>
+</option>
+<option>
+<value>18</value>
+<name>Engineer Force Field</name>
+</option>
+<option>
+<value>19</value>
+<name>Flood Combat Form</name>
+</option>
+<option>
+<value>20</value>
+<name>Flood Carrier Form</name>
+</option>
+<option>
+<value>21</value>
+<name>Cyborg Armor</name>
+</option>
+<option>
+<value>22</value>
+<name>Cyborg Energy Shield</name>
+</option>
+<option>
+<value>23</value>
+<name>Human Armor</name>
+</option>
+<option>
+<value>24</value>
+<name>Human Skin</name>
+</option>
+<option>
+<value>25</value>
+<name>Sentinel</name>
+</option>
+<option>
+<value>26</value>
+<name>Monitor</name>
+</option>
+<option>
+<value>27</value>
+<name>Plastic</name>
+</option>
+<option>
+<value>28</value>
+<name>Water</name>
+</option>
+<option>
+<value>29</value>
+<name>Leaves</name>
+</option>
+<option>
+<value>30</value>
+<name>Elite Energy Shield</name>
+</option>
+<option>
+<value>31</value>
+<name>Ice</name>
+</option>
+<option>
+<value>32</value>
+<name>Hunter Shield</name>
+</option>
+</value>
+
+
+
+
+
+
+
+
+<value>
+<type>bitmask32</type>
+<offset>0x28</offset>
+<name>Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Decal</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Two-Sided</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Flash Colour is Negative</name>
+</bitmask>
+<bitmask>
+<bit>29</bit>
+<name>Tint Mode-2</name>
+</bitmask>
+<bitmask>
+<bit>28</bit>
+<name>Unfiltered</name>
+</bitmask>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x7C</offset>
+<name>Gradient Min Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x7C</offset>
+<name>Gradient Min Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x80</offset>
+<name>Gradient Min Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x84</offset>
+<name>Gradient Min Colour - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x88</offset>
+<name>Gradient Max Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x88</offset>
+<name>Gradient Max Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x8C</offset>
+<name>Gradient Max Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x90</offset>
+<name>Gradient Max Colour - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x94</offset>
+<name>Background Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x94</offset>
+<name>Background Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x98</offset>
+<name>Background Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x9C</offset>
+<name>Background Colour - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0xA0</offset>
+<name>Flash Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xA0</offset>
+<name>Flash Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xA4</offset>
+<name>Flash Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xA8</offset>
+<name>Flash Colour - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0xAC</offset>
+<name>Tint Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0xAC</offset>
+<name>Tint Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xB0</offset>
+<name>Tint Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xB4</offset>
+<name>Tint Colour - B</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xB8</offset>
+<name>Meter Transparency</name>
+</value>
+<value>
+<type>float</type>
+<offset>0xBC</offset>
+<name>Background Transparency</name>
+</value>
+
+
+
+</struct>
+</plugin>

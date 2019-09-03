@@ -1,0 +1,29 @@
+<plugin class="glw!" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <string32 name="Attachment Marker" offset="0x00" Visible="true"/>
+  <short name="Number of Particles" offset="0x20" Visible="true"/>
+  <enum16 name="Boundary Effect" offset="0x22" Visible="true">
+    <option name="Bounce" value="0"/>
+    <option name="Wrap" value="1"/>
+  </enum16>
+  <enum16 name="Normal Particle Distribution" offset="0x24" Visible="true">
+    <option name="Distributed Randomly" value="0"/>
+    <option name="Distributed Uniformly" value="1"/>
+  </enum16>
+  <enum16 name="Trailing Particle Distribution" offset="0x26" Visible="true">
+    <option name="Emit Verticle" value="0"/>
+    <option name="Emit Nomral (up)" value="1"/>
+    <option name="Emit Randomly" value="2"/>
+  </enum16>
+  <bitmask32 name="Glow Flags" offset="0x28" Visible="true">
+    <option name="Modify Particle Colour in Range" value="0"/>
+    <option name="Particles Move Backwards" value="1"/>
+    <option name="Particles Move Both Directions" value="2"/>
+    <option name="Trailing Particles Fade Over Time" value="2"/>
+    <option name="Trailing Particles Shrink Over Time" value="3"/>
+    <option name="Trailing Particles Slow Over Time" value="4"/>
+  </bitmask32>
+  <float name="Colour_Bound_0 - A" offset="0xB4" Visible="true"/>
+  <float name="Colour_Bound_0 - R" offset="0xB8" Visible="true"/>
+  <float name="Colour_Bound_0 - G" offset="0xBC" Visible="true"/>
+  <float name="Colour_Bound_0 - B" offset="0xC0" Visible="true"/>
+</plugin>

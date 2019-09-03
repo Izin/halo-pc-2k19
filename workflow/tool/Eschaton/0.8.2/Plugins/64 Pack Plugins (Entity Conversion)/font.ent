@@ -1,0 +1,7 @@
+<plugin class="font" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="Flags" offset="0x00" Visible="true"/>
+  <short name="Ascending Height" offset="0x04" Visible="true"/>
+  <short name="Decending Height" offset="0x06" Visible="true"/>
+  <short name="Leading Height" offset="0x08" Visible="true"/>
+  <short name="Leading Width" offset="0x0A" Visible="true"/>
+</plugin>

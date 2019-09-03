@@ -1,0 +1,6 @@
+<plugin class="colo" author="conure" version="1" headersize="0">
+ <struct name="colors" offset="0x0" visible="true" size="48" name_offset="0x0">
+  <string32 name="name" offset="0x0" visible="true"/>
+  <colorARGB name="Color" offset="0x20" visible="True"/>
+ </struct>
+</plugin>

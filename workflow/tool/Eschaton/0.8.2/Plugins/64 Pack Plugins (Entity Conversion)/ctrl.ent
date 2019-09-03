@@ -1,0 +1,25 @@
+<plugin class="ctrl" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x17C" Visible="true">
+    <option name="Postion Loops" value="0"/>
+    <option value="0"/>
+    <option name="Postion Not Interpolated" value="1"/>
+  </bitmask32>
+  <float name="Power Transition Time" offset="0x180" Visible="true"/>
+  <float name="Power Acceleration Time" offset="0x184" Visible="true"/>
+  <float name="Postion Transition Time" offset="0x188" Visible="true"/>
+  <float name="Postion Acceleration Time" offset="0x18C" Visible="true"/>
+  <float name="Depowered Postion Transition Time" offset="0x190" Visible="true"/>
+  <float name="Delay Time" offset="0x194" Visible="true"/>
+  <float name="Automatic Activation Radius" offset="0x198" Visible="true"/>
+  <enum16 name="Type" offset="0x290" Visible="true">
+    <option name="Toggle Switch" value="0"/>
+    <option name="On Button" value="1"/>
+    <option name="Off Button" value="2"/>
+    <option name="Call Button" value="3"/>
+  </enum16>
+  <enum16 name="Triggers When" offset="0x292" Visible="true">
+    <option name="Touched by Player" value="0"/>
+    <option name="Destoryed" value="1"/>
+  </enum16>
+  <float name="Call Value" offset="0x294" Visible="true"/>
+</plugin>

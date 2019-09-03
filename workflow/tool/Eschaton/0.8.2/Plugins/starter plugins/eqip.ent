@@ -1,0 +1,25 @@
+<plugin class="eqip" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <enum16 name="Powerup Type" offset="0x308" Visible="true">
+    <option name="None" value="0"/>
+    <option name="Double Speed" value="1"/>
+    <option name="Over Shield" value="2"/>
+    <option name="Active Camo" value="3"/>
+    <option name="Full-Spectrum Vision" value="4"/>
+    <option name="Health" value="5"/>
+    <option name="Grenade" value="6"/>
+  </enum16>
+  <enum16 name="Grenade Type" offset="0x30A" Visible="true">
+    <option name="Human Fragmentation" value="0"/>
+    <option name="Covenant Plasma" value="1"/>
+  </enum16>
+  <bitmask32 name="More Flags" offset="0x17C" Visible="true">
+    <option name="Always Maintains Z Up" value="0"/>
+    <option name="Destroyed by Explosions" value="1"/>
+    <option name="Unaffected by Gravity" value="2"/>
+  </bitmask32>
+  <float name="Detonation Delay" offset="0x2E0" Visible="true"/>
+  <float name="Detonation Delay - To" offset="0x2E4" Visible="true"/>
+  <float name="Detonating Effect" offset="0x303" Visible="true"/>
+  <float name="Detonation Effect" offset="0x2F3" Visible="true"/>
+  <float name="Powerup Time" offset="0x30C" Visible="true"/>
+</plugin>

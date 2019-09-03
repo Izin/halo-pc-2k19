@@ -1,0 +1,80 @@
+<plugin class="coll" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Takes Shield Damage for Children" value="0"/>
+    <option name="Takes Body Damage for Children" value="1"/>
+    <option name="Always Shields Friendly Damage" value="2"/>
+    <option name="Passes Area Damage to Children" value="3"/>
+    <option name="Parent Never takes Body Damage for You" value="4"/>
+    <option name="Only Damaged by Explosions" value="5"/>
+    <option name="Only Damaged While Occupied" value="6"/>
+  </bitmask32>
+  <float name="Max Body Vitality" offset="0x08" Visible="true"/>
+  <float name="Body System Shock" offset="0x0C" Visible="true"/>
+  <float name="Friendly Damage Resistance" offset="0x44" Visible="true"/>
+  <float name="Body Damage Threshold" offset="0x80" Visible="true"/>
+  <float name="Body Destroyed Threshold" offset="0x94" Visible="true"/>
+  <float name="Max Shield Vitality" offset="0xCC" Visible="true"/>
+  <float name="Shield Failure Threshold" offset="0xF0" Visible="true"/>
+  <float name="Failing Shield Leak Fraction" offset="0xF4" Visible="true"/>
+  <float name="Min Stun Damage" offset="0xF8" Visible="true"/>
+  <float name="Stun Time" offset="0xFC" Visible="true"/>
+  <float name="Recharge Time" offset="0x100" Visible="true"/>
+  <float name="Shield Damage Threshold" offset="0x104" Visible="true"/>
+  <struct name="Materials" offset="0x234" visible="true" size="72">
+    <enum16 name="Material Type" offset="0x24" Visible="true">
+      <option name="Dirt" value="0"/>
+      <option name="Sand" value="1"/>
+      <option name="Stone" value="2"/>
+      <option name="Snow" value="3"/>
+      <option name="Wood" value="4"/>
+      <option name="Metal (Hollow)" value="5"/>
+      <option name="Metal (Thin)" value="6"/>
+      <option name="Metal (Thick)" value="7"/>
+      <option name="Rubber" value="8"/>
+      <option name="Glass" value="9"/>
+      <option name="Force Field" value="10"/>
+      <option name="Grunt" value="11"/>
+      <option name="Hunter Armor" value="12"/>
+      <option name="Hunter Skin" value="13"/>
+      <option name="Elite" value="14"/>
+      <option name="Jackal" value="15"/>
+      <option name="Jackal Energy Shield" value="16"/>
+      <option name="Engineer Skin" value="17"/>
+      <option name="Engineer Force Field" value="18"/>
+      <option name="Flood Combat Form" value="19"/>
+      <option name="Flood Carrier Form" value="20"/>
+      <option name="Cyborg Armor" value="21"/>
+      <option name="Cyborg Energy Shield" value="22"/>
+      <option name="Human Armor" value="23"/>
+      <option name="Human Skin" value="24"/>
+      <option name="Sentinel" value="25"/>
+      <option name="Monitor" value="26"/>
+      <option name="Plastic" value="27"/>
+      <option name="Water" value="28"/>
+      <option name="Leaves" value="29"/>
+      <option name="Elite Energy Shield" value="30"/>
+      <option name="Ice" value="31"/>
+      <option name="Hunter Shield" value="32"/>
+    </enum16>
+    <string32 name="Name" offset="0x00" Visible="true"/>
+    <float name="Shield Leak Percentage" offset="0x28" Visible="true"/>
+    <float name="Shield Damage Mumtiplier" offset="0x2C" Visible="true"/>
+    <float name="Body Damage Multiplier" offset="0x3C" Visible="true"/>
+  </struct>
+  <struct name="Regions" offset="0x240" visible="true" size="84">
+    <string32 name="Name" offset="0x00" Visible="true"/>
+    <bitmask32 name="More Flags" offset="0x20" Visible="true">
+      <option name="Lives Until Object Dies" value="0"/>
+      <option name="Forces Object to Die" value="1"/>
+      <option name="Dies When Object Dies" value="2"/>
+      <option name="Dies When Object is Damaged" value="3"/>
+      <option name="Disappears When Shield is Off" value="4"/>
+      <option name="Inhibits Melee Attack" value="5"/>
+      <option name="Inhibits Weapon Attack" value="6"/>
+      <option name="Inhibits Walking" value="7"/>
+      <option name="Forces Drop Weapon" value="8"/>
+      <option name="Causes Head-Maimed Scream" value="9"/>
+    </bitmask32>
+    <float name="Damage Threshold" offset="0x24" Visible="true"/>
+  </struct>
+</plugin>

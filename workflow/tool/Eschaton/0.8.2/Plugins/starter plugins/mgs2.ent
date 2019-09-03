@@ -1,0 +1,39 @@
+<plugin class="mgs2" author="conure" version="1" headersize="0">
+ <string32 name="marker" offset="0x0" visible="true"/>
+ <bitmask32 name="flags" offset="0x20" visible="true">
+  <option name="interpolate color in HSV" value="0"/>
+  <option name="...more colors" value="1"/>
+ </bitmask32>
+ <float name="near fade distance" offset="0x34" visible="true"/>
+ <float name="Far fade distance" offset="0x38" visible="true"/>
+ <float name="perpendicular brightness scale" offset="0x3c" visible="true"/>
+ <float name="parallel brightness scale" offset="0x40" visible="true"/>
+ <enum16 name="brightness scale source" offset="0x44" visible="true">
+  <option name="none" value="0"/>
+  <option name="A out" value="1"/>
+  <option name="B out" value="2"/>
+  <option name="C out" value="3"/>
+  <option name="D out" value="4"/>
+ </enum16>
+ <short name="sequence index" offset="0x6c" visible="true"/>
+ <short name="count" offset="0x6e" visible="true"/>
+ <enum16 name="frame animation source" offset="0xb8" visible="true">
+  <option name="none" value="0"/>
+  <option name="A out" value="1"/>
+  <option name="B out" value="2"/>
+  <option name="C out" value="3"/>
+  <option name="D out" value="4"/>
+ </enum16>
+ <struct name="Frames" offset="0x120" visible="true" size="176">
+   <float name="offset from marker" offset="0x10" visible="true"/>
+   <float name="offset exponet" offset="0x14" visible="true"/>
+   <float name="length" offset="0x18" visible="true"/>
+   <float name="radius hither" offset="0x3c" visible="true"/>
+   <float name="radius yon" offset="0x40" visible="true"/>
+   <float name="radius exponent" offset="0x44" visible="true"/>
+   <colorARGB name="tint color hither" offset="0x68" visible="true"/>
+   <colorARGB name="tint color yon" offset="0x78" visible="true"/>
+   <float name="tint color exponent" offset="0x88" visible="true"/>
+   <float name="brightness exponent" offset="0x8c" visible="true"/>
+ </struct>
+</plugin>

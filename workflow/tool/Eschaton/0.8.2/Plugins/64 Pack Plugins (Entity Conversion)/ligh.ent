@@ -1,0 +1,28 @@
+<plugin class="ligh" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x00" Visible="true">
+    <option name="Dynamic" value="0"/>
+    <option name="No Specular" value="1"/>
+    <option name="Dont Light Own Object" value="2"/>
+    <option name="Supersize in FP" value="3"/>
+    <option name="First Person Flashlight" value="4"/>
+    <option name="Dont Fade ActiveCamo" value="5"/>
+  </bitmask32>
+  <float name="Radius" offset="0x04" Visible="true"/>
+  <float name="Radius Modifer" offset="0x08" Visible="true"/>
+  <float name="Radius Modifer - To" offset="0x0C" Visible="true"/>
+  <float name="Falloff Angle" offset="0x10" Visible="true"/>
+  <float name="Cutoff Angle" offset="0x14" Visible="true"/>
+  <float name="Lens Flare Only Radius" offset="0x18" Visible="true"/>
+  <float name="Colour Lower Bound - A" offset="0x38" Visible="true"/>
+  <float name="Colour Lower Bound - R" offset="0x3C" Visible="true"/>
+  <float name="Colour Lower Bound - G" offset="0x40" Visible="true"/>
+  <float name="Colour Lower Bound - B" offset="0x44" Visible="true"/>
+  <float name="Colour Upper Bound - A" offset="0x48" Visible="true"/>
+  <short name="Colour Upper Bound - R" offset="0x4C" Visible="true"/>
+  <float name="Colour Upper Bound - G" offset="0x50" Visible="true"/>
+  <float name="Colour Upper Bound - B" offset="0x54" Visible="true"/>
+  <float name="Intensity" offset="0xD4" Visible="true"/>
+  <float name="Colour - R" offset="0xD8" Visible="true"/>
+  <float name="Colour - G" offset="0xDC" Visible="true"/>
+  <float name="Colour - B" offset="0xE0" Visible="true"/>
+</plugin>

@@ -1,0 +1,93 @@
+This program requires mwgfx.dll in order to run. If you have
+Bmp2000 or one of my other Graphics programs installed then
+you will probably have it already. If not download the latest
+mwgfx.dll self-extracting archive from http://fly.to/mwgfx/
+and run it to install the dll in your Windows\System folder.
+Check first to see if the program mwgfxdll.exe is included
+in this DXTBmp package. If so you can run that to install
+the latest version of mwgfx.dll
+
+Setup :-
+
+The default Editor is set to MSPaint but you will probably
+want to change this first thing. The Images are passed to
+the Editor in 24 bit format so most Paint programs will
+work. Change the Editor from the Prefs menu
+
+
+Using :-
+
+Viewing/Editing an existing Texture :-
+
+From the File Menu select "Load Extended 16 bit Image" and
+browse to select a texture. If this is a valid Extended
+image then it will be loaded for view. To Edit select
+"Send to Editor" from the "Image" menu. Do your editing and
+Save (not Save As) from the Paint program then select 
+"Reload after Edit" from the "Image" menu and the edited
+image will be loaded as a Normal Bitmap.
+
+Saving out in Extended Format :-
+
+Currently 4 options are available (more to follow)
+
+"Save DXT Texture" 
+
+      will save in the new CFS2 compressed format.
+      If "Include Mips" is selected in the Prefs->DXT Settings
+      then it will include mipmapped sub-images. 
+      If "Include Transparency" is selected then any areas
+      painted Pure Green (0,255,0) will be set Transparent
+
+"Save 16 bit Extended (565)" 
+
+      will save in the FS2000 Extended 16 bit 565 Format
+      This is the same format used in the CFS2 Beta and is
+      supported by CFS2. It will create files 4x Bigger than
+      the DXT format.
+
+"Save 16 bit Extended (555-1)" 
+
+      will save in the FS2000 Extended 16 bit 555 Format with
+      1 bit to signify if a pixel is transparent or not. 
+      This is the same format used in the CFS2 Beta and is
+      supported by CFS2. It will create files 4x Bigger than
+      the DXT format. Transparent Pixels are indicated by pure
+      green (to assist editing) but are saved as transparent black.
+
+"Save 16 bit Extended (444-4)" 
+
+      will save in the FS2000 Extended 16 bit 444 Format. This has
+      12 bits for the RGB and 4 bits for a transparency channel
+      (giving 16 levels of transparency). This will only be available
+      when you have an image that was loaded in that format so if you
+      want to create your own then you will need to load an existing
+      one then paste your image over it when in the Paint Program.
+      The Alpha channel is loaded separately from the main image and
+      can be viewed and edited independantly (Image->444 Transparency)
+
+Note on Transparency :-
+
+Transparency comes in several forms in 16 bit Textures. Where
+possible these are converted to pure Green (0,255,0) on loading
+to facilitate the editing of transparent areas.
+
+DXT - Transparency is either on or off. Transparent areas Green
+
+16 bit 555 - Transparency is either on or off. Shown Green
+
+16 bit 444 - 16 levels of transparency. Editable separately
+
+
+Notes on Repainting :-
+
+It is best to do all your editing from within DXTBmp. Avoid using
+Images that have been reduced to 8 bit at any stage as the dithering
+this usually involves will affect the quality of DXT Compression.
+If creating images elsewhere to pass through the program at the final
+stage then work in 24 bit at all stages if possible.
+
+
+
+martin@mnwright.freeserve.co.uk
+http://fly.to/mwgfx/

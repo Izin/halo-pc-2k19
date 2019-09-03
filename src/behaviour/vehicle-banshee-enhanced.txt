@@ -1,0 +1,54 @@
+Eschaton 0.8
+==================================================================
+
+[jpt!: Damage Effect] vehicles/banshee/banshee bolt
+------------------------------------------------------------------
+Minimum Damage: 	      10 -> 5
+Maximum Damage (min) :	10 -> 5
+Maximum Damage (max) :  14 -> 7
+
+
+[jpt!: Damage Effect] vehicles/banshee/fuel road explosion
+------------------------------------------------------------------
+Minimum Damage: 	      40 -> 20
+Maximum Damage (min) :	75 -> 40
+Maximum Damage (max) :  75 -> 40
+
+
+[proj: Projectile] vehicles/banshee/banshee bolt
+------------------------------------------------------------------
+P - initial velocity:   1.666667  ->  6
+P - final velocity:     0.8333334 ->  3
+
+
+[proj: Projectile] vehicles/banshee/banshee fuel road
+------------------------------------------------------------------
+P - initial velocity:   0.6666667 ->  2
+P - final velocity:     0.1666667 ->  0.1
+
+
+[vehi: Vehicle] vehicles/banshee/banshee
+------------------------------------------------------------------
+# WITH HMT PLUGIN
+Seat
+[NOT CHECKED -> CHECKED] Third Person Entrance
+
+Top Speed (Forward): 0.22   -> 0.400
+Top Speed (Reverse): 0.03   -> 0.100
+Acceleration:        0.008  -> 0.020
+Deceleration:        0.016  -> 0.024
+Left Turn Angle:     1.5708 -> ?
+
+
+[weap: Weapon] vehicles/banshee/banshee gun
+------------------------------------------------------------------
+triggers
+
+rounds per second - from:   5 -> 11
+rounds per seconds - to:    6 -> 11
+
+error - acceleration time: 2 -> 4
+
+minimum error:          0.0087266 -> 0.000
+error angle - from: 	  0.0087266 -> 0.002
+error angle - to:	      0.0523599 -> 0.010

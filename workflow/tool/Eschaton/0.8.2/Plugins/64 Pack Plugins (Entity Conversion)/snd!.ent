@@ -1,0 +1,4 @@
+<plugin class="snd!" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <float name="Min Distance" offset="0x08" Visible="true"/>
+  <float name="Max Distance" offset="0x0C" Visible="true"/>
+</plugin>

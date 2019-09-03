@@ -1,0 +1,34 @@
+<plugin class="fog " author="conure" version="1" headersize="0">
+ <bitmask32 name="flags" offset="0x0" visible="true">
+  <option name="is water" value="0"/>
+  <option name="atmosphere dominant" value="1"/>
+  <option name="fog screen only" value="2"/>
+ </bitmask32>
+ <float name="max density [0,1]" offset="0x58" visible="true"/>
+ <float name="opaque distance" offset="0x60" visible="true"/>
+ <float name="opaque depth" offset="0x68" visible="true"/>
+ <float name="distance to water plane" offset="0x74" visible="true"/>
+ <colorRGB name="colors" offset="0x78" visible="true"/>
+ <bitmask32 name="more flags" offset="0x84" visible="true">
+  <option name="no environment multipass" value="0"/>
+  <option name="no model multipass" value="1"/>
+  <option name="no texture-based falloff" value="2"/>
+ </bitmask32>
+ <short name="layer count [0,4]" offset="0x86" visible="true"/>
+ <float name="distance gradient" offset="0x88" visible="true"/>
+ <float name="distance gradient - to" offset="0x8c" visible="true"/>
+ <float name="density gradient" offset="0x90" visible="true"/>
+ <float name="density gradient - to" offset="0x94" visible="true"/>
+ <float name="start distance from fog plane" offset="0x98" visible="true"/>
+ <float name="rotation multiplier" offset="0xa4" visible="true"/>
+ <float name="strafing multiplier" offset="0xa8" visible="true"/>
+ <float name="zoom multiplier" offset="0xac" visible="true"/>
+ <float name="map scale" offset="0xb8" visible="true"/>
+ <float name="animation period" offset="0xcc" visible="true"/>
+ <float name="wind velocity" offset="0xd4" visible="true"/>
+ <float name="wind velocity - to" offset="0xd8" visible="true"/>
+ <float name="wind period" offset="0xdc" visible="true"/>
+ <float name="wind period - to" offset="0xe0" visible="true"/>
+ <float name="wind acceleration weight [0,1]" offset="0xe4" visible="true"/>
+ <float name="wind perpendicular weight [0,1]" offset="0xe8" visible="true"/>
+</plugin>

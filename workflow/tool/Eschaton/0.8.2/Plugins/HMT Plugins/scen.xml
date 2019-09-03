@@ -1,0 +1,13 @@
+﻿<plugin>
+ <tag>scen</tag>
+ <struct>
+  <name>Main</name>
+  <size>0</size>
+  <value>
+   <type>float</type>
+   <offset>0x34</offset>
+   <name>Model</name>
+   <info>The Model Of Fiqure You've Selected</info>
+  </value>
+ </struct>
+</plugin>

@@ -1,0 +1,17 @@
+A grenade more "punchy"
+
+
+Eschaton 0.8
+==================================================================
+
+
+[proj: Projectile] weapons/rocker launcher/rocket
+------------------------------------------------------------------
+#bounding radius 0.1 -> ??
+#acceleration scale: 2 -> ??
+#D - arming time:               1.50 -> 1.00
+#D - danger radius:             2.25 -> 3.00
+
+
+#parallel friction: 0.8 ->
+#perpendicular friction: 0.9 -> ?,

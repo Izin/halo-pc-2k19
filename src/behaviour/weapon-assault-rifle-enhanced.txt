@@ -1,0 +1,45 @@
+The AR should be a lot more accurate and deadly at mid range. The accuracy has
+been significantly improved. This has to be the MAIN human weapon in the
+battlefield.
+
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/assaut riffle/bullet
+------------------------------------------------------------------
+Minimum Damage: 	           10.00 ->   8.00
+Maximum Damage (min):	       10.00 ->   8.00
+Maximum Damage (max):        10.00 ->   8.00
+
+# Less effective against armor
+Elite:                        1.00 ->   0.65
+Cyborg:                       1.00 ->   0.75
+Armored Human:                1.00 ->   0.85
+
+# Less effective against shields
+Cyborg Energy Shield:         1.00 ->   0.70
+Elite Energy Shield:          0.70 ->   0.50
+
+# Less effective against vehicles (a lot less!)
+Vehicle Passthrough penalty:   0.00 -> 0.75
+Metal (Hollow):                0.25 -> 0.10
+Metal (Thin):                  0.25 -> 0.10
+Metal (Thick):                 0.25 -> 0.10
+Rubber:                        0.25 -> 0.10
+
+
+[weap: Weapon] weapons/assaut riffle/assaut riffle
+------------------------------------------------------------------
+rounds total maximum: 	       600 -> 420 (7 * 60)
+magazine:                      060 -> 120
+
+triggers
+
+rounds per second - from:  17.60      -> 15.00
+rounds per second - to: 	 17.60      -> 15.00
+minimum error: 		          0.00      -> 0.000
+error angle - from: 	      0.0349066 -> 0.008
+error angle - to:	          0.1134464 -> 0.020

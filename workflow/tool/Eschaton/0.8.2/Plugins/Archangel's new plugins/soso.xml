@@ -1,0 +1,369 @@
+<plugin>
+<tag>soso</tag>
+<struct>
+<name>Main</name>
+<size>0</size>
+<value>
+<type>bitmask32</type>
+<offset>0x00</offset>
+<name>Flags</name>
+<bitmask>
+<bit>32</bit>
+<name>Simple Parameterization</name>
+</bitmask>
+<bitmask>
+<bit>31</bit>
+<name>Ignore Normals</name>
+</bitmask>
+<bitmask>
+<bit>30</bit>
+<name>Transparent Lit</name>
+</bitmask>
+</value>
+<value>
+<type>id16</type>
+<offset>0x02</offset>
+<name>Detail Level</name>
+<option>
+<value>00</value>
+<name>High</name>
+</option>
+<option>
+<value>01</value>
+<name>Medium</name>
+</option>
+<option>
+<value>02</value>
+<name>Low</name>
+</option>
+<option>
+<value>03</value>
+<name>Turd</name>
+</option>
+</value>
+<value>
+<type>float</type>
+<offset>0x04</offset>
+<name>Power</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x08</offset>
+<name>Color of Emitted Light</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x08</offset>
+<name>Colour of Emitted Light - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x0C</offset>
+<name>Colour of Emitted Light - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x10</offset>
+<name>Colour of Emitted Light - B</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x14</offset>
+<name>Tint Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x14</offset>
+<name>Tint Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x18</offset>
+<name>Tint Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x1C</offset>
+<name>Tint Colour - B</name>
+</value>
+<value>
+<type>bitmask32</type>
+<offset>0x800</offset>
+<name></name>
+<bitmask>
+<bit>  </bit>
+<name>Physics Property</name>
+</bitmask>
+</value>
+<value>
+<type>id16</type>
+<offset>0x22</offset>
+<name>Material Type</name>
+<option>
+<value>00</value>
+<name>Dirt</name>
+</option>
+<option>
+<value>01</value>
+<name>Sand</name>
+</option>
+<option>
+<value>02</value>
+<name>Stone</name>
+</option>
+<option>
+<value>03</value>
+<name>Snow</name>
+</option>
+<option>
+<value>04</value>
+<name>Wood</name>
+</option>
+<option>
+<value>05</value>
+<name>Metal (Hollow)</name>
+</option>
+<option>
+<value>06</value>
+<name>Metal (Thin)</name>
+</option>
+<option>
+<value>07</value>
+<name>Metal (Thick)</name>
+</option>
+<option>
+<value>08</value>
+<name>Rubber</name>
+</option>
+<option>
+<value>09</value>
+<name>Glass</name>
+</option>
+<option>
+<value>10</value>
+<name>Force Field</name>
+</option>
+<option>
+<value>11</value>
+<name>Grunt</name>
+</option>
+<option>
+<value>12</value>
+<name>Hunter Armor</name>
+</option>
+<option>
+<value>13</value>
+<name>Hunter Skin</name>
+</option>
+<option>
+<value>14</value>
+<name>Elite</name>
+</option>
+<option>
+<value>15</value>
+<name>Jackal</name>
+</option>
+<option>
+<value>16</value>
+<name>Jackal Energy Shield</name>
+</option>
+<option>
+<value>17</value>
+<name>Engineer Skin</name>
+</option>
+<option>
+<value>18</value>
+<name>Engineer Force Field</name>
+</option>
+<option>
+<value>19</value>
+<name>Flood Combat Form</name>
+</option>
+<option>
+<value>20</value>
+<name>Flood Carrier Form</name>
+</option>
+<option>
+<value>21</value>
+<name>Cyborg Armor</name>
+</option>
+<option>
+<value>22</value>
+<name>Cyborg Energy Shield</name>
+</option>
+<option>
+<value>23</value>
+<name>Human Armor</name>
+</option>
+<option>
+<value>24</value>
+<name>Human Skin</name>
+</option>
+<option>
+<value>25</value>
+<name>Sentinel</name>
+</option>
+<option>
+<value>26</value>
+<name>Monitor</name>
+</option>
+<option>
+<value>27</value>
+<name>Plastic</name>
+</option>
+<option>
+<value>28</value>
+<name>Water</name>
+</option>
+<option>
+<value>29</value>
+<name>Leaves</name>
+</option>
+<option>
+<value>30</value>
+<name>Elite Energy Shield</name>
+</option>
+<option>
+<value>31</value>
+<name>Ice</name>
+</option>
+<option>
+<value>32</value>
+<name>Hunter Shield</name>
+</option>
+</value>
+
+
+
+
+<value>
+<type>float</type>
+<offset>0x38</offset>
+<name>Translucency</name>
+</value>
+
+<value>
+<type>bitmask32</type>
+<offset>0x800</offset>
+<name></name>
+<bitmask>
+<bit></bit>
+<name>Colour Change</name>
+</bitmask>
+</value>
+
+<value>
+<type>id16</type>
+<offset>0x4C</offset>
+<name>Colour Change</name>
+<option>
+<value>00</value>
+<name>NONE</name>
+</option>
+<option>
+<value>01</value>
+<name>black</name>
+</option>
+<option>
+<value>02</value>
+<name>white</name>
+</option>
+<option>
+<value>03</value>
+<name>player</name>
+</option>
+<option>
+<value>04</value>
+<name>active/player</name>
+</option>
+</value>
+<value>
+<type>bitmask32</type>
+<offset>0x800</offset>
+<name></name>
+<bitmask>
+<bit>  </bit>
+<name>Reflection Properties</name>
+</bitmask>
+</value>
+<value>
+<type>float</type>
+<offset>0x13C</offset>
+<name>Reflection Falloff Distance</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x140</offset>
+<name>Reflection Cutoff Distance</name>
+</value>
+
+
+<value>
+<type>float</type>
+<offset>0x144</offset>
+<name>Perpendicular Brightness</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x148</offset>
+<name>Perpendicular Tint Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x148</offset>
+<name>Perpendicular Tint Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x14C</offset>
+<name>Perpendicular Tint Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x150</offset>
+<name>Perpendicular Tint Colour - B</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x154</offset>
+<name>Parallel Brightness</name>
+</value>
+
+<value>
+<type>colorRGB</type>
+<offset>0x158</offset>
+<name>Parallel Tint Color</name>
+</value>
+
+<value>
+<type>float</type>
+<offset>0x158</offset>
+<name>Parallel Tint Colour - R</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x15C</offset>
+<name>Parallel Tint Colour - G</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x160</offset>
+<name>Parallel Tint Colour - B</name>
+</value>
+
+
+
+
+
+
+
+
+
+</struct>
+</plugin>

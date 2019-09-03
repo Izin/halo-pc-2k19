@@ -1,0 +1,135 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f16\froman\fcharset238\fprq2 Times New Roman CE;}{\f17\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f19\froman\fcharset161\fprq2 Times New Roman Greek;}{\f20\froman\fcharset162\fprq2 Times New Roman Tur;}
+{\f21\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f22\fswiss\fcharset238\fprq2 Arial CE;}{\f23\fswiss\fcharset204\fprq2 Arial Cyr;}{\f25\fswiss\fcharset161\fprq2 Arial Greek;}{\f26\fswiss\fcharset162\fprq2 Arial Tur;}
+{\f27\fswiss\fcharset186\fprq2 Arial Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;
+\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid \snext0 Normal;}{
+\s1\keepn\nowidctlpar\widctlpar\adjustright \b\fs20\lang2057\cgrid \sbasedon0 \snext0 heading 1;}{\s2\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\i\f1\lang2057\cgrid \sbasedon0 \snext0 heading 2;}{
+\s3\li283\sb119\sa240\keepn\nowidctlpar\widctlpar\adjustright \b\f1\lang2057 \sbasedon0 \snext0 heading 3;}{\*\cs10 \additive Default Paragraph Font;}{\s15\li340\nowidctlpar\widctlpar\tqr\tldot\tx8296\adjustright \i\fs20\lang1024\cgrid 
+\sbasedon0 \snext0 \sautoupd toc 3;}{\s16\nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid \sbasedon0 \snext0 \sautoupd toc 1;}{\s17\li284\nowidctlpar\widctlpar\adjustright \fs20\lang1024\cgrid \sbasedon0 \snext0 \sautoupd toc 2;}}{\info
+{\title Aircraft Texture Formats used by FS2002}{\author Martin Wright}{\operator Martin Wright}{\creatim\yr2003\mo4\dy20\hr11\min14}{\revtim\yr2003\mo7\dy13\hr17\min10}{\printim\yr2003\mo4\dy20\hr11\min13}{\version4}{\edmins2}{\nofpages4}{\nofwords1657}
+{\nofchars7681}{\*\company MW Graphics}{\nofcharsws0}{\vern71}}\paperw11906\paperh16838 \widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl 
+{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s3\li283\sb119\sa240\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \b\f1\lang2057 {Texture Formats used by FS2002
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par FS2002 supports a wide range of formats for Aircraft and other 
+textures. Some of these go back to the early days of Flight Simulator and others have been introduced as part of the progression through FS98, CFS1, FS2000 and CFS2. FS2002 will happily handle any textur
+es originally designed for any previous version of Flight Simulator or Combat Flight Simulator.
+\par 
+\par In order of introduction the formats are :-
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {RAW
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par This is the original FS format. Also often called R8 format it is a very basic system where all textures are 256x256 pixels and are tied to a fixed 256 colour palette. 
+\par This is also the format used by the first widely available Aircraft Design program \ldblquote Aircraft Factory\rdblquote  (AF99) so is frequently seen in older addon aircraft. 
+\par 
+\par Just to confuse everyone the RAW format
+ is not tied to any particular filename extension. While the default FS98 aircraft use .R8 as the extension the scenery textures contain many other variations. AF99 uses a strange system whereby all the textures for a particular aircraft have the same nam
+e but a different extension so you will get filenames like spit9.0AF, spit9.1AF, spit9.2AF and so on.
+\par 
+\par There is a compressed version of the RAW format also available. This uses a lossless compression algorithm and the final file size is entirely dependent o
+n the complexity of the images. Simple images can shrink to a tiny fraction of the original size while complex ones may even end up larger after compression.
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {8 bit Extended BMP
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par Introduced by CFS1 this is a subtle variation on the standard Windows 256 colour BMP format. 
+\par Normal Windows 256 colour BMP files are also supported but they will be displayed without the extra options provided by the extended format. 
+\par 
+\par No longer restricted to 256x256 pixels but the texture width and height must be values that are a \ldblquote power of 2\rdblquote  (16, 32, 64, 128, 256, 512, 1024).
+\par 
+\par CFS1 only allowed square textures and a maximum size of 256x256 but starting with FS2000 textures could be larger (up to 1024) and have different width and height.
+\par 
+\par There are 2 main differences between the Extended BMP and the normal format used by Windows.
+\par 
+\par Firstly the Extended BMP textures include Mip data (multiple sub-images in reduced sizes for display at times when the object is too far away to require the fullsized texture to be displayed)
+\par 
+\par Secondly the palette (colour table) of Extended BMP textures has the facility to define varying levels of transparency for each individual colour entry.
+\par 
+\par A major step forward from the RAW format. You could now use any 256 colours you like for each texture rather than the fixed (and limited) colours offered by the RAW palette.
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {\page 16 bit Extended BMP
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par Introduced with FS2000 this format allowed greater colour depth than 8 bit. Instead of 256 colours you could now use the full \ldblquote HiColor\rdblquote  range of 65536 colours.
+\par 
+\par Again the textures can be any size that is a \ldblquote power of 2\rdblquote  in width and height.
+\par 
+\par There are several variations of the 16 bit format for use in different situations :-
+\par 
+\par \tab 565\tab -\tab For general use where no Alpha is required
+\par \tab 555-1\tab -\tab For use when a simple on/off  Alpha is needed.
+\par \tab 444-4\tab -\tab For use when several levels of Alpha are wanted.
+\par 
+\par Assigning bits as Alpha will necessarily reduce the number of bits available for the colour data so that while 565 allows the full 65536 colours to be used 555-1 will only have 32768 colours available and 444-4 only 4096.
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {32 bit Extended BMP
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par Also introduced with FS2000 this format theoretically allows the full 16 million colours provided by 24 bit RGB along with an 8 bit Alpha channel. In fact it would seem that only 4 bits of the Alpha channel are actually used when the texture is displayed.
+
+\par 
+\par The major drawback of this (otherwise ideal) format is the sheer size of the files. A 1024x1024 Extended texture in 32 bit would be over 5 megabytes.
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {DXT1 Extended BMP
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par Introduced with CFS2. As part of the move towards more efficient texture formats it is a combination of DirectX DXT compressed data and a BMP file layout.
+\par 
+\par DXT is a clever compression that lets you use 16 bit colour (65536 colours) while only using 4 bits to describe each pixel.
+\par 
+\par The efficiency of this format is achieved by the small file sizes (half the size of the equivalent 8 bit texture and 25% of the size of a 16 bit version) and also by the fact that most modern Graphics cards provide hardware-support for DirectX textures. T
+hey will display faster and more textures can be cached in graphics memory. 
+\par 
+\par DXT1 format allows for a 1 bit (on/off) alpha channel if required without changing the filesize.
+\par 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {DXT3 Extended BMP
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par Also introduced with CFS2 this is a variation on the DXT1 format that allows for a 16-level alpha channel. 
+\par 
+\par Filesizes are twice as big as the equivalent DXT1 texture but the wider alpha channel is useful when something more than a simple on/off is required.
+\par 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {\page Alpha channels
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par }\pard\plain \s3\li283\sb119\sa240\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \b\f1\lang2057 {What is an Alpha channel?
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {On a technical level \endash 
+ Image data is usually stored as an array consisting of a Red, Green and Blue value for each point in the image.  This is the standard arrangement for computers because monitor displays a
+re generally Cathode Ray Tubes that function by activating Red, Green and Blue phosphors to varying levels to create the colour you actually see on the screen.  The RGB values for each pixel in the image data will be used to define the amount of activatio
+n to apply to the RGB phosphors at the appropriate point on the screen.  The RGB components are generally described as \ldblquote channels\rdblquote 
+. Any RGB image can be thought of as the overlaying of a Red Channel, a Green Channel and a Blue Channel. Some Paint programs will actually let you split and image into the separate channels.
+\par 
+\par In addition to this RGB data image files can also contain a fourth component. For ancient reasons this channel is called the \ldblquote alpha\rdblquote  channel. It can be thought of as a spare channel that can 
+be used for storing extra data about the image over and above the RGB data. The most common use of the alpha is to store transparency data but it can equally be used for storing other information such as brightness, reflection, bump-mapping or any other s
+econdary data. How the alpha channel is interpreted is entirely down to the software that is reading the data. 
+\par 
+\par }\pard\plain \s3\li283\sb119\sa240\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \b\f1\lang2057 {What do they do in FS?
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {It used to be simple. Prior to FS2002 the alpha channel could be simply described as a portion of the texture data that t
+old FS how much transparency to apply. For each pixel in the image there would be a value for Red, Green, Blue and Alpha. FS would create the colour by combining the Red, Green and Blue values and would then use the Alpha value to decide how \ldblquote 
+transparent\rdblquote  the colour would be. This was mainly used for things like windows. By setting a suitable alpha level you could get the right amount of \ldblquote see through\rdblquote  for cockpits and cabin windows.
+\par 
+\par FS2002 introduced a new use for Alpha channels.  It can now also be used as a value for Reflection.
+\par 
+\par What confuses things slightly is that exactly the same texture will have different properties depending on how it has been applied by the designer of the aircraft model. If the texture has been applied as a normal material then t
+he alpha will be used in the old way as a transparency value.  If the texture has been applied as a reflective material then any alpha will be used as a value for reflection. It is even possible for the designer to apply the same texture as 2 different ma
+terials and get the alpha being used as transparency in some places and reflection in others.
+\par 
+\par The important thing to note is that you can not make a plane reflective simply by adding an alpha channel to the textures. Unless the original designer has used r
+eflective materials when creating the aircraft then your new alpha will apply transparency values instead. The increasing use of Gmax and FSDS 2 means that more designers are now including reflection in their designs but all the older models created with 
+FSDS 1 or AF99 will not have the facility to support reflection 
+\par 
+\par While formats having a 1 bit (on/off) Alpha can be used for reflective textures the results will not be good.  1 bit will only allow 0% or 100% reflection. For realistic reflections in-betwee
+n values are needed. This means one of the formats that supports varying levels of Alpha (16 bit 444, 32 bit or DXT3)
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {\page File Sizes
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par The various formats can most easily by identified by the size of the file. Taking a basic 256x256 image the file sizes will be :-
+\par 
+\par \tab RAW\tab \tab \tab -\tab 64k
+\par \tab 8 bit Standard BMP\tab -\tab 65k
+\par \tab 8 bit Extended BMP\tab -\tab 87k
+\par \tab 16 bit Extended BMP\tab -\tab 170k
+\par \tab 32 bit Extended BMP\tab -\tab 341k
+\par \tab DXT1 Extended BMP\tab -\tab 43k
+\par \tab DXT3 Extended BMP\tab -\tab 86k
+\par 
+\par 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid { Replacing RAW with newer formats
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang2057\cgrid {
+\par There are still hundreds of aircraft available that were designed using AF99. These aircraft will work in FS2002 but the textures will be much lower quality than can be achieved with the newer formats.
+\par 
+\par The good news is that FS doesn\rquote t use the texture filename to decide the format. It examines the data itself and interprets it accordingly.
+\par 
+\par This means that you can replace the 256x256 fixed-palette RAW file with a more modern texture. As long as you keep it square you can also use larger sizes. All that is r
+equired is the final file has the same filename as the original (including the file extension).  The only other thing to take into account is that RAW data is stored upside-down so you will need to ensure that the image has been \ldblquote flipped
+\rdblquote  at some stage of the process. 
+\par }}

@@ -1,0 +1,29 @@
+<plugin class="mach" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
+  <bitmask32 name="Flags" offset="0x17E" Visible="true">
+    <option name="Postion Loops" value="0"/>
+    <option name="Postion Not Interpolated" value="1"/>
+  </bitmask32>
+  <float name="Power Transition Time" offset="0x180" Visible="true"/>
+  <float name="Power Acceleration Time" offset="0x184" Visible="true"/>
+  <float name="Postion Transition Time" offset="0x188" Visible="true"/>
+  <float name="Postion Acceleration Time" offset="0x18C" Visible="true"/>
+  <float name="Depowered Postion Transition Time" offset="0x190" Visible="true"/>
+  <float name="Delay Time" offset="0x200" Visible="true"/>
+  <float name="Automatic Activation Radius" offset="0x21C" Visible="true"/>
+  <enum16 name="Type" offset="0x290" Visible="true">
+    <option name="Door" value="0"/>
+    <option name="Platform" value="1"/>
+    <option name="Gear" value="2"/>
+  </enum16>
+  <bitmask32 name="More Flags" offset="0x292" Visible="true">
+    <option name="Pathfinding Obstacle" value="0"/>
+    <option name="... But not When Open" value="1"/>
+    <option name="Elevator" value="2"/>
+  </bitmask32>
+  <float name="Door Open Time" offset="0x294" Visible="true"/>
+  <enum16 name="Collision Response" offset="0x2E8" Visible="true">
+    <option name="Pause Until Crushed" value="0"/>
+    <option name="Reverse Directions" value="1"/>
+  </enum16>
+  <short name="Elevator Node" offset="0x2EA" Visible="true"/>
+</plugin>

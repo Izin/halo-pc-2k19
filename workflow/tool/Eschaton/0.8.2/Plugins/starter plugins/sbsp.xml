@@ -1,0 +1,18 @@
+<plugin>
+<tag>sbsp</tag>
+<struct>
+<name>Main</name>
+<size>0</size>
+<value>
+<type>dependency</type>
+<offset>0x18</offset>
+<name>Lightmap Reference</name>
+</value>
+<value>
+<type>float</type>
+<offset>0x2C</offset>
+<name>Vehicle Ceiling</name>
+</value>
+
+</struct>
+</plugin>
