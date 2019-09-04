@@ -3,9 +3,9 @@
 # Introduction
 
 2K20 is an overhaul mod for Halo PC which improves the user experience in 3 ways:
- - visual enhancement (weapons, menu, HUD, ...)
- - rebalancing the mechanics of the game
- - various fixes and resolution improvements (thanks to Chimera)
+ - textures: visual enhancement (weapons, menu, HUD, ...)
+ - behaviours: rebalancing the mechanics of the game in campaign
+ - third-party software: external fixes and improvements
 2K20's main goal is to make new players want to play this game, while moving away as
 little as possible form the lore of the game. Halo 1 is one of the very best Halo
 game, it must be respected. This documentation should assist in setting up 2K20.
@@ -54,13 +54,12 @@ Ready to setup the mod? Let's go!
 
 # Roadmap
 
-| Version      | Features                                                                          | Release |
-| ------------ | --------------------------------------------------------------------------------- | ------- |
-| 0.1.0 ALPHA  | Unfinished behaviours<br>Unfinished textures<br>Fird parties tools                | Q3 2019 |
-| 0.2.0 ALPHA  | Main menu retextured (Halo Reach like)<br>New textures                            | Q4 2019 |
-| 1.0.0 BETA   | Fixed all major issues<br>Finished behaviours and textures                        | Q4 2019 |
-| 1.0.X RC     | Official release                                                                  | Q1 2020 |
-
+| Version       | Features                                                                                                             | Release |
+| ------------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
+| v0.1.0 ALPHA  | UPDATE behaviours in campaign (unfinished)<br>UPDATE textures (unfinished)<br>ADD Third-party software configuration | Q3 2019 |
+| v0.2.0 ALPHA  | UPDATE main menu UI - Halo Reach like (finished)<br>UPDATE existing textures<b>ADD new textures                      | Q4 2019 |
+| v1.0.0  BETA  | FIX all major issues<br>UPDATE campaign behaviours<br>UPDATE textures                                                | Q4 2019 |
+| v1.0.X    RC  | PUBLIC RELEASE Official release                                                                                      | Q1 2020 |
 
 # Know bugs
 
