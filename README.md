@@ -1,14 +1,20 @@
-![Banner](repository/repository-logo.png "logo")
+<p align="center">
+  ![Banner](repository/repository-logo.png)
+  A general overhaul mod for Halo: Combat Evolved
+</p>
 
 # Introduction
 
 2K20 is an overhaul mod for Halo PC which improves the user experience in 3 ways:
- - textures: visual enhancement (weapons, menu, HUD, ...)
- - behaviours: rebalancing the mechanics of the game in campaign
- - third-party software: external fixes and improvements
+
+| 1. Updated textures                            | 2. Updated behaviours in campaign              | 3. Third-party software configuration          |
+| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
+| [IMG1](repository/textures-picture.png)        | [IMG2](repository/behaviours-picture.png)      | [IMG3](repository/sfotware-picture.png)        |
+| visual enhancement (weapons, menu, HUD, ...)   | rebalancing the mechanics of the game          | external fixes and improvements                |
+
 2K20's main goal is to make new players want to play this game, while moving away as
 little as possible form the lore of the game. Halo 1 is one of the very best Halo
-game, it must be respected. This documentation should assist in setting up 2K20.
+game, so it must be respected. This documentation should assist you in setting upthe mod.
 
 # Table of Contents
 
@@ -38,7 +44,7 @@ game, it must be respected. This documentation should assist in setting up 2K20.
 
 # Requirements
 
-2K20 supports Halo: Combat Evolved version 1.10 [ENGLISH version only].
+This mod supports Halo: Combat Evolved [ENGLISH] version 1.10
 
 # Setup
 
@@ -57,7 +63,7 @@ Ready to setup the mod? Let's go!
 | Version       | Features                                                                                                             | Release |
 | ------------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
 | v0.1.0 ALPHA  | UPDATE behaviours in campaign (unfinished)<br>UPDATE textures (unfinished)<br>ADD Third-party software configuration | Q3 2019 |
-| v0.2.0 ALPHA  | UPDATE main menu UI - Halo Reach like (finished)<br>UPDATE existing textures<b>ADD new textures                      | Q4 2019 |
+| v0.2.0 ALPHA  | UPDATE main menu UI - Halo Reach like (finished)<br>UPDATE existing textures<br>ADD new textures                     | Q4 2019 |
 | v1.0.0  BETA  | FIX all major issues<br>UPDATE campaign behaviours<br>UPDATE textures                                                | Q4 2019 |
 | v1.0.X    RC  | PUBLIC RELEASE Official release                                                                                      | Q1 2020 |
 
