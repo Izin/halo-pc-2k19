@@ -1,5 +1,5 @@
+![Logo](repository/repository-logo.png "logo")
 <p align="center">
-  ![Logo](repository/repository-logo.png "logo")
   A general overhaul mod for Halo: Combat Evolved
 </p>
 
@@ -7,9 +7,7 @@
 
 2K20 is an overhaul mod for Halo PC which improves the user experience in 3 ways:
 
- <p align="center">
-   ![Banner](repository/repository-banner.jpg "banner")
- </p>
+![Banner](repository/repository-banner.jpg "banner")
 
 2K20's main goal is to make new players want to play this game, while moving away as
 little as possible form the lore of the game. Halo 1 is one of the very best Halo
