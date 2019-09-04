@@ -1,7 +1,4 @@
-<h1 align="center">Halo PC 2K19</h1>
-<p align="center">
-    A general overhaul mod for Halo: Combat Evolved
-</p>
+![Logo](repository/repository-logo.png "2K19")
 
 # Introduction
 
@@ -17,25 +14,26 @@ game, it must be respected. This documentation should assist in setting up 2K19.
 
 * [**Requirements**](#requirements)
 * [**Setup**](#setup)
-  * [Backup!](#backup-is-the-key-of-the-ultimate-power)
-  * [Prerequisite: Chimera](#prerequisite)
-    * [What is it?](#what-is-chimera)
-    * [Install an old and unsupported version](#install-chimera)
-    * [Configure](#configure-chimera)
+  * [Backup](#backup)
+  * [Prerequisite](#prerequisite)
+    * [Chimera](#chimera)
+    * [Install an old version of Chimera](#install-an-old-version-of-chimera)
+    * [Configure Chimera](#configure-chimera)
   * [Full Installation](#full-installation)
     * [Maps](#maps)
-      * [The choice is yours](#install-visuals-and-or-behaviours)
-    * [Anti-aliasing](#injectsmaa)
+      * [Visuals and behaviours](#visuals-and-behaviours)
+    * [Anti-aliasing-with-injectsmaa](#anti-aliasing-with-injectsmaa)
     * [Update Launcher](#update-launcher)
   * [Partial Installation](#partial-installation)
     * [Build](#build)
-      * [Behaviours](#build-behaviours)
-      * [Textures](#build-textures)
-* [**Whats's next?**](#todo)
+      * [Behaviours](#behaviours)
+      * [Textures](#textures)
+* [**Roadmap**](#roadmap)
+* [**Known bugs**](#known-bugs)
 * [**Remove**](#remove)
 * [**Credits**](#credits)
 * [**Links**](#links)
-* [**Microsoft Intellectual Property**](#microsoft)
+* [**Microsoft Intellectual Property**](#microsoft-intellectual-property)
 
 # Requirements
 
@@ -47,10 +45,34 @@ Ready to setup the mod? Let's go!
 
 ## Backup
 
+...
+
 @todo
 
-# Microsoft Intellectual Property 
+...
+
+##Roadmap
+
+| Version      | Features                                                                          | Release |
+| ------------ | --------------------------------------------------------------------------------- | ------- |
+| 0.1.0 ALPHA  | Unfinished behaviours<br>Unfinished textures<br>Fird parties tools                | Q2 2019 |
+| 0.2.0 ALPHA  | Main menu retextured (Halo Reach like)<br>New textures                            | Q3 2019 |
+| 1.0.0 BETA   | Fixed all major issues<br>Finished behaviours and textures                        | Q4 2019 |
+| 1.0.X RC     | Official release                                                                  | Q1 2020 |
+
+
+## Know bugs
+
+- Behaviour/Campaign: plasma rifle has a lot less rpm after it reaches 50% of available energy [BUG not introduced by 2K19]
+- Behaviour/117: increasing walking speed causes side effects, such as "jumps on collision"
+- Behaviour/Loaded plasma shot: increasing the velocity of the projectile makes it difficult to follow any target
+- Texture/Needer: ammo counter on HUD is broken since magazine capacity has been increased to 22
+- Texture/Jackal: texture of the upper jaw's teeth collide each other
+- Texture/Sand: on some maps, the color is too damn pronunced (literally gold color on blood gulch)
+- Texture/Main menu: given that Reach main menu is not finalized, it can be tricky to use it in some ways
+
+# Microsoft Intellectual Property
 
 I do not own any of the original Halo: Combat Evolved file. It is the property
-of Microsoft and it is protected under their End-User License Agreement (EULA)
+of Microsoft and thereby protected under their End-User License Agreement (EULA)
 or License Terms.
