@@ -1,4 +1,4 @@
-![2K20 Banner](/repository/repository-banner.png)
+![2K20 Banner](/doc/repository-banner.png)
 
 # Introduction
 
@@ -7,11 +7,11 @@
  while trying to maintain consistency with the original game. 2K20 is made for
  every PC gamer: PGM, beginner, modder, curious, streamer...
 
-## What's inside?
+### What is updated?
 
-![2K20 Content](/repository/repository-mod-content.png)
+![2K20 Content](/doc/repository-mod-content.png)
 
-### Technical goal
+### What is the technical goal?
 
 2K20 is particular because the main technical goal is to ONLY update original
  textures/maps/behaviours. There is no new tag, no 4K HD textures... ONLY a
@@ -23,7 +23,7 @@
 
 ![Banshee](/screenshots/gif/banshee.gif)
 
-[HD screenshots](/sceenshots/1080p) are also available.
+HD visuals are also available in [screenshots/1080p](/sceenshots/1080p) folder.
 
 ## Warning
 
