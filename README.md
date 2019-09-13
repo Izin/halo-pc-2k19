@@ -19,13 +19,11 @@
   1. I am a passionate tunner, not a skilled modder
   2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
-### Comparison OLD/NEW
+### Original vs 2K20
 
-<p align="center">
-  ![Banshee](/screenshots/gif/banshee.gif)
-</p>
+![Banshee](/screenshots/gif/banshee.gif)
 
-HD screenshots are also available [here](/sceenshots/1080p)
+[HD screenshots](/sceenshots/1080p) are also available.
 
 ## Warning
 
