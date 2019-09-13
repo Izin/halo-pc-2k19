@@ -21,7 +21,7 @@
 
 ### Retail vs 2k20
 
-![Menu](https://media.giphy.com/media/h2ON5qDphWtyQqUBfp/source.mov)
+![Menu](/repository/menu.gif)![Banshee](/repository/banshee.gif)![Assault Rifle](/repository/assault-rifle.gif)
 
 ## Warning
 
