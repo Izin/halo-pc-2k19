@@ -9,9 +9,9 @@
 
 ## What's inside?
 
-![2K20 Content](/repository/repository-mode-content.png)
+![2K20 Content](/repository/repository-mod-content.png)
 
-## Technical goal
+### Technical goal
 
 2K20 is particular because the main technical goal is to ONLY update original
  textures/maps/behaviours. There is no new tag, no 4K HD textures... ONLY a
@@ -19,9 +19,9 @@
   1. I am a passionate tunner, not a skilled modder
   2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
-## Retail vs 2k20
+### Retail vs 2k20
 
-![Menu](https://giphy.com/gifs/h2ON5qDphWtyQqUBfp)
+![Menu](https://media.giphy.com/media/h2ON5qDphWtyQqUBfp/source.mov)
 
 ## Warning
 
