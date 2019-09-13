@@ -2,24 +2,25 @@
 
 # Introduction
 
-2K20 is a general overhaul mod for Halo: Combat Evolved. It's main goal is to
- bring the game to the year 2020, by upgrading gameplay, visuals and screen ratio,
- while trying to maintain consistency with the original game. 2K20 is made for
- every PC gamer: PGM, beginner, modder, curious, streamer...
+2K20 is a general overhaul mod for Halo: Combat Evolved. Experience the game
+ with high quality graphics and enhanced playability, while retaining the
+ feeling of the original game. If you never played Halo: Combat Evolved before,
+ it is now the perfect time to try! Veterans can also rediscover the game of
+ their childhood with modern gameplay and visuals.
 
-### What is updated?
+## Changes
 
 ![2K20 Content](/doc/repository-mod-content.png)
 
-### What is the technical goal?
+## Project philosophy
 
-2K20 is particular because the main technical goal is to ONLY update original
- textures/maps/behaviours. There is no new tag, no 4K HD textures... ONLY a
- massive redesign of many elements. This choice is motivated by two reasons:
+2K20 only updates original textures and behaviours. It is a massive redesign
+ of many elements, but it does not include 4K textures or new tags. This 
+ choice is motivated by two reasons:
   1. I am a passionate tunner, not a skilled modder
   2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
-### Original vs 2K20
+## Original vs 2K20
 
 ![Banshee](/screenshots/gif/banshee.gif)
 
@@ -28,8 +29,9 @@ HD visuals are also available in [screenshots/1080p](/sceenshots/1080p) folder.
 ## Warning
 
 The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
- software that update technical elements of Halo, but does NOT supports Halo PC
- (retail version of Halo: CE). No guarantees can be made on Halo PC stability!
+ software that updates technical elements of Halo. However it does NOT support
+ Halo PC (retail version of Halo: CE). No guarantees can be made on Halo PC
+ stability!
 
 
 # Table of Contents
