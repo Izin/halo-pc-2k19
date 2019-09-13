@@ -19,16 +19,19 @@
   1. I am a passionate tunner, not a skilled modder
   2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
-### Retail vs 2k20
+### Comparison OLD/NEW
 
-![Menu](/repository/menu.gif)![Banshee](/repository/banshee.gif)![Assault Rifle](/repository/assault-rifle.gif)
+<p align="center">
+  ![Banshee](/screenshots/gif/banshee.gif)
+</p>
+
+HD screenshots are also available [here](/sceenshots/1080p)
 
 ## Warning
 
-Also, I implement [Chimera](https://github.com/Dwood15/Chimera), a third-party
- software that changes technical elements of Halo, but does not supports the
- retail version of Halo (Halo PC). No guarantees can be made on how stable Halo PC
- will be using this software.
+The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
+ software that update technical elements of Halo, but does NOT supports Halo PC
+ (retail version of Halo: CE). No guarantees can be made on Halo PC stability!
 
 
 # Table of Contents
