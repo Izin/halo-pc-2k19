@@ -1,28 +1,34 @@
-![Logo](repository/repository-logo.png "logo")
+![2K20 Banner](/repository/repository-banner.png)
 
-<p align="center">
-  A general overhaul mod for Halo: Combat Evolved
-</p>
+# Introduction
 
-## What?
+2K20 is a general overhaul mod for Halo: Combat Evolved. It's main goal is to
+ bring the game to the year 2020, by upgrading gameplay, visuals and screen ratio,
+ while trying to maintain consistency with the original game. 2K20 is made for
+ every PC gamer: PGM, beginner, modder, curious, streamer...
 
-![Banner](repository/repository-banner.jpg "banner")
+## What's inside?
 
-## What?
-2K20's main goal is to bring the game to the year 2020, by upgrading gameplay,
-visuals and screen ratio, while trying to maintain consistency with the original
-game.
+![2K20 Content](/repository/repository-mode-content.png)
 
-## Who?
-2K20 is made for every PC gamer: PGM, beginner, modder, curious, streamer...
+## Technical goal
 
-## How?
-This mod is particular, because the main technical goal is to ONLY update original
-textures/maps/behaviours. So there is no new tag, no 2K HD HUD, otherwise a redesign
-of everything already here. This choice is motivated by two mane reasons:
- - I am a passionate tunner, not a skilled modder
- - Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE's work
+2K20 is particular because the main technical goal is to ONLY update original
+ textures/maps/behaviours. There is no new tag, no 4K HD textures... ONLY a
+ massive redesign of many elements. This choice is motivated by two reasons:
+  1. I am a passionate tunner, not a skilled modder
+  2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
+## Retail vs 2k20
+
+![Menu](https://giphy.com/gifs/h2ON5qDphWtyQqUBfp)
+
+## Warning
+
+Also, I implement [Chimera](https://github.com/Dwood15/Chimera), a third-party
+ software that changes technical elements of Halo, but does not supports the
+ retail version of Halo (Halo PC). No guarantees can be made on how stable Halo PC
+ will be using this software.
 
 
 # Table of Contents
@@ -85,33 +91,3 @@ Ready to setup the mod? Let's go!
 - Texture/Jackal: texture of the upper jaw's teeth collide each other
 - Texture/Sand: on some maps, the color is too damn pronounced (literally gold color on blood gulch)
 - Texture/Main menu: given that Reach main menu is not finalized, it can be tricky to use it in some ways
-
-# "I AM GRO....SLIPGUERRE!"
-I'm Slip2Guerre, a french Halo 1 veteran who love crushing grunts
-with its hog and sticking Elites. What's more normal.
-
-## My BORING story
-A friend of the family gave me a cracked version of Halo PC at the end of 2003.
- A the time, I had the chance to have my own computer powered by Windows XP SP1, 256Mb of RAM
- and a flat screen with a 4/3 resolution (1024 x 768 pixels). Almost immediately after
- I started playing the game (my first FPS experience ever), I began to both
- rage and love the game... I was so bad that I was trying to kill at
- distance Elites using the plasma pistol. Time passed, other
- games were released, and I was still on Halo: CE for good, doing headshots with
- the M6D, a pistol which is more a BR than a pistol. I used to have a team, then I
- created mine, we won matchs, losed others, etc. I discovered the skinning community (before the
- modding community) and started doing my own skins using MS Paint or Photofiltre.
- In 2011 I organised a multiplayer tournament for 40 french players. It was good,
- but I was so jaded by the same mechanics and graphics. So I started working on A
- Halo REACH menu and new reticles sporadically. In june 2019 I discovered Chimera and
- the associated Discord. I discovered that not only the community was still active, but
- was benevolent again, like in 2004's. This gave my the necessary motivation to
- concretize my vision of the game and the sharing within this mod.
-
- Credits:
- Microsoft Game Studios, 343 Industries, and Bungie: for Halo
-# Microsoft Intellectual Property & BUNGIE <3
-
-I do not own any of the original Halo: Combat Evolved file. It is the property
-of Microsoft and thereby protected under their End-User License Agreement (EULA)
-or License Terms.
