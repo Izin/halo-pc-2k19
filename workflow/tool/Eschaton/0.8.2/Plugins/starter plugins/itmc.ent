@@ -1,6 +1,0 @@
-<plugin class="itmc" author="conure" version="1" headersize="0">
- <short name="spawn time(in seconds, 0 = defualt)" offset="0xc" visible="true"/>
- <struct name="item permutation" offset="0x0" visible="true" size="84">
-  <float name="weight" offset="0x20" visible="true"/>
- </struct>
-</plugin>

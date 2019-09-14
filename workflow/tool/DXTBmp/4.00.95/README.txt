@@ -1,1 +1,0 @@
-If the app don't work, please install mwgfxdll.exe!

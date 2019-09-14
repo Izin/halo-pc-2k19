@@ -1,4 +1,0 @@
-<plugin class="tagc" author="conure" version="1" headersize="0">
- <struct name="ui widget definitions" offset="0x0" visible="true" size="16">
- </struct>
-</plugin>

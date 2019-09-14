@@ -1,3 +1,0 @@
-<plugin class="sbsp" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
-  <float name="Vehicle Ceiling" offset="0x14" Visible="true"/>
-</plugin>

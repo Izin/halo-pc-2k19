@@ -1,3 +1,3 @@
 # src
 
-Contains the files used to build the mod
+Contains all the files used to build the mod.

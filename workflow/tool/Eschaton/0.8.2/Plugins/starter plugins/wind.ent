@@ -1,9 +1,0 @@
-<plugin class="window" author="conure" version="1" headersize="0">
- <float name="velocity" offset="0x0" visible="true"/>
- <float name="velocity - to" offset="0x4" visible="true"/>
- <float name="varation area" offset="0x8" visible="true"/>
- <float name="varation area - to" offset="0xc" visible="true"/>
- <float name="local variation weight" offset="0x10" visible="true"/>
- <float name="local variation rate" offset="0x14" visible="true"/>
- <float name="damping" offset="0x18" visible="true"/>
-</plugin>

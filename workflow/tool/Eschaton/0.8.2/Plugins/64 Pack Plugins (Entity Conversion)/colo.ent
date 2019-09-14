@@ -1,9 +1,0 @@
-<plugin class="colo" Author="Conure's plugin type converter v0.1" version="0.5?" headersize="Main">
-  <struct name="Colours" offset="0x00" visible="true" size="48">
-    <string32 name="Name" offset="0x00" Visible="true"/>
-    <float name="Colour - A" offset="0x20" Visible="true"/>
-    <float name="Colour - R" offset="0x24" Visible="true"/>
-    <float name="Colour - G" offset="0x28" Visible="true"/>
-    <float name="Colour - B" offset="0x2C" Visible="true"/>
-  </struct>
-</plugin>
