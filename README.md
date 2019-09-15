@@ -60,13 +60,12 @@ The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
 
 #### Software
 
-This mod supports Halo: Combat Evolved [ENGLISH] version 1.10 for Windows. It
- is tested ONLY on a 1080p screen and Windows 10.
+ - Windows 7 (tested only on Windows 10)
+ - Halo: Combat Evolved [ENGLISH] version 1.10
 
 #### Hardware
 
-Please, don't try this mod with a Potato PC, or you will have surprises,
- especially because of some third-party software.
+ - Potato PCs are forbidden because of [Chimera requirements](https://github.com/Dwood15/Chimera/blob/master/README.md#requirements), [Chimera interpolation](https://github.com/Dwood15/Chimera/blob/master/README.md#interpolation) and because I says so.
 
 ### Backup
 
