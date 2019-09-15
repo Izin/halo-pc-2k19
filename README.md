@@ -27,21 +27,13 @@
 
 HD visuals are also available in [screenshots/1080p](/screenshots/1080p) folder.
 
-## Warning
-
-The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
- software that updates technical elements of Halo. However it does NOT support
- Halo PC (retail version of Halo: CE). No guarantees can be made on Halo PC
- stability!
-
-
 # Table of Contents
 
 * [**Prerequisite**](#prerequisite)
   * [**Requirements**](#requirements)
   * [**Warning about third-party software**](#warning-about-third-party-software)
 * [**Getting Started**](#getting-started)
-  * [**Download and extract**](#download-and-extract)
+  * [**Download**](#download)
   * [**Install**](#install)
   * [**Configure**](#configure)
   * [**Enjoy**](#enjoy)
@@ -80,11 +72,13 @@ In the small world of modding, a great majority of modders prefer to work on
  newer version by yourself. It also means that some features don't work, and
  there is nothing to do to fix that, except by porting this mod to Halo CE.
 
+ Also: 2K20 uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
+  software that updates technical elements of Halo. However, Chimera does
+  NOT support Halo PC. No guarantees can be made on how stable the game will be.
+
 # Getting Started
 
-You are about to install 2K20 in your computer.
-
-## Download and Extract
+## Download
 
 2K20 can be obtained from [https://mega.nz/2K20/release/](https://mega.nz/#F!8IMVVSLA!JaDc4ovBcdp_4pfYfzBP6g).
 
