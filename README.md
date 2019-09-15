@@ -25,16 +25,16 @@
 
 ![Banshee](/screenshots/gif/banshee.gif)
 
-HD visuals are also available in [screenshots/1080p](/screenshots/1080p) folder.
+IN GAME screenshots are also available [here](/screenshots/1080p).
 
 # Table of Contents
 
 * [**Prerequisite**](#prerequisite)
   * [**Requirements**](#requirements)
   * [**Warning about third-party software**](#warning-about-third-party-software)
-* [**Getting Started**](#getting-started)
+* [**Install**](#install)
   * [**Download**](#download)
-  * [**Install**](#install)
+  * [**Setup**](#setup)
   * [**Configure**](#configure)
   * [**Enjoy**](#enjoy)
 * [**Upgrade**](#upgrade)
@@ -51,20 +51,29 @@ HD visuals are also available in [screenshots/1080p](/screenshots/1080p) folder.
 
 ## Requirements
 
- - Windows: automated scripts are coded in batch
- - Windows 10 is recommended
+### General
+
+- Halo: Combat Evolved, ENGLISH, version 1.10
+- 1080p or better
+- A working computer: potato PCs will die because of [Chimera interpolation](https://github.com/Dwood15/Chimera/blob/master/README.md#interpolation) setting
+
+### Windows
+
+ - Windows 10
  - Account with administrator access
  - [7-Zip](https://www.7-zip.org/)
- - Halo: Combat Evolved [ENGLISH] version 1.10
- - At least a 1080p resolution
- - A real PC, not a potato one: mainly because of [Chimera requirements](https://github.com/Dwood15/Chimera/blob/master/README.md#requirements) and [Chimera interpolation](https://github.com/Dwood15/Chimera/blob/master/README.md#interpolation)
+
+### Linux
+
+ - [p7zip](http://p7zip.sourceforge.net/). Some Linux distributions may already include the ability to open .7z archives without any additional software installation.
 
 ## Warning about Third-party software
 
 In the Halo 1 for PC community, there are 2 different games with a similar name:
  - Halo: Combat Evolved, as known as Halo PC, which is the retail version of Halo 1.
  - Halo Custom Edition, as kwnon as Halo CE, which is an unsupported version of
- Halo PC, but unlock modding capabilities
+ Halo PC with unlocked modding capabilities
+
 In the small world of modding, a great majority of modders prefer to work on
  Halo CE, so 2K20 is an exception and hijacks the use of certain third-party
  software like [Chimera](https://github.com/Dwood15/Chimera) to achieve objectives.
@@ -74,10 +83,11 @@ In the small world of modding, a great majority of modders prefer to work on
  there is nothing to do to fix that, except by porting this mod to Halo CE.
 
  Also: 2K20 uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
-  software that updates technical elements of Halo. However, Chimera does
-  NOT support Halo PC. No guarantees can be made on how stable the game will be.
+  software that updates technical elements of Halo. However, Chimera supports
+  ONLY Halo CE. No guarantees can be made on how stable Halo PC will be when
+  launched.
 
-# Getting Started
+# Install
 
 ## Download
 
@@ -95,7 +105,7 @@ Place the extracted folder in the root directory of Halo:
 
 ![Halo directory](/doc/repository-halo-folder-with-2K20-install-folder.png)
 
-## Install
+## Setup
 
 You are going to install 2K20. It can be done using an automated script or a
  manual copy/paste of files and folders. Once installed, the mod is almost ready,
@@ -112,7 +122,7 @@ Then follow the instructions displayed on the window:
 ![2K20 installer script](/doc/repository-2K20-installer-script.png)
 
 And you're done for this part! If you encounter any error, you will probably
-find help in [2K20 Discord](https://discord.gg/p9m7Gn7).
+find help in our [2K20 Discord](https://discord.gg/p9m7Gn7).
 
 ### Manual
 
@@ -134,14 +144,14 @@ Find of create a shortcut for Halo. Then open its `Properties window`. Following
 ```
 C:\Program Files\Halo\halo.exe
 ```
-Replace it by this one (adapt it to your needs)
+Replace it by this one, once adapted to your needs and Halo installation path:
 ```
 C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21
 ```
  - `-novideo` disables intro video when the game is launched [Not necessary]
  - `-vidmode 1920,1080,60` lets you determine resolution and refresh rate
  - `-use21` forces Halo to launch using the latest supported version of shaders, the 2.1
- - `-console` will enable the the IN GAME console [Not necessary]
+ - `-console` will enable the IN GAME console [Not necessary]
 
 ### Ambient sound
 
@@ -166,7 +176,7 @@ Install 2K20 like it's new, it will detect the current installation and
 
 ### Automated (Windows only)
 
- 1. `Run as administrator` the script `Halo/2K20/UNINSTALL.cmd`.
+ 1. `Run as administrator` the script `Halo/2K20/UNINSTALL.cmd`
  2. Install the version of 2K20 you want
 
 # Remove
