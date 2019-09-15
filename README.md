@@ -37,14 +37,16 @@ The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
 
 # Table of Contents
 
-* [**Installation**](#installation)
-  * [**Prerequisite**](#prerequisite)
-    * [**Requirements**](#requirements)
-    * [**Backup**](#backup)
-    * [**Warning about third-party software**](#warning-about-third-party-software)
-  * [**Update game files**](#update-game-files)
-* [**Configuration**](#configuration)
+* [**Prerequisite**](#prerequisite)
+  * [**Requirements**](#requirements)
+  * [**Warning about third-party software**](#warning-about-third-party-software)
+* [**Getting Started**](#getting-started)
+  * [**Download and extract**](#download-and-extract)
+  * [**Install**](#install)
+  * [**Configure**](#configure)
+  * [**Enjoy**](#enjoy)
 * [**Upgrade**](#upgrade)
+* [**Downgrade**](#downgrade)
 * [**Remove**](#remove)
 * [**Community**](#community)
   * [**Roadmap**](#roadmap)
@@ -52,31 +54,19 @@ The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
   * [**Credits**](#credits)
   * [**Links**](#links)
 
-# Installation
 
-## Prerequisite
+# Prerequisite
 
-### Requirements
+## Requirements
 
-#### Software
-
- - Windows 7 (tested only on Windows 10)
+ - Windows 10 [for automatic install]
+ - An account with administrator access
+ - [7-Zip](https://www.7-zip.org/)
  - Halo: Combat Evolved [ENGLISH] version 1.10
+ - At least a 1080p resolution
+ - A real PC, not a potato one: mainly because of [Chimera requirements](https://github.com/Dwood15/Chimera/blob/master/README.md#requirements) and [Chimera interpolation](https://github.com/Dwood15/Chimera/blob/master/README.md#interpolation)
 
-#### Hardware
-
- - Potato PCs are forbidden because of [Chimera requirements](https://github.com/Dwood15/Chimera/blob/master/README.md#requirements), [Chimera interpolation](https://github.com/Dwood15/Chimera/blob/master/README.md#interpolation) and because I says so.
-
-### Backup
-
-In order to remove the mod later, create a backup of your **MAPS** folder. You
- can place this backup in the same place and call it **MAPS_backup"** for
- example. Here is an example of a the path to **MAPS**:
- **"/C:/Program Files/Microsoft Games/Halo/MAPS"**
-
-This is it!
-
-### Warning about Third-party software
+## Warning about Third-party software
 
 In the Halo 1 for PC community, there are 2 different games with a similar name:
  - Halo: Combat Evolved, as known as Halo PC, which is the retail version of Halo 1
@@ -90,29 +80,134 @@ In the small world of modding, a great majority of modders prefer to work on
  newer version by yourself. It also means that some features don't work, and
  there is nothing to do to fix that, except by porting this mod to Halo CE.
 
-## Updated game files
+# Getting Started
 
-This step will setup almost everything. To do so, simply merge the content of
- **[/build/halo](/build/halo)** in the root folder of Halo PC. Here is an
- example of the destination path: **"/C:/Program Files/Microsoft Games/Halo/"**.
- When Windows asks you if you want to replace existing files, says **YES**.
- PLEASE D'ONT FORGET TO MAKE A [BACKUP](#backup) FIRST.
+## 2K20 Directory Structure [NOT INSTALLED]
 
-## Upgrade
+```
+2K20-install-X.X.X
+├── 2K20
+│   └── UNINSTALL.cmd
+├── controls
+│   └── chimera.dll
+├── maps
+│   ├── a10.map
+│   ├── a30.map
+│   └── ...
+├── root
+│   ├── alsoft.ini
+│   ├── chimerasave.txt
+│   └── ...
+└── INSTALL.cmd
+```
+
+## 2K20 Directory Structure [INSTALLED]
+
+```
+2K20
+├── backup
+│   └── MAPS
+│       ├── a10.map
+│       ├── a30.map
+│       └── ...
+└── UNINSTALL.cmd
+```
+
+## Download and Extract
+
+2K20 can be obtained from [https://mega.nz/2K20/release/](https://mega.nz/#F!8IMVVSLA!JaDc4ovBcdp_4pfYfzBP6g).
+  Download the latest version and extract it inside of the root folder of Halo.
+
+ ![Download](/doc/repository-download-2K20.png)
+ ![Extract](/doc/repository-extract-2K20.png)
+ ![Halo directory](/doc/repository-halo-folder-with-2K20-install-folder.png)
+
+## Install
+
+### Automatic [Windows]
+The easiest way to install 2K20 is to use the `Windows batch script` that is
+ provided in the installation folder. Run `Halo/2K20-install-X.X.X/INSTALL.cmd`
+ as administrator and follow the steps.
+
+![2K20 install folder](/doc/repository-2K20-install-folder.png)
+![2K20 installer script](/doc/repository-2K20-installer-script.png)
+
+### Manual [Windows, Linux]
+
+It is also possible to manually install 2K20. To do so, follow the instructions:
+ - move the folder `Halo/2K20-install-X.X.X/2K20` in `Halo/`
+ - backup your existing maps in `Halo/2K20/backup/MAPS/`
+ - move the content of `Halo/2K20-install-X.X.X/root` in `Halo/`
+ - move the content of `Halo/2K20-install-X.X.X/controls` in `Halo/CONTROLS/`
+ - move the content of `Halo/2K20-install-X.X.X/maps` in `Halo/MAPS/`
+
+## Configure
+
+### Shortcut
+
+Find of create a shortcut for Halo. Then open its Properties. On Target field,
+ you should see something like `C:\Program Files\Halo\halo.exe`. There are some
+ arguments very usefull you can add to this line. For example, to disable intro
+ video, you can write `C:\Program Files\Halo\halo.exe -novideo`. For this mod, I
+ strongly recommend something like this:
+```
+C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21`
+```
+`-vidmode` lets you determine resolution. Here it's 1920 x 1080 px, with 60 i/s,
+ also known at 1080p 60 FPS. `-use21` forces Halo to launch using the latest
+ shader version supported: 2.1.You can also enable the IG console by adding
+ `-console`.
+
+### EAX ambient sound
+
+Launch Halo, go to `Settings > Audio config` and enable **Hardware acceleration.**.
+ Chose **high** for **Sound quality** and **Sound variety**. Then chose **EAX**
+ for **Ambient sound**, like in the following picture.
+
+![Halo sounds setting](/doc/repository-halo-sound-settings.png)
 
 
+## Enjoy
 
-## Remove
+**PLAY!**, and don't forget to come give us your feedback in [2K20 Discord](https://discord.gg/p9m7Gn7).
+ You have the opportunity to make it better.
 
-This step will setup technical enhancements such as environmental audio. To do
- so, simply copy/paste the content of **[/build/config](/build/maps)**
+# Upgrade
 
+## Automatic [Windows]
 
-@todo
+Install 2K20 like it's new, it will detect the current installation and
+ remove it for you.
 
-...
+**WARNING**: it will also replace the backup already made. So if
+ your backup contains untouched Halo maps, they will be replaced by the maps
+ you currently use with the mod.
 
-# Roadmap
+## Manually [Windows, Linux]
+
+You probably know very well how to do the things, but if you're stuck, you'll  
+ find help on the [2K20 Discord](https://discord.gg/p9m7Gn7).
+
+# Downgrade
+
+## Automatic [Windows]
+
+You MUST run `Halo/2K20/UNINSTALL.cmd` as administrator in order to cleanly
+ remove you current installation. Then, and ONLY then, download and install
+ the version of 2K20 you want the normal way.
+
+# Remove
+
+Run `Halo/2K20/UNINSTALL.cmd` as administrator
+
+# Community
+
+All the source files of this project can be found here: [/src](/src). Feel free
+ to download, copy and adapt them to the needs of your next mod :). In exchange,
+ share your work with me! Let me know in the Discord server (link below) what
+ you managed to achieve!
+
+## Roadmap
 
 | Version          | Features                                                                                                             | Release |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
@@ -121,7 +216,7 @@ This step will setup technical enhancements such as environmental audio. To do
 | v1.0.0  BETA     | FIX all major issues<br>UPDATE campaign behaviours<br>UPDATE textures                                                | Q4 2019 |
 | v1.0.X    RC     | PUBLIC RELEASE Official release                                                                                      | Q1 2020 |
 
-# Know bugs
+## Known Bugs
 
 - Behaviour/117: increasing walking speed causes side effects, such as "jumps on collision"
 - Behaviour/Loaded plasma shot: increasing the velocity of the projectile makes it difficult to follow any target
@@ -130,14 +225,7 @@ This step will setup technical enhancements such as environmental audio. To do
 - Texture/Sand: on some maps, the color is too damn pronounced (literally gold color on blood gulch)
 - Texture/Main menu: given that Reach main menu is not finalized, it can be tricky to use it in some ways
 
-# I love MODDERS <3
-
-All the source files of this project can be found here: [/src](/src). Feel free
- to download, copy and adapt them to the needs of your next mod :). In exchange,
- share your work with me! Let me know in the Discord server (link below) what
- you managed to achieve!
-
-# Credits
+## Credits
 
 These people were invaluable to the development of Chimera:
 
@@ -154,10 +242,10 @@ These people were invaluable to the development of Chimera:
   of Microsoft and thereby protected under their End-User License Agreement (EULA)
   or License Terms. I do not own any of the third-party software either.
 
-# Links
+## Links
 
  - [2K20 Discord](https://discord.gg/p9m7Gn7)
  - [Chimera Discord](https://discord.gg/ZwQeBE2)
  - [Halo CE Reclaimers Discord](https://discord.gg/YUJdesD)
- - http://hce.halomaps.org
  - https://opencarnage.net/index.php?/topic/7383-the-halo-ce-ultimate-enhancement-guide-updated-05092019/
+ - [DSOAL Builds](http://vaporeon.io/hosted/dsoal-builds/)
