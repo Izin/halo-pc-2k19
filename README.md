@@ -69,7 +69,7 @@ The mod uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
 ## Warning about Third-party software
 
 In the Halo 1 for PC community, there are 2 different games with a similar name:
- - Halo: Combat Evolved, as known as Halo PC, which is the retail version of Halo 1
+ - Halo: Combat Evolved, as known as Halo PC, which is the retail version of Halo 1.
  - Halo Custom Edition, as kwnon as Halo CE, which is an unsupported version of
  Halo PC, but unlock modding capabilities
 In the small world of modding, a great majority of modders prefer to work on
@@ -82,59 +82,38 @@ In the small world of modding, a great majority of modders prefer to work on
 
 # Getting Started
 
-## 2K20 Directory Structure [NOT INSTALLED]
-
-```
-2K20-install-X.X.X
-├── 2K20
-│   └── UNINSTALL.cmd
-├── controls
-│   └── chimera.dll
-├── maps
-│   ├── a10.map
-│   ├── a30.map
-│   └── ...
-├── root
-│   ├── alsoft.ini
-│   ├── chimerasave.txt
-│   └── ...
-└── INSTALL.cmd
-```
-
-## 2K20 Directory Structure [INSTALLED]
-
-```
-2K20
-├── backup
-│   └── MAPS
-│       ├── a10.map
-│       ├── a30.map
-│       └── ...
-└── UNINSTALL.cmd
-```
+You are about to install 2K20 in your computer.
 
 ## Download and Extract
 
 2K20 can be obtained from [https://mega.nz/2K20/release/](https://mega.nz/#F!8IMVVSLA!JaDc4ovBcdp_4pfYfzBP6g).
-  Download the latest version and extract it inside of the root folder of Halo.
 
- ![Download](/doc/repository-download-2K20.png)
- ![Extract](/doc/repository-extract-2K20.png)
- ![Halo directory](/doc/repository-halo-folder-with-2K20-install-folder.png)
+Download the latest version:
+
+![Download](/doc/repository-download-2K20.png)
+
+Extract it:
+
+![Extract](/doc/repository-extract-2K20.png)
+
+Place it in the root folder of Halo:
+
+![Halo directory](/doc/repository-halo-folder-with-2K20-install-folder.png)
 
 ## Install
 
-### Automatic [Windows]
-The easiest way to install 2K20 is to use the `Windows batch script` that is
- provided in the installation folder. Run `Halo/2K20-install-X.X.X/INSTALL.cmd`
- as administrator and follow the steps.
+### Automatic (Windows)
+The easiest way to install 2K20 is to `Run as administrator` `Halo/2K20-install-X.X.X/INSTALL.cmd`:
 
 ![2K20 install folder](/doc/repository-2K20-install-folder.png)
+
+Then follow the installation steps:
+
 ![2K20 installer script](/doc/repository-2K20-installer-script.png)
 
-### Manual [Windows, Linux]
+### Manual (Windows, Linux)
 
-It is also possible to manually install 2K20. To do so, follow the instructions:
+It is also possible to manually install 2K20. To do so, follow these steps:
  - move the folder `Halo/2K20-install-X.X.X/2K20` in `Halo/`
  - backup your existing maps in `Halo/2K20/backup/MAPS/`
  - move the content of `Halo/2K20-install-X.X.X/root` in `Halo/`
@@ -145,36 +124,34 @@ It is also possible to manually install 2K20. To do so, follow the instructions:
 
 ### Shortcut
 
-Find of create a shortcut for Halo. Then open its Properties. On Target field,
- you should see something like `C:\Program Files\Halo\halo.exe`. There are some
- arguments very usefull you can add to this line. For example, to disable intro
- video, you can write `C:\Program Files\Halo\halo.exe -novideo`. For this mod, I
- strongly recommend something like this:
+Find of create a shortcut for Halo. Then open its `Properties` Window. On `Target` field,
+ you should see something like this:
 ```
-C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21`
+C:\Program Files\Halo\halo.exe
 ```
-`-vidmode` lets you determine resolution. Here it's 1920 x 1080 px, with 60 i/s,
- also known at 1080p 60 FPS. `-use21` forces Halo to launch using the latest
- shader version supported: 2.1.You can also enable the IG console by adding
- `-console`.
+You will now replace this line by something like this:
+```
+C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21
+```
+ - `-novideo` disables intro video when the game is launched. You decide
+ - `-vidmode 1920,1080,60` lets you determine resolution and refresh rate
+ - `-use21` forces Halo to launch using the latest shader version supported: 2.1
+ - `-console` will enable the IN GAME console
 
-### EAX ambient sound
+### Ambient sound
 
-Launch Halo, go to `Settings > Audio config` and enable **Hardware acceleration.**.
- Chose **high** for **Sound quality** and **Sound variety**. Then chose **EAX**
- for **Ambient sound**, like in the following picture.
+Launch Halo and update **Audio config** like in the following picture:
 
 ![Halo sounds setting](/doc/repository-halo-sound-settings.png)
 
-
 ## Enjoy
 
-**PLAY!**, and don't forget to come give us your feedback in [2K20 Discord](https://discord.gg/p9m7Gn7).
- You have the opportunity to make it better.
+**HAVE FUN**, and don't forget: **YOU'RE MORE THAN WELCOMED** IN OUR [2K20 Discord](https://discord.gg/p9m7Gn7).
+ Help us make this mode better.
 
 # Upgrade
 
-## Automatic [Windows]
+### Automatic (Windows)
 
 Install 2K20 like it's new, it will detect the current installation and
  remove it for you.
@@ -183,14 +160,9 @@ Install 2K20 like it's new, it will detect the current installation and
  your backup contains untouched Halo maps, they will be replaced by the maps
  you currently use with the mod.
 
-## Manually [Windows, Linux]
-
-You probably know very well how to do the things, but if you're stuck, you'll  
- find help on the [2K20 Discord](https://discord.gg/p9m7Gn7).
-
 # Downgrade
 
-## Automatic [Windows]
+### Automatic (Windows)
 
 You MUST run `Halo/2K20/UNINSTALL.cmd` as administrator in order to cleanly
  remove you current installation. Then, and ONLY then, download and install
@@ -198,14 +170,12 @@ You MUST run `Halo/2K20/UNINSTALL.cmd` as administrator in order to cleanly
 
 # Remove
 
-Run `Halo/2K20/UNINSTALL.cmd` as administrator
+`Run as administrator` the script `Halo/2K20/UNINSTALL.cmd`.
 
 # Community
 
-All the source files of this project can be found here: [/src](/src). Feel free
- to download, copy and adapt them to the needs of your next mod :). In exchange,
- share your work with me! Let me know in the Discord server (link below) what
- you managed to achieve!
+Feel free to download, copy and adapt the source files of this project to
+ the needs of your next mod :). In exchange, share your work with us in our [2K20 Discord](https://discord.gg/p9m7Gn7).
 
 ## Roadmap
 
@@ -236,7 +206,7 @@ These people were invaluable to the development of Chimera:
  - **Shelly** - This nice fox will help you fix problems
  - **SOl_7** - [His work](https://www.youtube.com/channel/UCqeSNPrKO74SMtNwvvtoOtQ) is a great source of inspiration for this mod
  - **Derj** - His work is also a great source of inspiration for this mod
- - **Halo CE Reclaimers Discord** - Great people, caring and willing to help. This state of mind motivated me to release my work
+ - **Halo CE Reclaimers Discord** - Great people, caring and willing to help
 
  I do not own any of the Halo: Combat Evolved files. It is the property
   of Microsoft and thereby protected under their End-User License Agreement (EULA)
@@ -247,5 +217,4 @@ These people were invaluable to the development of Chimera:
  - [2K20 Discord](https://discord.gg/p9m7Gn7)
  - [Chimera Discord](https://discord.gg/ZwQeBE2)
  - [Halo CE Reclaimers Discord](https://discord.gg/YUJdesD)
- - https://opencarnage.net/index.php?/topic/7383-the-halo-ce-ultimate-enhancement-guide-updated-05092019/
  - [DSOAL Builds](http://vaporeon.io/hosted/dsoal-builds/)
