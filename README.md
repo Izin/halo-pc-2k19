@@ -51,8 +51,9 @@ HD visuals are also available in [screenshots/1080p](/screenshots/1080p) folder.
 
 ## Requirements
 
- - Windows 10 [for automatic install]
- - An account with administrator access
+ - Windows: automated scripts are coded in batch
+ - Windows 10 is recommended
+ - Account with administrator access
  - [7-Zip](https://www.7-zip.org/)
  - Halo: Combat Evolved [ENGLISH] version 1.10
  - At least a 1080p resolution
@@ -82,30 +83,38 @@ In the small world of modding, a great majority of modders prefer to work on
 
 2K20 can be obtained from [https://mega.nz/2K20/release/](https://mega.nz/#F!8IMVVSLA!JaDc4ovBcdp_4pfYfzBP6g).
 
-Download the latest version:
+Download the latest available version:
 
 ![Download](/doc/repository-download-2K20.png)
 
-Extract it:
+Extract it anywhere:
 
 ![Extract](/doc/repository-extract-2K20.png)
 
-Place it in the root folder of Halo:
+Place the extracted folder in the root directory of Halo:
 
 ![Halo directory](/doc/repository-halo-folder-with-2K20-install-folder.png)
 
 ## Install
 
-### Automatic (Windows)
-The easiest way to install 2K20 is to `Run as administrator` `Halo/2K20-install-X.X.X/INSTALL.cmd`:
+You are going to install 2K20. It can be done using an automated script or a
+ manual copy/paste of files and folders. Once installed, the mod is almost ready,
+ but still requires some attention in order to configure everything.
+
+### Automated (Windows only)
+The easiest way to install 2K20 is to `Run as administrator` the installation
+ script, like in the following picture:
 
 ![2K20 install folder](/doc/repository-2K20-install-folder.png)
 
-Then follow the installation steps:
+Then follow the instructions displayed on the window:
 
 ![2K20 installer script](/doc/repository-2K20-installer-script.png)
 
-### Manual (Windows, Linux)
+And you're done for this part! If you encounter any error, you will probably
+find help in [2K20 Discord](https://discord.gg/p9m7Gn7).
+
+### Manual
 
 It is also possible to manually install 2K20. To do so, follow these steps:
  - move the folder `Halo/2K20-install-X.X.X/2K20` in `Halo/`
@@ -116,21 +125,23 @@ It is also possible to manually install 2K20. To do so, follow these steps:
 
 ## Configure
 
+Let's configure the mod!
+
 ### Shortcut
 
-Find of create a shortcut for Halo. Then open its `Properties` Window. On `Target` field,
- you should see something like this:
+Find of create a shortcut for Halo. Then open its `Properties window`. Following
+ the word `Target`, you should see something like this:
 ```
 C:\Program Files\Halo\halo.exe
 ```
-You will now replace this line by something like this:
+Replace it by this one (adapt it to your needs)
 ```
 C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21
 ```
- - `-novideo` disables intro video when the game is launched. You decide
+ - `-novideo` disables intro video when the game is launched [Not necessary]
  - `-vidmode 1920,1080,60` lets you determine resolution and refresh rate
- - `-use21` forces Halo to launch using the latest shader version supported: 2.1
- - `-console` will enable the IN GAME console
+ - `-use21` forces Halo to launch using the latest supported version of shaders, the 2.1
+ - `-console` will enable the the IN GAME console [Not necessary]
 
 ### Ambient sound
 
@@ -140,27 +151,23 @@ Launch Halo and update **Audio config** like in the following picture:
 
 ## Enjoy
 
-**HAVE FUN**, and don't forget: **YOU'RE MORE THAN WELCOMED** IN OUR [2K20 Discord](https://discord.gg/p9m7Gn7).
- Help us make this mode better.
+**Have fun** and don't forget to give us **your feedback** in our [2K20 Discord](https://discord.gg/p9m7Gn7).
 
 # Upgrade
 
-### Automatic (Windows)
+### Automated (Windows only)
 
 Install 2K20 like it's new, it will detect the current installation and
- remove it for you.
-
-**WARNING**: it will also replace the backup already made. So if
- your backup contains untouched Halo maps, they will be replaced by the maps
- you currently use with the mod.
+ remove it for you. **BE CAREFULL**: it will also replace the existing
+ backup of your old maps. So if your backup contains untouched Halo maps,
+ they will be replaced by the maps you currently use in Halo.
 
 # Downgrade
 
-### Automatic (Windows)
+### Automated (Windows only)
 
-You MUST run `Halo/2K20/UNINSTALL.cmd` as administrator in order to cleanly
- remove you current installation. Then, and ONLY then, download and install
- the version of 2K20 you want the normal way.
+ 1. `Run as administrator` the script `Halo/2K20/UNINSTALL.cmd`.
+ 2. Install the version of 2K20 you want
 
 # Remove
 
