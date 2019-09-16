@@ -65,7 +65,7 @@ IN GAME screenshots are also available [here](/screenshots/1080p).
 
 ### Linux
 
- - [p7zip](http://p7zip.sourceforge.net/). Some Linux distributions may already include the ability to open .7z archives without any additional software installation.
+ - [p7zip](http://p7zip.sourceforge.net/). Some Linux distributions may already include the ability to open .7z archives without any additional software installation
 
 ## Warning about Third-party software
 
@@ -78,14 +78,10 @@ In the small world of modding, a great majority of modders prefer to work on
  Halo CE, so 2K20 is an exception and hijacks the use of certain third-party
  software like [Chimera](https://github.com/Dwood15/Chimera) to achieve objectives.
  It doesn't mean that the mod will not work, it means that the mod uses software
- that doesn't not support Halo PC, and can cease to work if you upgrade to a
- newer version by yourself. It also means that some features don't work, and
- there is nothing to do to fix that, except by porting this mod to Halo CE.
-
- Also: 2K20 uses [Chimera](https://github.com/Dwood15/Chimera), a third-party
-  software that updates technical elements of Halo. However, Chimera supports
-  ONLY Halo CE. No guarantees can be made on how stable Halo PC will be when
-  launched.
+ that doesn't not support Halo PC, and can cease to work anytime or if you have
+ the great idea to manually upgrade to a newer version by yourself.
+ It also means that some features don't work, and there is nothing to do to
+ fix that, except by porting this mod to Halo CE.
 
 # Install
 
@@ -107,9 +103,9 @@ Place the extracted folder in the root directory of Halo:
 
 ## Setup
 
-You are going to install 2K20. It can be done using an automated script or a
- manual copy/paste of files and folders. Once installed, the mod is almost ready,
- but still requires some attention in order to configure everything.
+You are going to install 2K20 files. It can be done using an automated
+ script or by manually copy/pasting files and folders. Once installed,
+ the mod is almost ready for use, but it still needs to be configured.
 
 ### Automated (Windows only)
 The easiest way to install 2K20 is to `Run as administrator` the installation
@@ -117,12 +113,12 @@ The easiest way to install 2K20 is to `Run as administrator` the installation
 
 ![2K20 install folder](/doc/repository-2K20-install-folder.png)
 
-Then follow the instructions displayed on the window:
+This will open a command window executing our `batch` script. Follow
+ the displayed instructions and report any problem on our [2K20 Discord](https://discord.gg/p9m7Gn7).
 
 ![2K20 installer script](/doc/repository-2K20-installer-script.png)
 
-And you're done for this part! If you encounter any error, you will probably
-find help in our [2K20 Discord](https://discord.gg/p9m7Gn7).
+Once finished, close the window.
 
 ### Manual
 
@@ -135,8 +131,6 @@ It is also possible to manually install 2K20. To do so, follow these steps:
 
 ## Configure
 
-Let's configure the mod!
-
 ### Shortcut
 
 Find of create a shortcut for Halo. Then open its `Properties window`. Following
@@ -144,7 +138,7 @@ Find of create a shortcut for Halo. Then open its `Properties window`. Following
 ```
 C:\Program Files\Halo\halo.exe
 ```
-Replace it by this one, once adapted to your needs and Halo installation path:
+Replace the previous line by this one (once adapted to your needs and to your Halo installation path):
 ```
 C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21
 ```
@@ -159,16 +153,18 @@ Launch Halo and update **Audio config** like in the following picture:
 
 ![Halo sounds setting](/doc/repository-halo-sound-settings.png)
 
+This is it! You're good to go!
+
 ## Enjoy
 
-**Have fun** and don't forget to give us **your feedback** in our [2K20 Discord](https://discord.gg/p9m7Gn7).
+**Have fun!** (**feedbacks** in our [2K20 Discord](https://discord.gg/p9m7Gn7) will be greatly appreciated).
 
 # Upgrade
 
 ### Automated (Windows only)
 
 Install 2K20 like it's new, it will detect the current installation and
- remove it for you. **BE CAREFULL**: it will also replace the existing
+ remove it for you. **Warning**: it will also replace the existing
  backup of your old maps. So if your backup contains untouched Halo maps,
  they will be replaced by the maps you currently use in Halo.
 
@@ -190,12 +186,12 @@ Feel free to download, copy and adapt the source files of this project to
 
 ## Roadmap
 
-| Version          | Features                                                                                                             | Release |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
-| v0.1.0 ALPHA     | UPDATE behaviours in campaign (unfinished)<br>UPDATE textures (unfinished)<br>ADD Third-party software configuration | Q3 2019 |
-| v0.2.0 ALPHA     | UPDATE main menu UI - Halo Reach like (finished)<br>UPDATE existing textures<br>ADD new textures                     | Q4 2019 |
-| v1.0.0  BETA     | FIX all major issues<br>UPDATE campaign behaviours<br>UPDATE textures                                                | Q4 2019 |
-| v1.0.X    RC     | PUBLIC RELEASE Official release                                                                                      | Q1 2020 |
+| Version          | Features                                                                                                             | Release | Status            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------- | ------- | ----------------- |
+| v0.1.0 ALPHA     | UPDATE behaviours in campaign (unfinished)<br>UPDATE textures (unfinished)<br>ADD Third-party software configuration | Q3 2019 | Under development |
+| v0.2.0 ALPHA     | UPDATE main menu UI - Halo Reach like (finished)<br>UPDATE existing textures<br>ADD new textures                     | Q4 2019 |                   |
+| v1.0.0  BETA     | FIX all major issues<br>UPDATE campaign behaviours<br>UPDATE textures                                                | Q4 2019 |                   |
+| v1.0.X    RC     | PUBLIC RELEASE Official release                                                                                      | Q1 2020 |                   |
 
 ## Known Bugs
 
@@ -208,8 +204,7 @@ Feel free to download, copy and adapt the source files of this project to
 
 ## Credits
 
-These people were invaluable to the development of Chimera:
-
+ - **Slip2Guerre** - Mod development and creation; documentation; testing
  - **Microsoft and BUNGIE** - For Halo
  - **Azzak** - Documentation; testing
  - **Orbmancer** - Testing
