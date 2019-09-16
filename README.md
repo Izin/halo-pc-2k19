@@ -21,6 +21,9 @@
   1. I am a passionate tunner, not a skilled modder
   2. Pushing the game as its maximum "as is" is a personal bet and a mark of respect for BUNGIE
 
+This is NOT the right way to mod Halo PC. This is very old school, even for
+Halo. Don't follow my example and don't try this at home ;P.
+
 ## Original vs 2K20
 
 ![Banshee](/screenshots/gif/banshee.gif)
@@ -149,6 +152,12 @@ C:\Program Files\Halo\halo.exe -novideo -vidmode 1920,1080,60 -use21
 
 ### Ambient sound
 
+EAX is environmental audio, things like echoing footsteps and
+ reverberating bullets. it worked out of the box on Windows XP,
+ then Microsoft rewrote the audio code on Vista+, so EAX is not
+ working anymore on Vista+ OS. A DirectSound wrapper for OpenAL
+ ([DSOAL](https://repo.or.cz/dsound-openal.git)) is a set of DLL files that will re-enable EAX Effects.
+
 Launch Halo and update **Audio config** like in the following picture:
 
 ![Halo sounds setting](/doc/repository-halo-sound-settings.png)
@@ -176,6 +185,8 @@ Install 2K20 like it's new, it will detect the current installation and
  2. Install the version of 2K20 you want
 
 # Remove
+
+### Automated (Windows only)
 
 `Run as administrator` the script `Halo/2K20/UNINSTALL.cmd`.
 
