@@ -1,0 +1,39 @@
+TODO : augmenter pr�cision mitrailleuse tourelle
+TODO : augmenter temps de d�placement tourelle
+TODO : augmenter temps de rotation du char
+TODO : projectile plus rapide
+TODO : rechargement plus lent
+TODO : diminuer l'acc�l�ration
+
+Eschaton 0.8
+==================================================================
+
+[jpt!: Damage Effect] vehicles/scorpion/shell explosion
+------------------------------------------------------------------
+Minimum Damage: 	      080 -> 041
+Maximum Damage (min) :	351 -> 201
+Maximum Damage (max) :  351 -> 201
+
+
+[jpt!: Damage Effect] vehicles/scorpion/bullet (mitrailleuse tourelle)
+------------------------------------------------------------------
+Minimum Damage: 	010 -> 020
+Maximum Damage (min) :	010 -> 025
+Maximum Damage (max) :  010 -> 030
+
+
+[weap: Weapon] vehicles/scorpion/scorpion_cannon
+------------------------------------------------------------------
+error angle - from: 	0.0174533 -> 0.005
+error angle - to:	0.0349066 -> 0.005
+
+
+Halo Map Tools V3.5
+==================================================================
+Also doable in Eschaton: Current Plugin >>> starter plugins:vehi.xml <<<
+
+[vehi] vehicles/scorpion/scorpion
+------------------------------------------------------------------
+Acceleration:          0.002 -> 0.002
+Top Speed (Forward):	0.14 -> 0.12
+Top Speed (Reverse):	0.12 -> 0.08

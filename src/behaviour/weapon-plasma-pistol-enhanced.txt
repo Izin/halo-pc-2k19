@@ -1,0 +1,36 @@
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/plasma pistol/bolt
+------------------------------------------------------------------
+Minimum Damage:            10 -> 4
+Maximum Damage (Minimum):  16 -> 6
+Maximum Damage (Maximum):  20 -> 8
+
+
+[proj: Projectile] weapons/plasma pistol/bolt
+------------------------------------------------------------------
+P - initial velocity:   0.8333334 ->  4
+P - final velocity:     0.5       ->  3
+
+
+[proj: Projectile] weapons/plasma rifle/charged_bolt
+------------------------------------------------------------------
+P - initial velocity:   0.5       ->  0.85
+P - final velocity:     0.3333333 ->  0.55
+
+
+[weap: Weapon] weapons/plasma pistol/plasma pistol
+------------------------------------------------------------------
+# See the sniper rifle memo
+
+magnification range - from:     2 ->  3
+magnification range - to:       2 ->  3
+
+triggers
+
+heat generated per round [0,1]:   0.16  -> 0.014
+age generated per round [0,1]:    0.002 -> 0.002

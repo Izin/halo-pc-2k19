@@ -1,0 +1,21 @@
+App: Eschaton 0.8
+==================================================================
+
+[jpt!: Damage Effect] weapons/assaut_riffle/bullet
+------------------------------------------------------------------
+Minimum Damage: 	       10 -> 7
+Maximum Damage (min) :	       10 -> 7
+Maximum Damage (max) :         10 -> 7
+
+[weap: Weapon] weapons/assaut_riffle/assaut_riffle
+------------------------------------------------------------------
+rounds total initial: 	      240 -> 120
+magazine (chunk 1):           240 -> 120
+
+rounds between tracers:         3 -> 1
+
+rounds per second - from:      15 -> 17.6
+rounds per second - to:	       15 -> 17.6
+
+error angle - from: 	0.0349066 -> 0.005
+error angle - to:	0.1134464 -> 0.025

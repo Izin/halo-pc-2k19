@@ -1,0 +1,18 @@
+@todo Increase rockets speed
+@todo increase rockets precision
+
+Eschaton 0.8
+==================================================================
+
+
+[vehi: Vehicle] vehicles/warthog/warthog
+------------------------------------------------------------------
+# WITH HMT PLUGIN
+
+Seat
+Third Person Entrance: NOT CHECKED -> CHECKED
+
+Top Speed (Forward): 0.225   -> 0.26
+Top Speed (Reverse): 0.010   -> 0.1
+Acceleration:        0.00275 -> 0.006
+Deceleration:        0.011   -> 0.03

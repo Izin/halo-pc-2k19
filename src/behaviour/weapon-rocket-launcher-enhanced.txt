@@ -1,0 +1,23 @@
+A more punchy rocket launcher
+
+
+Eschaton 0.8
+==================================================================
+
+
+[proj: Projectile] weapons/rocker launcher/rocket
+------------------------------------------------------------------
+P - initial velocity:         0.4000000 ->  1.00
+P - final velocity:           0.3333333 ->  1.35
+
+
+[weap: Weapon] weapons/rocket launcher/rocket launcher
+------------------------------------------------------------------
+# See the sniper rifle memo
+
+magnification range - from:     2 ->  3
+magnification range - to:       2 ->  3
+
+magazines (chunk 1)
+
+rounds total maximum: 8 -> 4

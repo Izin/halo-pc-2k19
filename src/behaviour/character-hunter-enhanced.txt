@@ -1,0 +1,11 @@
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] characters/hunter/melee
+------------------------------------------------------------------
+Minimum Damage:             35 -> 60
+Maximum Damage (Minimum):   35 -> 60
+Maximum Damage (Maximum):   45 -> 70

@@ -1,0 +1,32 @@
+==================================================================
+Eschaton 0.8
+Job: transform MA5B to MA5D
+==================================================================
+
+RESTE A FAIRE : piger pourquoi le bullet counter sur le fusil 
+commence toujours à 60
+
+[jpt!: Damage Effect] weapons/assaut_riffle/bullet
+------------------------------------------------------------------
+Minimum Damage: 	10 -> 8
+Maximum Damage (min) :	10 -> 8
+Maximum Damage (max) :  10 -> 8
+
+
+[weap: Weapon] weapons/assaut_riffle/assaut_riffle
+------------------------------------------------------------------
+rounds total initial: 	240 -> 108
+rounds total maximum: 	600 -> 252
+rounds loaded maximum:	060 -> 036
+rounds reloaded:        060 -> 036
+magzine (chunk 1):      240 -> 072
+
+rounds per second - from: 15 -> 10
+rounds per second - to:	  15 -> 10
+
+error angle - from: 	0.0349066 -> 0.01
+error angle - to:	0.1134464 -> 0.02
+
+[wphi: Weapon HUD Interface] weapons/assaut_riffle/assaut_riffle
+------------------------------------------------------------------
+total ammo cutoff: 61 -> 37

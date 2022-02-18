@@ -1,0 +1,51 @@
+A mix between Halo 5 and my personal preferences
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/needler/detonation damage
+------------------------------------------------------------------
+# When a needle detonate after it sticked to an enemy
+Minimum Damage:            10 -> 10
+Maximum Damage (Minimum):  10 -> 10
+Maximum Damage (Maximum):  10 -> 10
+
+
+[jpt!: Damage Effect] weapons/needler/explosion
+------------------------------------------------------------------
+# When many needles detonate at the same time
+Minimum Damage:            40 -> 20
+Maximum Damage (Minimum):  60 -> 30
+Maximum Damage (Maximum):  60 -> 30
+
+
+[proj: Projectile] weapons/needler/needle
+------------------------------------------------------------------
+P - initial velocity:         0.1333333 ->  0.6
+P - final velocity:           0.1333333 ->  0.3
+P - guided angular velocity:  1.5707960 ->  2.0
+
+
+[weap: Weapon] weapons/needler/needler
+------------------------------------------------------------------
+magazines (chunk 1)
+rounds total initial: 	 80 -> 44
+rounds total maximum:    80 -> 88
+rounds loaded maximum:   20 -> 22
+rounds reloaded:         20 -> 22
+magazine (chunk 1):      80 -> 44
+
+triggers
+
+rounds per second - from:            3 -> 8
+rounds per second - to:             10 -> 8
+
+minimum error: 		           0.0349066 -> 0.00
+error angle - from: 	       0.0698132 -> 0.01
+error angle - to:	           0.0698132 -> 0.03
+
+[wphi: Weapon HUD Interface] weapons/needler/needler
+------------------------------------------------------------------
+loaded ammo cutoff: 8 -> 6

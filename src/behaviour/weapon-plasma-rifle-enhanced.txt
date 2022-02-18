@@ -1,0 +1,37 @@
+Eschaton 0.8
+==================================================================
+
+
+[!jpt: Damage Effect] weapons/plasma rifle/bolt
+------------------------------------------------------------------
+Minimum Damage:            10 -> 5
+Maximum Damage (Minimum):  12 -> 6
+Maximum Damage (maximum):  14 -> 8
+
+# Less effective against COVIES (mostly Elites)
+Force Field:                  2.00 ->   1.50
+Elite Energy Shield:          2.00 ->   1.50
+Elite:                        1.00 ->   0.60
+
+# More effective against cyborgs
+Cyborg:                        0.50 ->   0.80
+
+
+[proj: Projectile] weapons/plasma rifle/bolt
+------------------------------------------------------------------
+P - initial velocity:   1.666667  ->  3.00
+P - final velocity:     0.8333334 ->  1.50
+
+
+[weap: Weapon] weapons/plasma rifle/plasma rifle
+------------------------------------------------------------------
+triggers
+
+rounds per seconds - from:          7 -> 11
+rounds per seconds - to:           10 -> 11
+
+error angle - from: 	    0.0043633 -> 0.002
+error angle - to:   	    0.0436332 -> 0.020
+
+heat generated per round [0,1]:   0.08  -> 0.060
+age generated per round [0,1]:    0.005 -> 0.002

@@ -1,0 +1,49 @@
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] vehicles/ghost/ghost bolt
+------------------------------------------------------------------
+Minimum Damage: 	      10 -> 4
+Maximum Damage (min) :	10 -> 4
+Maximum Damage (max) :  14 -> 6
+
+
+[proj: Projectile] vehicles/ghost/ghost bolt
+------------------------------------------------------------------
+P - initial velocity:   1.666667  ->  6
+P - final velocity:     0.8333334 ->  2
+
+
+[vehi: Vehicle] vehicles/ghost/ghost
+------------------------------------------------------------------
+# WITH HMT PLUGIN
+Seat
+[NOT CHECKED -> CHECKED] Third Person Entrance
+
+Top Speed (Forward): 0.225  -> 0.3
+Top Speed (Reverse): 0.000  -> 0.1
+Acceleration:        0.005  -> 0.008
+Deceleration:        0.000  -> 0.02
+
+
+[weap: Weapon] vehicles/ghost/ghost gun
+------------------------------------------------------------------
+magazines
+
+rounds total initial:   300   -> 140
+rounds total maximum:   300   -> 140
+rounds loaded maximum:   50   ->  70
+rounds reloaded:         50   ->  70
+chamber time:             0.3 ->   3
+
+triggers
+
+rounds per second - from:   5    -> 10
+rounds per seconds - to:    6    -> 10
+
+error - acceleration time:  2    ->  4
+
+minimum error:          0.0087266 -> 0.000
+error angle - from: 	  0.0087266 -> 0.002
+error angle - to:	      0.0523599 -> 0.010

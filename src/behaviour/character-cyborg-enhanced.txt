@@ -1,0 +1,30 @@
+Eschaton 0.8
+==================================================================
+
+
+[coll: Model Collision Geometry] characters/cyborg
+------------------------------------------------------------------
+maximum body vitality:     75 -> 100
+maximum shield vitality:   75 -> 100
+
+
+[ligh: Light] characters/cyborg/flashlight_cyborg
+------------------------------------------------------------------
+Radius:                   06.00     -> 06.00
+Light Intensity Burst:    01.00     -> 12.00 (linked, #1)
+Light Intensity:          01.00     -> 12.00 (linked, #1)
+
+
+[matg: Globals] globals/globals
+------------------------------------------------------------------
+player information
+
+run forward:        2.25 -> 3.00
+run backwards:      2.00 -> 2.50
+run sideways:       2.00 -> 2.50
+run acceleration:   0.32 -> 1.00
+
+sneak forward:        0.90 -> 1.50
+sneak backwards:      0.65 -> 1.25
+sneak sideways:       0.60 -> 1.20
+sneak acceleration:   0.16 -> 0.66

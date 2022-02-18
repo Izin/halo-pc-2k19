@@ -1,0 +1,30 @@
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] vehicles/c gun turret/bolt
+------------------------------------------------------------------
+Minimum Damage: 	       8 -> 6
+Maximum Damage (min) :	12 -> 10
+Maximum Damage (max) :  14 -> 12
+
+
+[proj: Projectile] vehicles/c gun turret/c gun turret
+------------------------------------------------------------------
+P - initial velocity:   0.8333334 ->  6.00
+P - final velocity:     0.5000000 ->  4.00
+
+
+[weap: Weapon] vehicles/c gun turret/c gun turret
+------------------------------------------------------------------
+triggers
+
+rounds per second - from:   4    -> 5
+rounds per seconds - to:    5    -> 5
+acceleration time (secs):   1    -> 2
+deceleration time (secs):   4    -> 4
+
+error - acceleration time:  3    -> 4
+
+error angle - from:    0.0174533 -> 0.004
+error angle - to:      0.0523599 -> 0.015

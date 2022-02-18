@@ -1,0 +1,23 @@
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/shotgun/pellet
+------------------------------------------------------------------
+Minimum Damage: 	       8 -> 6
+Maximum Damage (min) :	18 -> 16
+Maximum Damage (max) :  25 -> 24
+
+
+[weap: Weapon] weapons/shotgun/shotgun
+------------------------------------------------------------------
+rounds total initial: 	 24 -> 12
+rounds total maximum:    60 -> 48
+reounds loaded maximum:  12 -> 6
+magazine (chunk 1):      60 -> 12
+
+rounds per second - from: 1 -> 0.96
+rounds per second - to:	  1 -> 0.96
+
+error angle - from: 	0.1745329 -> 0.03
+error angle - to:	    0.1745329 -> 0.03

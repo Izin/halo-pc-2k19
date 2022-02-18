@@ -1,0 +1,63 @@
+@TODO augmenter temps de déplacement tourelle
+@TODO augmenter temps de rotation du char
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] vehicles/scorpion/bullet (MG)
+------------------------------------------------------------------
+Minimum Damage: 	      10 -> 4
+Maximum Damage (min) :	10 -> 4
+Maximum Damage (max) :  10 -> 4
+
+
+[jpt!: Damage Effect] vehicles/scorpion/shell explosion
+------------------------------------------------------------------
+Minimum Damage: 	      080 -> 060
+Maximum Damage (min) :	351 -> 301
+Maximum Damage (max) :  351 -> 301
+
+
+#[ligh: Light] vehicles/scorpion/headlight scorpion
+#------------------------------------------------------------------
+#Light Intensity Burst:    01.00     -> 15.00 (linked, #1)
+#Light Intensity:          01.00     -> 15.00 (linked, #1)
+
+
+[proj: Projectile] vehicles/scorpion/tank shell
+------------------------------------------------------------------
+# NOT WORKING
+P - initial velocity:   3.333333 ->  10
+P - final velocity:     3.333333 ->  06
+
+
+[vehi: Vehicle] vehicles/scorpion/scorpion[_mp]
+------------------------------------------------------------------
+# WITH HMT PLUGIN
+
+Seat
+Third Person Entrance: NOT CHECKED -> CHECKED
+
+Top Speed (Forward):	0.140 -> 0.120
+Top Speed (Reverse):	0.120 -> 0.100
+Acceleration:         0.002 -> 0.002
+Deceleration:         0.006 -> 0.035
+
+
+[weap: Weapon] vehicles/scorpion/scorpion cannon
+------------------------------------------------------------------
+
+triggers [CHUNK 1] (main cannon)
+
+error angle - from: 	0.0174533 -> 0.0025
+error angle - to:	    0.0349066 -> 0.0025
+
+triggers [CHUNK 2] (MG)
+
+rounds per second - from:   15   -> 14
+rounds per seconds - to:    15   -> 14
+
+error angle - from: 	0.0349066 -> 0.005
+error angle - to:	    0.1134464 -> 0.01

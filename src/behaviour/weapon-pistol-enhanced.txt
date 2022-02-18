@@ -1,0 +1,44 @@
+The M6D pistol is a DMR with huge damages. In order to make it more like a
+secondary weapon, its statistics should be updated.
+The updated version should be used for 2 purposes:
+ - close combat: when the player don't have the time to recharge another weapon
+ - mid range hits: because we love DMR stuff #fuckYeah
+
+
+Eschaton 0.8
+==================================================================
+
+
+[jpt!: Damage Effect] weapons/pistol/bullet
+------------------------------------------------------------------
+Minimum Damage: 	           25.00 ->   20.00
+Maximum Damage (min):	       25.00 ->   20.00
+Maximum Damage (max):        25.00 ->   20.00
+
+# Less effective against armor
+Elite:                        1.00 ->   0.70
+Cyborg:                       1.50 ->   0.80
+Armored Human:                1.00 ->   0.90
+
+# Less effective against shields
+Cyborg Energy Shield:         1.00 ->   0.70
+Elite Energy Shield:          0.80 ->   0.60
+
+# Less effective against vehicles (a lot less!)
+Vehicle Passthrough penalty:   0.00 -> 0.75
+Metal (Hollow):                0.25 -> 0.10
+Metal (Thin):                  0.25 -> 0.10
+Metal (Thick):                 0.25 -> 0.10
+Rubber:                        0.25 -> 0.10
+
+
+[weap: Weapon] weapons/pistol/pistol
+------------------------------------------------------------------
+triggers
+
+rounds per second - from:     3.5 -> 5
+rounds per second - to:	      3.5 -> 5
+error- acceleration time:     0.5 -> 1
+minimum error: 		            0.00349066 -> 0.000
+error angle - from: 	        0.00349070 -> 0.005
+error angle - to:	            0.00698132 -> 0.030
